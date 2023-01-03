@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Typography Effects with CSS3 and jQuery</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Typography Effects with CSS3 and jQuery" />
+        <meta name="keywords" content="typography, css3, effect, lettering, letters, transition, jquery" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/style6.css" />
+        <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis|Niconne' rel='stylesheet' type='text/css' />
+    </head>
+    <body>
+        <div class="container">
+            
+            <div id="letter-container" class="letter-container">
+				<h2>
+					<a href="#" style="text-decoration: none;">...and then there was serendipity</a>
+				</h2>
+			</div>
+			
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script type="text/javascript" src="js/jquery.lettering.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$("#letter-container h2 a").lettering();
+				});
+			</script>
+        </div>
+    </body>
+</html>

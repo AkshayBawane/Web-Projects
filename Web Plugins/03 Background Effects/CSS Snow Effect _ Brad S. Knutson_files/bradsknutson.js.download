@@ -1,0 +1,102 @@
+var jQuerytimer = 0;
+var jQuerylimit = 10;
+var jQueryflag = false;
+var jQueryonce = true;
+
+jQuery(document).ready(function() {
+    jQuery('.affiliate-link-1').on('click', function() {
+        ga('send', 'event', 'affiliate', 'image', 'Raven Tools');
+    });
+    jQuery('.affiliate-link-2').on('click', function() {
+        ga('send', 'event', 'affiliate', 'image', 'Treehouse');
+    });
+    jQuery('.affiliate-link-3').on('click', function() {
+        ga('send', 'event', 'affiliate', 'image', 'WP Engine');
+    });
+    jQuery('.affiliate-link-4').on('click', function() {
+        ga('send', 'event', 'affiliate', 'image', 'Social Sprout');
+    });
+    jQuery('.affiliate-link-5').on('click', function() {
+        ga('send', 'event', 'affiliate', 'image', 'Yoast');
+    });
+    jQuery('.affiliate-link-6').on('click', function() {
+        ga('send', 'event', 'affiliate', 'banner', 'Treehouse');
+    });
+    jQuery('.affiliate-link-7').on('click', function() {
+        ga('send', 'event', 'affiliate', 'image', 'DIYthemes');
+    });
+    jQuery('.affiliate-link-8').on('click', function() {
+        ga('send', 'event', 'affiliate', 'footer', 'Treehouse');
+    });
+    jQuery('.affiliate-link-9').on('click', function() {
+        ga('send', 'event', 'affiliate', 'footer', 'StudioPress');
+    });
+
+	jQuery('.pinterest-image img').after('<div class="hover-pinterest"></div>');
+	jQuery('.hover-pinterest').append('<a class="pin-it-link" target="_blank"></a>');
+	
+	jQuery('.pinterest-image').hover(
+		function() {
+			var imgurl = jQuery('img', this).attr('src');
+			var encodedurl = encodeURIComponent(imgurl);
+			var pathname = jQuery(location).attr('href');
+			url = encodeURIComponent(pathname);
+			var desc = encodeURIComponent('enter description here');
+			
+			var pinhref = 'http://pinterest.com/pin/create/button/?url=';
+			pinhref += url;
+			pinhref += '&media=';
+			pinhref += encodedurl;
+			pinhref += '&description=';
+			pinhref += desc;
+			
+			jQuery('.hover-pinterest a',this).attr('href',pinhref);
+			
+			var pinwidth = jQuery(this).width();
+			var pinheight = jQuery(this).height();
+			jQuery('.hover-pinterest',this).css('display','block');
+			jQuery('.hover-pinterest',this).css('width',pinwidth);
+			jQuery('.hover-pinterest',this).css('height',pinheight);
+		},function() {
+			jQuery('.hover-pinterest',this).css('display','none');
+        });
+    
+    if (jQuery.cookie('window_test') != '1') {
+		var jQueryinterval = setInterval(timerIncrement, 1000);
+		jQuery.cookie('window_test', '1', { expires: 90, path: '/' });
+	}
+});
+
+function timerIncrement() {
+	jQuerytimer++;
+	if ( jQuerytimer < jQuerylimit && jQueryonce) {
+		jQueryflag = true;
+		popUp(jQuerytimer);
+	} 
+	if ( jQuerytimer > jQuerylimit ){
+		jQueryflag = jQueryonce = false;
+        jQuery.cookie('window_test', '1', { expires: 90, path: '/' });
+	}
+}
+function popUp() {
+	addEvent(document, "mouseout", function(e) {
+		e = e ? e : window.event;
+		var from = e.relatedTarget || e.toElement;
+		if (!from || from.nodeName == "HTML") {
+			if (jQueryonce) {
+				jQuery.get('http://bradsknutson.com/wp-content/themes/flat-ui/cro.html', function(data) {
+					jQuery('body').append(data);
+				});
+				jQueryonce = false;
+			}
+		}
+	});			
+}
+function addEvent(obj, evt, fn) {
+    if (obj.addEventListener) {
+        obj.addEventListener(evt, fn, false);
+    }
+    else if (obj.attachEvent) {
+        obj.attachEvent("on" + evt, fn);
+    }
+}

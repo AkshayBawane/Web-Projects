@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.cssload-jar {
+	position: relative;
+	width: 350px;
+	margin: 88px auto 0;
+	text-align: center;
+}
+.cssload-jar .cssload-mouth {
+	width: 70px;
+	height: 18px;
+	margin: 0 auto -2px;
+	border-right: 7px solid rgb(0,0,0);
+	border-left: 7px solid rgb(0,0,0);
+	border-radius: 35px;
+		-o-border-radius: 35px;
+		-ms-border-radius: 35px;
+		-webkit-border-radius: 35px;
+		-moz-border-radius: 35px;
+}
+.cssload-jar .cssload-neck {
+	width: 61px;
+	height: 82px;
+	margin: 0 auto -12px;
+	z-index: 7;
+	position: relative;
+	background-color: rgb(255,255,255);
+	border-right: 7px solid rgb(0,0,0);
+	border-left: 7px solid rgb(0,0,0);
+}
+.cssload-jar .cssload-bubble {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	background-color: rgb(53,238,251);
+	opacity: 0.4;
+	left: 161px;
+	z-index: 8;
+	top: 193px;
+	border-radius: 100%;
+		-o-border-radius: 100%;
+		-ms-border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+	animation: cssload-buble 2.3s linear 1.15s infinite;
+		-o-animation: cssload-buble 2.3s linear 1.15s infinite;
+		-ms-animation: cssload-buble 2.3s linear 1.15s infinite;
+		-webkit-animation: cssload-buble 2.3s linear 1.15s infinite;
+		-moz-animation: cssload-buble 2.3s linear 1.15s infinite;
+}
+.cssload-jar .cssload-bubble + .cssload-bubble {
+	left: 152px;
+	top: 210px;
+	width: 26px;
+	height: 26px;
+	animation-duration: 3.45s;
+		-o-animation-duration: 3.45s;
+		-ms-animation-duration: 3.45s;
+		-webkit-animation-duration: 3.45s;
+		-moz-animation-duration: 3.45s;
+}
+.cssload-jar .cssload-base {
+	margin: auto;
+	width: 210px;
+	height: 175px;
+	border: 7px solid rgb(0,0,0);
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	z-index: 5;
+}
+.cssload-jar .cssload-base .cssload-bubble {
+	left: 26px;
+	top: 88px;
+	animation: cssload-bounce 2.65s linear 0s infinite alternate;
+		-o-animation: cssload-bounce 2.65s linear 0s infinite alternate;
+		-ms-animation: cssload-bounce 2.65s linear 0s infinite alternate;
+		-webkit-animation: cssload-bounce 2.65s linear 0s infinite alternate;
+		-moz-animation: cssload-bounce 2.65s linear 0s infinite alternate;
+}
+.cssload-jar .cssload-base .cssload-bubble + .cssload-bubble {
+	left: 131px;
+	top: 70px;
+	animation-duration: 3.45s;
+		-o-animation-duration: 3.45s;
+		-ms-animation-duration: 3.45s;
+		-webkit-animation-duration: 3.45s;
+		-moz-animation-duration: 3.45s;
+}
+.cssload-jar .cssload-liquid {
+	height: 70px;
+	background-color: rgb(53,238,251);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.cssload-jar .cssload-wave {
+	width: 105px;
+	height: 35px;
+	position: absolute;
+	background-color: rgb(53,238,251);
+	left: 0;
+	top: 100px;
+	animation: cssload-wave 1.15s linear 1.15s infinite alternate;
+		-o-animation: cssload-wave 1.15s linear 1.15s infinite alternate;
+		-ms-animation: cssload-wave 1.15s linear 1.15s infinite alternate;
+		-webkit-animation: cssload-wave 1.15s linear 1.15s infinite alternate;
+		-moz-animation: cssload-wave 1.15s linear 1.15s infinite alternate;
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+}
+.cssload-jar .cssload-wave + .cssload-wave {
+	left: auto;
+	right: 0;
+}
+
+
+
+
+
+
+
+@keyframes cssload-wave {
+	from {
+		transform: translateX(175px);
+	}
+	to {
+		transform: translateX(-175px);
+	}
+}
+
+@-o-keyframes cssload-wave {
+	from {
+		-o-transform: translateX(175px);
+	}
+	to {
+		-o-transform: translateX(-175px);
+	}
+}
+
+@-ms-keyframes cssload-wave {
+	from {
+		-ms-transform: translateX(175px);
+	}
+	to {
+		-ms-transform: translateX(-175px);
+	}
+}
+
+@-webkit-keyframes cssload-wave {
+	from {
+		-webkit-transform: translateX(175px);
+	}
+	to {
+		-webkit-transform: translateX(-175px);
+	}
+}
+
+@-moz-keyframes cssload-wave {
+	from {
+		-moz-transform: translateX(175px);
+	}
+	to {
+		-moz-transform: translateX(-175px);
+	}
+}
+
+@keyframes cssload-bounce {
+	0% {
+		transform: translate(9px, 26px);
+	}
+	50% {
+		transform: translate(0, -26px);
+	}
+	100% {
+		transform: translate(-9px, -65px);
+		opacity: 1;
+	}
+}
+
+@-o-keyframes cssload-bounce {
+	0% {
+		-o-transform: translate(9px, 26px);
+	}
+	50% {
+		-o-transform: translate(0, -26px);
+	}
+	100% {
+		-o-transform: translate(-9px, -65px);
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes cssload-bounce {
+	0% {
+		-ms-transform: translate(9px, 26px);
+	}
+	50% {
+		-ms-transform: translate(0, -26px);
+	}
+	100% {
+		-ms-transform: translate(-9px, -65px);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes cssload-bounce {
+	0% {
+		-webkit-transform: translate(9px, 26px);
+	}
+	50% {
+		-webkit-transform: translate(0, -26px);
+	}
+	100% {
+		-webkit-transform: translate(-9px, -65px);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes cssload-bounce {
+	0% {
+		-moz-transform: translate(9px, 26px);
+	}
+	50% {
+		-moz-transform: translate(0, -26px);
+	}
+	100% {
+		-moz-transform: translate(-9px, -65px);
+		opacity: 1;
+	}
+}
+
+@keyframes cssload-buble {
+	0% {
+		transform: translate(5px, 18px);
+	}
+	25% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(-5px, -44px);
+	}
+	75% {
+		transform: translate(0, -88px);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(5px, -175px);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-buble {
+	0% {
+		-o-transform: translate(5px, 18px);
+	}
+	25% {
+		-o-transform: translate(0, 0px);
+	}
+	50% {
+		-o-transform: translate(-5px, -44px);
+	}
+	75% {
+		-o-transform: translate(0, -88px);
+		opacity: 1;
+	}
+	100% {
+		-o-transform: translate(5px, -175px);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-buble {
+	0% {
+		-ms-transform: translate(5px, 18px);
+	}
+	25% {
+		-ms-transform: translate(0, 0px);
+	}
+	50% {
+		-ms-transform: translate(-5px, -44px);
+	}
+	75% {
+		-ms-transform: translate(0, -88px);
+		opacity: 1;
+	}
+	100% {
+		-ms-transform: translate(5px, -175px);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-buble {
+	0% {
+		-webkit-transform: translate(5px, 18px);
+	}
+	25% {
+		-webkit-transform: translate(0, 0px);
+	}
+	50% {
+		-webkit-transform: translate(-5px, -44px);
+	}
+	75% {
+		-webkit-transform: translate(0, -88px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translate(5px, -175px);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-buble {
+	0% {
+		-moz-transform: translate(5px, 18px);
+	}
+	25% {
+		-moz-transform: translate(0, 0px);
+	}
+	50% {
+		-moz-transform: translate(-5px, -44px);
+	}
+	75% {
+		-moz-transform: translate(0, -88px);
+		opacity: 1;
+	}
+	100% {
+		-moz-transform: translate(5px, -175px);
+		opacity: 0;
+	}
+}
+	</style>
+	<div class="cssload-jar">
+	<div class="cssload-mouth"></div>
+	<div class="cssload-neck"></div>
+	<div class="cssload-base">
+		<div class="cssload-liquid"> </div>
+		<div class="cssload-wave"></div>
+		<div class="cssload-wave"></div>
+		<div class="cssload-bubble"></div>
+		<div class="cssload-bubble"></div>
+	</div>
+	<div class="cssload-bubble"></div>
+	<div class="cssload-bubble"></div>
+</div>
+</body>
+</html>

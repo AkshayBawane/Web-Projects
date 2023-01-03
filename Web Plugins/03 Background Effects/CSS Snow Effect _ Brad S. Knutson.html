@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://bradsknutson.com/blog/css-snow-effect/ -->
+<html xmlns:fb="http://ogp.me/ns/fb#" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<meta property="twitter:account_id" content="624226074">
+<title>CSS Snow Effect | Brad S. Knutson</title>
+<link rel="shortcut icon" href="http://bradsknutson.com/wp-content/themes/flat-ui/favicon.ico?v=1.2">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="alternate" type="application/rss+xml" title="Brad S. Knutson » Feed" href="http://bradsknutson.com/feed/">
+<!--[if lt IE 9]>
+<script src="http://bradsknutson.com/wp-content/themes/flat-ui/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="&#39;Tis the season, right? If there is any time of the year it&#39;s appropriate to have a snow effect on your site, now is the time. So, with the holiday spirit">
+<link rel="canonical" href="http://bradsknutson.com/blog/css-snow-effect/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS Snow Effect | Brad S. Knutson">
+<meta property="og:description" content="&#39;Tis the season, right? If there is any time of the year it&#39;s appropriate to have a snow effect on your site, now is the time. So, with the holiday spirit">
+<meta property="og:url" content="http://bradsknutson.com/blog/css-snow-effect/">
+<meta property="og:site_name" content="Brad S. Knutson">
+<meta property="article:author" content="brad.s.knutson">
+<meta property="fb:admins" content="13957822">
+<meta property="og:image" content="http://bradsknutson.com/wp-content/uploads/2014/01/css-snow.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="&#39;Tis the season, right? If there is any time of the year it&#39;s appropriate to have a snow effect on your site, now is the time. So, with the holiday spirit">
+<meta name="twitter:title" content="CSS Snow Effect | Brad S. Knutson">
+<meta name="twitter:site" content="@Bradsknutson">
+<meta name="twitter:domain" content="Brad S. Knutson">
+<meta name="twitter:image:src" content="http://bradsknutson.com/wp-content/uploads/2014/01/css-snow.jpg">
+<meta name="twitter:creator" content="@Bradsknutson">
+<script src="./CSS Snow Effect _ Brad S. Knutson_files/3052.js.download" async="" type="text/javascript"></script><script src="./CSS Snow Effect _ Brad S. Knutson_files/cb=gapi.loaded_1" async=""></script><script src="./CSS Snow Effect _ Brad S. Knutson_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./CSS Snow Effect _ Brad S. Knutson_files/plusone.js.download" gapi_processed="true"></script><script id="twitter-wjs" src="./CSS Snow Effect _ Brad S. Knutson_files/widgets.js.download"></script><script id="facebook-jssdk" src="./CSS Snow Effect _ Brad S. Knutson_files/all.js.download"></script><script async="" src="./CSS Snow Effect _ Brad S. Knutson_files/analytics.js.download"></script><script type="text/javascript" async="" src="./CSS Snow Effect _ Brad S. Knutson_files/ga.js.download"></script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/bradsknutson.com\/","name":"Brad S. Knutson"}</script>
+<!-- / Yoast WordPress SEO plugin. -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/bradsknutson.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.14"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./CSS Snow Effect _ Brad S. Knutson_files/wp-emoji-release.min.js.download" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="crayon-css" href="./CSS Snow Effect _ Brad S. Knutson_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./CSS Snow Effect _ Brad S. Knutson_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="ts_fab_css-css" href="./CSS Snow Effect _ Brad S. Knutson_files/ts-fab.min.css" type="text/css" media="all">
+<script type="text/javascript">try {
+var AG_onLoad=function(func){if(document.readyState==="complete"||document.readyState==="interactive")func();else if(document.addEventListener)document.addEventListener("DOMContentLoaded",func);else if(document.attachEvent)document.attachEvent("DOMContentLoaded",func)};
+var AG_removeElementById = function(id) { var element = document.getElementById(id); if (element && element.parentNode) { element.parentNode.removeChild(element); }};
+var AG_removeElementBySelector = function(selector) { if (!document.querySelectorAll) { return; } var nodes = document.querySelectorAll(selector); if (nodes) { for (var i = 0; i < nodes.length; i++) { if (nodes[i] && nodes[i].parentNode) { nodes[i].parentNode.removeChild(nodes[i]); } } } };
+var AG_each = function(selector, fn) { if (!document.querySelectorAll) return; var elements = document.querySelectorAll(selector); for (var i = 0; i < elements.length; i++) { fn(elements[i]); }; };
+var AG_removeParent = function(el, fn) { while (el && el.parentNode) { if (fn(el)) { el.parentNode.removeChild(el); return; } el = el.parentNode; } };
+} catch (ex) { console.error('Error executing AG js: ' + ex); }</script><link rel="stylesheet" id="twentytwelve-fonts-css" href="./CSS Snow Effect _ Brad S. Knutson_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="./CSS Snow Effect _ Brad S. Knutson_files/style.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://bradsknutson.com/wp-content/themes/flat-ui/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="jetpack_css-css" href="./CSS Snow Effect _ Brad S. Knutson_files/jetpack.css" type="text/css" media="all">
+<!-- This site uses the Google Analytics by Yoast plugin v5.4.2 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38151043-1']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/jquery.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.7.1","is_admin":"0","ajaxurl":"http:\/\/bradsknutson.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/crayon.min.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/ts-fab.min.js.download"></script>
+<style>form .message-textarea {display: none !important; }</style>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/jquery.cookie.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/bradsknutson.js.download"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38151043-2', 'bradsknutson.com');
+  ga('send', 'pageview');
+
+</script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('.menu-icon').click(function() {
+        jQuery('#masthead.site-header').toggleClass('extended');
+    });
+});
+</script>
+<script src="./CSS Snow Effect _ Brad S. Knutson_files/secureAnonymousFramework"></script><script type="text/javascript" charset="utf-8" async="" src="./CSS Snow Effect _ Brad S. Knutson_files/button.90facfc7dd48c9c8c4f1fc94e137b515.js.download"></script><style type="text/css">* html #li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link{height:1% !important;}#li_ui_li_gen_1494071759066_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1494071759066_0 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link:link, #li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link:visited, #li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link:hover, #li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1494071759066_0 a#li_ui_li_gen_1494071759066_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -593px !important;background-repeat:no-repeat !important;background-color:#0077b5 !important;background-size:initial !important;cursor:pointer !important;border:0 !important;border-right:1px solid #066094 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:2px !important;-webkit-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;}#li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title{color:#fff !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;text-shadow:0 -1px #005887 !important;line-height:20px !important;border-radius:2px !important;-webkit-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#0077b5 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0077b5), color-stop(100%,#0077b5)) !important; background-image: -webkit-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}#li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title{border:1px solid #000 !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0369a0), color-stop(100%,#0369a0)) !important; background-image: -webkit-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}#li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title, #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title{color:#fff !important;border:1px solid #000 !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#066094), color-stop(100%,#066094)) !important; background-image: -webkit-linear-gradient(top, #066094 0%, #066094 100%) !important;}.IN-shadowed #li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title{}.IN-shadowed #li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title{}.IN-shadowed #li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title, .IN-shadowed #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title{}#li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title-text, #li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title-text *{color:#fff !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title-text, #li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title-text *{color:#fff !important;}#li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title-text, #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title-text, #li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title-text *, #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title-text *{color:#fff !important;}#li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title #li_ui_li_gen_1494071759066_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title{color:#fff !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;background-color:#0077b5 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0077b5), color-stop(100%,#0077b5)) !important; background-image: -webkit-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}.success #li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title-text, .success #li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1494071759066_0 #li_ui_li_gen_1494071759066_0-title{}.success #li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title{color:#fff !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#0369a0), color-stop(100%,#0369a0)) !important; background-image: -webkit-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}.success #li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title-text, .success #li_ui_li_gen_1494071759066_0.hovered #li_ui_li_gen_1494071759066_0-title-text *{color:#fff !important;}.success #li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title, .success #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title{color:#fff !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#066094), color-stop(100%,#066094)) !important; background-image: -webkit-linear-gradient(top, #066094 0%, #066094 100%) !important;}.success #li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title-text, .success #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title-text, .success #li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title-text *, .success #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1494071759066_0.clicked #li_ui_li_gen_1494071759066_0-title, .IN-shadowed .success #li_ui_li_gen_1494071759066_0.down #li_ui_li_gen_1494071759066_0-title{}#li_ui_li_gen_1494071759093_1-container.IN-top {display:inline-block !important;overflow:visible !important;position:relative !important;height:42px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1494071759093_1.IN-top {display:inline-block !important;height:42px !important;width:60px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:-207px -470px !important;}#li_ui_li_gen_1494071759093_1-content.IN-top {display:inline !important;font-size:16px !important;color:#4e4e4e !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:38px !important;}#li_ui_li_gen_1494071759093_1-container.IN-empty #li_ui_li_gen_1494071759093_1-inner.IN-top {background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -560px !important;background-size:initial !important;overflow:hidden !important;margin:4px auto 0 auto !important;width:28px !important;height:28px !important;display:block !important;}#li_ui_li_gen_1494071759093_1-container.IN-empty #li_ui_li_gen_1494071759093_1-content.IN-top {text-indent:-999px !important;display:inline-block !important;}#li_ui_li_gen_1494071759093_1-container.IN-hidden #li_ui_li_gen_1494071759093_1 {display:none !important;}</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://z-m-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+
+<body class="single single-blog postid-2489 full-width custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+        <div class="header-container">
+            <hgroup>
+                <h1 class="site-title"><a href="http://bradsknutson.com/" title="Brad S. Knutson" rel="home">Brad S. Knutson</a></h1>
+                <div class="menu-icon">
+                    <div class="menu-inner"></div>
+                    <div class="menu-inner"></div>
+                    <div class="menu-inner"></div>
+                </div>
+            </hgroup>
+    
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <div class="menu-main-site-navigation-container"><ul id="menu-main-site-navigation" class="nav-menu"><li id="menu-item-251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-251"><a href="http://bradsknutson.com/">Home</a></li>
+<li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a href="http://bradsknutson.com/about/">About</a></li>
+<li id="menu-item-255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-255"><a href="http://bradsknutson.com/portfolio/">Portfolio</a></li>
+<li id="menu-item-254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-254"><a href="http://bradsknutson.com/services/">Services</a></li>
+<li id="menu-item-253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-253"><a href="http://bradsknutson.com/contact/">Contact</a></li>
+<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a href="http://bradsknutson.com/blog-posts/">Blog</a></li>
+</ul></div>            </nav><!-- #site-navigation -->
+    
+                    </div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="wrapper"><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./CSS Snow Effect _ Brad S. Knutson_files/87XNE1PC38r.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./CSS Snow Effect _ Brad S. Knutson_files/87XNE1PC38r(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="inner-container">
+    <div class="inner-page">		
+	<header class="entry-header">
+		<h1 class="entry-title">CSS Snow Effect</h1>
+	</header>
+
+	<article id="post-2489" class="post-2489 blog type-blog status-publish has-post-thumbnail hentry topics-css">
+			<ul id="social-media">
+				
+				<li>
+					<div id="fb-social"><div class="fb-like fb_iframe_widget" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=56&amp;href=http%3A%2F%2Fbradsknutson.com%2Fblog%2Fcss-snow-effect%2F&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450"><span style="vertical-align: bottom; width: 50px; height: 40px;"><iframe name="f2b0fa77ae65958" width="450px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./CSS Snow Effect _ Brad S. Knutson_files/like.html" style="border: none; visibility: visible; width: 50px; height: 40px;" class=""></iframe></span></div></div>
+				</li>
+				
+				<li>
+					<div id="google-social"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I0_1494071756044" name="I0_1494071756044" src="./CSS Snow Effect _ Brad S. Knutson_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div></div>
+				</li>
+				
+				<li>
+					<div id="twitter-social" style="height:65px;"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 60px; height: 20px;" title="Twitter Tweet Button" src="./CSS Snow Effect _ Brad S. Knutson_files/tweet_button.5b6375bb17bd9edb2f4e7f8f12971999.en.html" data-url="http://bradsknutson.com/blog/css-snow-effect/"></iframe>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+				</li>
+				
+				<li>
+					<div id="linkedin-social"><script src="./CSS Snow Effect _ Brad S. Knutson_files/in.js.download" type="text/javascript"></script>
+					<span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1494071759093_1-container" class="IN-top"><span id="li_ui_li_gen_1494071759093_1" class="IN-top"><span id="li_ui_li_gen_1494071759093_1-inner" class="IN-top"><span id="li_ui_li_gen_1494071759093_1-content" class="IN-top">1</span></span></span></span></span><br><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1494071759066_0"><a id="li_ui_li_gen_1494071759066_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1494071759066_0-logo">in</span><span id="li_ui_li_gen_1494071759066_0-title"><span id="li_ui_li_gen_1494071759066_0-mark"></span><span id="li_ui_li_gen_1494071759066_0-title-text">Share</span></span></a></span></span></span><script type="IN/Share+init" data-counter="top"></script></div>
+				</li>
+				
+				<li>
+					<div id="stumbleupon-social"><script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/button.js.download"></script><iframe scrolling="no" frameborder="0" class="buffer-button" src="./CSS Snow Effect _ Brad S. Knutson_files/saved_resource.html" style="border: none; width: 55px; height: 62px;"></iframe></div>
+				</li>
+				<li style="margin: 5px 0px 0px -5px;">
+					<a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Fbradsknutson.com%2Ffeed%2F" target="blank"><img id="feedlyFollow" src="./CSS Snow Effect _ Brad S. Knutson_files/feedly-follow-rectangle-flat-medium_2x.png" alt="follow us in feedly" width="71" height="28"></a>
+				</li>
+			</ul>
+		<div class="entry-content">
+			<div id="blogposts">
+			<div id="date-info">Published January 4, 2014 by Brad Knutson</div>					<div id="blog-thumb-inpost"><img width="600" height="350" src="./CSS Snow Effect _ Brad S. Knutson_files/css-snow.jpg" class="attachment-full wp-post-image" alt="CSS Snow"></div>			<p>‘Tis the season, right?</p>
+<p>If there is any time of the year it’s appropriate to have a snow effect on your site, now is the time.</p>
+<p>So, with the holiday spirit in mind, I’d like to show you how to create this effect quickly and easily with a little help from our web design friend, CSS!</p>
+<h3>The Demo</h3>
+<p><iframe style="width: 100%;height: 300px;" src="./CSS Snow Effect _ Brad S. Knutson_files/saved_resource(1).html"></iframe></p>
+<h3>The CSS</h3>
+<p>To create this effect, we’ll need three different “snow” graphics.  These are transparent images of varying degrees of size and focus.  We’ll overlay these three graphics on top of one another for a bit of depth.</p>
+<p>Let’s style the background with these images.  I’ve uploaded them to Imgur, feel free to use them.</p>
+<pre><code>body <span style="color:#AB875D;">{</span>
+    background-color: #6b92b9;
+    background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+<span style="color:#AB875D;">}</span></code></pre>
+<p>Next, let’s create the keyframe.  This is necessary to animate the background images as shown in the example above.  If you’re read any of my posts before, you’re probably familiar with CSS Keyframes by now.  If not, check out <a href="http://bradsknutson.com/blog/css3-shake-animation/" target="_blank">this post</a>.</p>
+<pre><code>@-webkit-keyframes snow <span style="color:#AB875D;">{</span>
+    0% <span style="color:#AB875D;">{</span> background-position: 0px 0px, 0px 0px, 0px 0px <span style="color:#AB875D;">}</span>
+    50% <span style="color:#AB875D;">{</span> background-color: #b4cfe0 <span style="color:#AB875D;">}</span>
+    100% <span style="color:#AB875D;">{</span>
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    <span style="color:#AB875D;">}</span>
+<span style="color:#AB875D;">}</span>
+@-moz-keyframes snow <span style="color:#AB875D;">{</span>
+    0% <span style="color:#AB875D;">{</span> background-position: 0px 0px, 0px 0px, 0px 0px <span style="color:#AB875D;">}</span>
+    50% <span style="color:#AB875D;">{</span> background-color: #b4cfe0 <span style="color:#AB875D;">}</span>
+    100% <span style="color:#AB875D;">{</span>
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    <span style="color:#AB875D;">}</span>
+<span style="color:#AB875D;">}</span>
+@-ms-keyframes snow <span style="color:#AB875D;">{</span>
+    0% <span style="color:#AB875D;">{</span> background-position: 0px 0px, 0px 0px, 0px 0px <span style="color:#AB875D;">}</span>
+    50% <span style="color:#AB875D;">{</span> background-color: #b4cfe0 <span style="color:#AB875D;">}</span>
+    100% <span style="color:#AB875D;">{</span>
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    <span style="color:#AB875D;">}</span>
+<span style="color:#AB875D;">}</span>
+@keyframes snow <span style="color:#AB875D;">{</span>
+    0% <span style="color:#AB875D;">{</span> background-position: 0px 0px, 0px 0px, 0px 0px <span style="color:#AB875D;">}</span>
+    50% <span style="color:#AB875D;">{</span> background-color: #b4cfe0 <span style="color:#AB875D;">}</span>
+    100% <span style="color:#AB875D;">{</span>
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    <span style="color:#AB875D;">}</span>
+<span style="color:#AB875D;">}</span></code></pre>
+<p>Our “snow” keyframe is slowly moving each background image independently of one another at different paces to create the awesome effect of snow falling.</p>
+<p>You can change the speed or direction by modifying the background positions in the keyframe at 100%.</p>
+<p>Finally, our last step is to add the keyframe to the style for the <code>body</code> tag to complete the animation.</p>
+<pre><code>body <span style="color:#AB875D;">{</span>
+    background-color: #6b92b9;
+    background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+<span style="color:#AB875D;">}</span></code></pre>
+<h3>The Finished Product</h3>
+<p><iframe style="width: 100%;height: 300px;" src="./CSS Snow Effect _ Brad S. Knutson_files/saved_resource(2).html"></iframe></p>
+<p>That’s all there is too it!  Not very complicated, right?</p>
+<div id="ts-fab-below" class="ts-fab-wrapper"><span class="screen-reader-text">The following two tabs change content below.</span><ul class="ts-fab-list"><li class="ts-fab-bio-link active"><a href="http://bradsknutson.com/blog/css-snow-effect/#ts-fab-bio-below">Bio</a></li></ul><div class="ts-fab-tabs">
+	<div class="ts-fab-tab" id="ts-fab-bio-below" style="display: block;">
+		<div class="ts-fab-avatar"><img alt="" src="./CSS Snow Effect _ Brad S. Knutson_files/bb1f3fd877e3e00ad2b5ed6e1e0a209c" srcset="http://2.gravatar.com/avatar/bb1f3fd877e3e00ad2b5ed6e1e0a209c?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80"><div class="ts-fab-social-links"><a href="http://twitter.com/Bradsknutson" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://twitter.com/Bradsknutson&#39;, &#39;&#39;]);" title="Twitter"><img src="./CSS Snow Effect _ Brad S. Knutson_files/twitter.png" width="24" height="24" alt="My Twitter profile"></a><a href="http://facebook.com/brad.s.knutson" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://facebook.com/brad.s.knutson&#39;, &#39;&#39;]);" title="Facebook"><img src="./CSS Snow Effect _ Brad S. Knutson_files/facebook.png" width="24" height="24" alt="My Facebook profile"></a><a href="http://plus.google.com/+BradKnutson?rel=author" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://plus.google.com/+BradKnutson?rel=author&#39;, &#39;&#39;]);" title="Google+"><img src="./CSS Snow Effect _ Brad S. Knutson_files/googleplus.png" width="24" height="24" alt="My Google+ profile"></a></div>
+		</div>
+		
+		<div class="ts-fab-text">
+			<div class="ts-fab-header"><h4 itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Brad Knutson</span></h4><div class="ts-fab-description"><span>Founder</span> at <span>Inbounderish</span></div></div><!-- /.ts-fab-header -->
+			<div class="ts-fab-content">Brad Knutson is a Web Developer in the Twin Cities area of Minnesota. He has experience working with WordPress and Drupal, and also has an interest in SEO and Inbound Marketing.</div>
+		</div>
+	</div>
+	<div class="ts-fab-tab" id="ts-fab-latest-posts-below" style="display: none;">
+		<div class="ts-fab-avatar"><img alt="" src="./CSS Snow Effect _ Brad S. Knutson_files/bb1f3fd877e3e00ad2b5ed6e1e0a209c" srcset="http://2.gravatar.com/avatar/bb1f3fd877e3e00ad2b5ed6e1e0a209c?s=160&amp;d=mm&amp;r=g 2x" class="avatar avatar-80 photo" height="80" width="80"><div class="ts-fab-social-links"><a href="http://twitter.com/Bradsknutson" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://twitter.com/Bradsknutson&#39;, &#39;&#39;]);" title="Twitter"><img src="./CSS Snow Effect _ Brad S. Knutson_files/twitter.png" width="24" height="24" alt="My Twitter profile"></a><a href="http://facebook.com/brad.s.knutson" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://facebook.com/brad.s.knutson&#39;, &#39;&#39;]);" title="Facebook"><img src="./CSS Snow Effect _ Brad S. Knutson_files/facebook.png" width="24" height="24" alt="My Facebook profile"></a><a href="http://plus.google.com/+BradKnutson?rel=author" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;outbound-article&#39;, &#39;http://plus.google.com/+BradKnutson?rel=author&#39;, &#39;&#39;]);" title="Google+"><img src="./CSS Snow Effect _ Brad S. Knutson_files/googleplus.png" width="24" height="24" alt="My Google+ profile"></a></div>
+		</div>
+	</div>
+		</div>
+	</div>			<div id="topics-links">			<p>Topics discussed in this post: </p><a href="http://bradsknutson.com/topics/css/" rel="tag">CSS</a>			</div>		
+                        <a href="http://bradsknutson.com/go/treehouse-banner/" target="_blank" class="affiliate-link-6"><div class="container1">
+                <div class="banner">
+                    <div class="phrase-1">
+                        Learn CSS3 and HTML5 for 1% the cost of a degree...
+                    </div>
+                    <div class="phrase-2">
+                        <span class="team-treehouse">Learn more for less.</span>
+                        <img class="team-treehouse noboxshadow" src="./CSS Snow Effect _ Brad S. Knutson_files/th-logo-white.png" alt="Treehouse">
+                    </div>
+                    <div class="blob-1"></div>
+                    <div class="blob-2"></div>
+                    <div class="blob-3"></div>
+                </div>
+            </div></a>			
+			</div>
+			<div id="blog-widgets">
+				<h2>
+					Keep Up-to-Date
+				</h2>
+				<a class="demo-button up-to-date-email" href="http://eepurl.com/CpQcz">Subscribe</a>
+				<a class="up-to-date-rss" href="http://feeds.feedburner.com/Bradsknutson" target="_blank"><img src="./CSS Snow Effect _ Brad S. Knutson_files/rss.png"></a>
+			<h2>Topics</h2><ul><li><a href="http://bradsknutson.com/topics/css">CSS</a> (52)</li><li><a href="http://bradsknutson.com/topics/social-media">Social Media</a> (46)</li><li><a href="http://bradsknutson.com/topics/seo">SEO</a> (44)</li><li><a href="http://bradsknutson.com/topics/wordpress">WordPress</a> (40)</li><li><a href="http://bradsknutson.com/topics/php">PHP</a> (27)</li><li><a href="http://bradsknutson.com/topics/web-design">Web Design</a> (18)</li><li><a href="http://bradsknutson.com/topics/quick-tip">Quick Tip</a> (18)</li><li><a href="http://bradsknutson.com/topics/jquery">jQuery</a> (17)</li><li><a href="http://bradsknutson.com/topics/twitter">Twitter</a> (14)</li><li><a href="http://bradsknutson.com/topics/" title="See more Topics">...</a></li></ul><p>See a complete list of topics discussed in blog posts <a href="http://bradsknutson.com/topics/">here</a>.		
+                </p><h2>Check These Out</h2>	
+				                <a class="treehouse affiliate-link-2" target="_blank" href="http://bradsknutson.com/go/treehouse-sidebar/"><img src="http://www.shareasale.com/image/43811/Quantcast_300x250_Green.gif" alt="Get 2 Weeks Free! Sign Up Today!" border="0"></a>
+				<a class="wp-engine-img affiliate-link-3" target="_blank" href="http://bradsknutson.com/go/wpengine"><img src="http://www.shareasale.com/image/41388/Feature-Fast-300x250.jpeg" border="0" alt="Premium Managed WordPress Hosting"></a>
+                <a target="_blank" class="raven-tools affiliate-link-9" href="http://bradsknutson.com/go/studiopress/"><img src="http://www.shareasale.com/image/28169/300x250.png" alt="Genesis Framework for WordPress" border="0"></a>
+                <a class="raven-tools affiliate-link-1" target="_blank" href="http://bradsknutson.com/go/raven/" rel="nofollow"><img src="http://www.shareasale.com/image/25914/raven_aff_300x250_seo021.jpg" alt="SEO is complex. Tools should be simple." border="0"></a>
+                <a class="raven-tools affiliate-link-7" target="_blank" href="http://bradsknutson.com/go/diythemes/"><img src="http://www.shareasale.com/image/24570/thesis-300x250-1.png" alt="Thesis Theme for WordPress:  Options Galore and a Helpful Support Community" border="0"></a>			</div>
+		</div><!-- .entry-content -->
+	</article><!-- #post -->	
+	
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			2 thoughts on “<span>CSS Snow Effect</span>”		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-105908">
+		<article id="comment-105908" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="./CSS Snow Effect _ Brad S. Knutson_files/bd63e6aee6d0903028899bb3df811570" srcset="http://2.gravatar.com/avatar/bd63e6aee6d0903028899bb3df811570?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><cite class="fn"><a href="http://jsbin.com/riloru" rel="external nofollow" class="url">henrik</a> </cite><a href="http://bradsknutson.com/blog/css-snow-effect/#comment-105908"><time datetime="2014-12-07T14:54:19+00:00">December 7, 2014 at 2:54 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hey,<br>
+I’ve borrowed your cool effect.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a class="comment-reply-link" href="http://bradsknutson.com/blog/css-snow-effect/?replytocom=105908#respond" onclick="return addComment.moveForm( &quot;comment-105908&quot;, &quot;105908&quot;, &quot;respond&quot;, &quot;2489&quot; )" aria-label="Reply to henrik">Reply</a> <span>↓</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-108240">
+		<article id="comment-108240" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt="" src="./CSS Snow Effect _ Brad S. Knutson_files/8f236d8e8c79e2d627929887f21ab05a" srcset="http://2.gravatar.com/avatar/8f236d8e8c79e2d627929887f21ab05a?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96"><cite class="fn">Leon </cite><a href="http://bradsknutson.com/blog/css-snow-effect/#comment-108240"><time datetime="2015-01-09T14:41:50+00:00">January 9, 2015 at 2:41 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>thanks m8</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+				<a class="comment-reply-link" href="http://bradsknutson.com/blog/css-snow-effect/?replytocom=108240#respond" onclick="return addComment.moveForm( &quot;comment-108240&quot;, &quot;108240&quot;, &quot;respond&quot;, &quot;2489&quot; )" aria-label="Reply to Leon">Reply</a> <span>↓</span>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+
+		
+		
+	
+							<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Share Your Thoughts <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://bradsknutson.com/blog/css-snow-effect/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://bradsknutson.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																			<p class="comment-notes">Your email address will not be shown.</p>							<p class="comment-form-author"><label for="author">Name <span class="">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required="true" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required="true" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30"></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" class="message-textarea" name="comment" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true" required="required"></textarea><!-- </form> --><textarea id="a7de8f365" name="a7de8f365" cols="45" rows="8" aria-describedby="form-allowed-tags" aria-required="true" required="required"></textarea></p>						<p class="form-allowed-tags" id="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code class="" title="" data-url=""&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;s&gt; &lt;strike&gt; &lt;strong&gt; &lt;pre class="" title="" data-url=""&gt; &lt;span class="" title="" data-url=""&gt; </code></p>
+						<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="2489" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9c713349a9"></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"></p>					<input type="hidden" id="ak_js" name="ak_js" value="1494071754088"></form>
+							</div><!-- #respond -->
+			
+</div><!-- #comments .comments-area -->	
+    </div>
+</div>
+
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+        <div class="pre-footer">
+            <div class="footer-design">
+                <a href="http://bradsknutson.com/topics/css/"><img src="./CSS Snow Effect _ Brad S. Knutson_files/design.png" alt="Design"></a>
+                <a href="http://bradsknutson.com/topics/css/" class="demo-button">Read About CSS</a>
+            </div>
+            <div class="footer-marketing">
+                <a href="http://bradsknutson.com/topics/seo/"><img src="./CSS Snow Effect _ Brad S. Knutson_files/marketing.png" alt="Marketing" style="margin-top:-20px;"></a>
+                <a href="http://bradsknutson.com/topics/seo/" class="demo-button">Read About Marketing</a>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="footer-container">
+            <div class="social-area">
+                <a href="https://twitter.com/BradSKnutson" target="_blank" rel="nofollow"><div class="fsocial ftwitter"></div></a>
+                <a href="https://www.facebook.com/brad.s.knutson" target="_blank" rel="nofollow"><div class="fsocial ffacebook"></div></a>
+                <a href="https://plus.google.com/u/0/103344059956204476766/posts" target="_blank" rel="nofollow"><div class="fsocial fgoogle"></div></a>
+                <a href="http://www.linkedin.com/in/bradsknutson/" target="_blank" rel="nofollow"><div class="fsocial flinkedin"></div></a>
+                <a href="http://instagram.com/bradsknutson" target="_blank" rel="nofollow"><div class="fsocial finstagram"></div></a>
+            </div>
+            <div class="site-info">
+                Content and Design by Brad Knutson
+            </div><!-- .site-info -->
+        </div>
+	</footer><!-- #colophon -->
+    <div class="footer-below-container">
+        <div class="footer-below">
+            <p>Brad S. Knutson | St. Paul, MN</p><br>
+            <p>brad.s.knutson@gmail.com</p>
+        </div>
+        <div class="center">
+            <a target="_blank" href="http://bradsknutson.com/go/treehouse-footer/" class="affiliate-link-8"><img src="http://www.shareasale.com/image/43811/728x902.png" alt="Learn Web Design, Coding &amp; More. No Risk. No Contracts. Learn More" border="0"></a>
+        </div>
+    </div>
+</div><!-- #page -->
+
+	<div style="display:none">
+	<div class="grofile-hash-map-bb1f3fd877e3e00ad2b5ed6e1e0a209c">
+	</div>
+	<div class="grofile-hash-map-bd63e6aee6d0903028899bb3df811570">
+	</div>
+	<div class="grofile-hash-map-8f236d8e8c79e2d627929887f21ab05a">
+	</div>
+	</div>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/form.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/jquery.form.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/bradsknutson.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/scripts.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/devicepx-jetpack.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/navigation.js.download"></script>
+
+  	<script type="text/javascript" src="./CSS Snow Effect _ Brad S. Knutson_files/e-201718.js.download" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.5',blog:'46936377',post:'2489',tz:'-6',srv:'bradsknutson.com'} ]);
+	_stq.push([ 'clickTrackerInit', '46936377', '2489' ]);
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0018/3052.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+
+
+<!-- Dynamic page generated in 0.155 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-05-06 05:55:50 -->
+
+<!-- super cache --><img src="./CSS Snow Effect _ Brad S. Knutson_files/g.gif" alt=":)" width="6" height="5" id="wpstats"><iframe name="oauth2relay986512519" id="oauth2relay986512519" src="./CSS Snow Effect _ Brad S. Knutson_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./CSS Snow Effect _ Brad S. Knutson_files/saved_resource(3).html"></iframe>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('.bounce-prevent').on('click', function() {
+        ga('send', 'event', 'bounce rate', 'bounce rate popup', 'Bounce Prevented');
+        jQuery.get('https://zapier.com/hooks/catch/n/idot5/?bounce_check=true');
+    });      
+    jQuery('.affiliate-link-9').on('click', function() {
+        ga('send', 'event', 'affiliate', 'bounce rate popup', 'Treehouse');
+    });    
+	jQuery('.cro-close, .cro-button-3').click(function(e) {
+		jQuery('.cro-background').fadeOut(1000).delay(1000).queue(function(next) {
+			jQuery('.cro-background').remove();
+		});
+		e.preventDefault();
+	});   
+});
+</script></body></html>
