@@ -1,0 +1,290 @@
+// import all styles
+
+// helpers
+// @import 'helpers/_variables';
+// @import 'helpers/_mixins';
+
+// base
+@import 'base/_normalize';
+// @import 'base/_base';
+// @import 'base/_layout';
+
+// components
+// @import 'components/_header';
+// @import 'components/_footer';
+// @import 'components/_iconlist';
+// @import 'components/_linklist';
+
+
+/*--------------------------------------------------
+#   Fonts
+--------------------------------------------------*/
+@font-face {
+	font-family: freeland;
+	src: url(./../../src/fonts/Freeland.ttf);
+}
+
+@font-face {
+	font-family: neoplanta;
+	src: url(./../../src/fonts/NeoplantaBG-Bold.ttf.woff);
+}
+
+/*--------------------------------------------------
+#   Mixins
+--------------------------------------------------*/
+@mixin reset-list($mt: 0, $mb: 0, $ls: none) {
+	margin-top: $mt;
+	margin-bottom: $mb;
+	padding-left: 0;
+	list-style: $ls;
+}
+
+/*--------------------------------------------------
+#   Utility Classes
+--------------------------------------------------*/
+.mtb-100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.ptb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/*--------------------------------------------------
+#	Browser Scrollbar
+--------------------------------------------------*/
+body, .side, .o-y-scroll {
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,.5);
+        box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+        border-radius: 5px;
+        &:window-inactive {
+            background: rgba(210,210,210,.4);
+        }
+    }
+}
+/*--------------------------------------------------
+#	Initialization
+--------------------------------------------------*/
+html, body {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	font-size: 1rem;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn {
+	border-radius: 38px;
+}
+
+.logo-and-toggle {
+	@include reset-list;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	z-index: 999;
+	text-align: center;
+
+	.logo-img {
+		max-width: 200px;
+	}
+}
+
+.toggle-btn {
+	color: #ffffff;
+	margin-top: 10px;
+	filter: drop-shadow(2px 4px 6px black);
+
+	span {
+		margin-left: 5px;
+	}
+}
+
+/*--------------------------------------------------
+#   Banner Section
+--------------------------------------------------*/
+.page-navigation {
+	position: relative;
+}
+
+.scoll-btn {
+	@include reset-list;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #ffffff;
+	
+	&:hover {
+		color: #ffffff;
+	}
+	
+	.scoll-btn-a {
+		font-size: 30px;
+		color: inherit;
+	}
+}
+
+.banner-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+nav {
+	height: 100%;
+}
+
+.banner-wrapper {
+	position: relative;
+	transition: all 0.3s ease;
+	
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		z-index: 0;
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+}
+
+.banner-wrapper.animate-nav {
+	position: fixed;
+
+	&::before {
+		opacity: .9;
+		background-color: rgba(76, 121, 30, 0.75);
+	}
+}
+
+.btn-style-outline {
+	width: 90px;
+	transition: all 0.25s;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	
+	span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+		
+		&:after {
+			content: '';
+			background-image: url('./../images/arrow-right.svg');
+			position: absolute;
+			background-repeat: no-repeat;
+			height: 16px;
+			width: 16px;
+			opacity: 0;
+			top: 4px;
+			right: 0;
+			transition: all 0.25s;
+		}
+	}
+	
+	&:hover {
+		span {
+			padding-right: 22px;
+			&:after {
+				opacity: 1;
+				right: 0;
+			}
+		}
+	}
+}
+
+h2 {
+	font-family: neoplanta;
+}
+
+.product-showcase {
+	.prod-desc-h2 {
+		font-size: 38px;
+	}
+
+	.prod-desc-p {
+		font-family: freeland;
+		font-size: 30px;
+	}
+}
+
+.e-testimonials {
+	text-align: center;
+
+	.col-md-3 {
+		border-right: 1px solid #ccc;
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+}
+
+.toggle-btn-body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.e-footer {
+	background-color: #191716;
+
+	ul {
+		@include reset-list;
+		color: #ffffff;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		li {
+			margin-right: 25px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			color: inherit;
+		}
+	}
+}

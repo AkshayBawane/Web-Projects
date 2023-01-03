@@ -1,0 +1,637 @@
+/* ——————————————————————————————————————————————————
+	Buttons.scss
+—————————————————————————————————————————————————— */
+// Comment this generic bootstrap code
+// .btn {
+// 	color: $body-color;
+// 	background-color: transparent;
+// 	@include hover() {
+// 	  color: $body-color;
+// 	}
+//  @include transition($btn-transition);
+// }
+
+@mixin hover() {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+// btn-1
+.btn-1 {
+	background: #f05a30;
+	letter-spacing: 0;
+	color: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	width: 200px;
+
+	@include hover() {
+		letter-spacing: 1px;
+		background-color: #ffffff;
+		color: #f05a30;
+	}
+}
+
+.btn-1_1 {
+	background: #fff;
+	letter-spacing: 0;
+	color: #f05a30;
+	margin-bottom: 10px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	width: 200px;
+
+	@include hover() {
+		letter-spacing: 1px;
+		background-color: #f05a30;
+		color: #fff;
+	}
+}
+
+.btn-1_2 {
+	background: #ffaf2a;
+	letter-spacing: 0;
+	color: #fff;
+	margin-bottom: 10px;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	width: 200px;
+
+	@include hover() {
+		letter-spacing: 1px;
+		background-color: #ffffff;
+		color: #ffaf2a;
+	}
+}
+
+// btn-4-next
+.btn-4-next {
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	transition-property: color;
+	transition-duration: 0.3s;
+	position: relative;
+	padding: 18px 50px 18px 40px;
+	z-index: 1;
+	transition: all 0.8s ease 0s;
+	border: thin solid black;
+	color: #000;
+	min-width: 200px;
+	font-weight: 300;
+
+	&:after {
+		position: absolute;
+		content: "";
+		right: 22px;
+		top: 13px;
+		width: 40px;
+		height: 35px;
+		background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+		background-size: auto 25px;
+		transition: all 0.5s ease 0s;
+	}
+	
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #000;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		transition-property: transform;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
+
+	@include hover() {
+		color: white;
+		&::after {
+			color: white;
+			background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+			right: 10px;
+			transition: all 0.5s ease 0s;
+			background-size: auto 25px;
+		}
+
+		&::before {
+			transform: scaleX(1);
+		}
+	}
+}
+
+// btn-4
+.btn-4-prev {
+	display: inline-block;
+	position: relative;
+	padding: 18px 40px 18px 50px;
+	z-index: 1;
+	transition: all 0.8s ease 0s;
+	border: thin solid black;
+	color: #000;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	transition-property: color;
+	transition-duration: 0.3s;
+	min-width: 200px;
+	font-weight: 300;
+
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #2098D1;
+		transform: scaleX(0);
+		transform-origin: 100% 50%;
+		transition-property: transform;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+		background: #000;
+	}
+	
+	&:after {
+		position: absolute;
+		content: "";
+		left: 22px;
+		top: 13px;
+		width: 28px;
+		height: 35px;
+		background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+		background-size: auto 25px;
+		transition: all 0.5s ease 0s;
+		transform: rotateY(-180deg)
+	}
+
+	@include hover() {
+		color: white;
+
+		&::after {
+			background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+			left: 10px;
+			transition: all 0.5s ease 0s;
+			background-size: auto 25px;
+		}
+
+		&::before {
+			transform: scaleX(1);
+		}
+	}
+}
+
+// btn-3-1
+.btn-3-1_2 {
+	padding: 18px 50px 18px 40px;
+	display: inline-block;
+	vertical-align: middle;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	transition-property: color;
+	transition-duration: 0.3s;
+	border: thin solid #fff;
+	color: #fff;
+	min-width: 200px;
+	font-weight: 300;
+
+	&:after {
+		position: absolute;
+		content: "";
+		right: 22px;
+		top: 13px;
+		width: 40px;
+		height: 35px;
+		background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-white.svg) center no-repeat;
+		background-size: auto 25px;
+		transition: all 0.5s ease 0s;
+	}
+	
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #fff;
+		transform: scaleX(0);
+		transform-origin: 0 50%;
+		transition-property: transform;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
+
+	@include hover() {
+		color: black;
+		text-decoration: none;
+		
+		&::after {
+			background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+			right: 10px;
+			transition: all 0.5s ease 0s;
+			background-size: auto 25px;
+		}
+
+		&::before {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.btn-3-1_3 {
+	position: relative;
+	color: #000;
+	font-weight: 300;
+	margin: 2rem 0;
+
+	&:after {
+		position: absolute;
+		content: "";
+		right: -35px;
+		top: -5px;
+		width: 40px;
+		height: 35px;
+		background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+		background-size: auto 25px;
+		transition: all 0.5s ease 0s;
+	}
+
+	@include hover() {
+		color: #000;
+
+		&:after {
+			right: -47px;
+			transition: all 0.5s ease 0s;
+			background-size: auto 25px;
+		}
+	}
+}
+
+.btn-3-1_3-inverse {
+	position: relative;
+	color: #fff;
+	font-weight: 300;
+
+	&:after {
+		position: absolute;
+		content: "";
+		right: -35px;
+		top: -5px;
+		width: 40px;
+		height: 35px;
+		background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+		opacity: .5;
+		background-size: auto 25px;
+		transition: all 0.5s ease 0s;
+	}
+
+	@include hover() {
+		color: #fff;
+
+		&:after {
+			background: url(https://www.koruux.com/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+			opacity: 1;
+			right: -47px;
+			transition: all 0.5s ease 0s;
+			background-size: auto 25px;
+		}
+	}
+}
+
+// btn-4
+.btn-4 {
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 1.2em;
+	min-width: 200px;
+	background: none;
+	border: 2px solid #a9fd00;
+	color: #222;
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 400;
+	margin: 2rem 0;
+	transition: all .5s;
+
+	@include hover() {
+		background-color: rgba(169, 253, 0, 0.2);
+		color: #000;
+	}
+}
+
+// btn-5
+.btn-5 {
+	position: relative;
+	padding: 20px 45px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, .2);
+	box-shadow: inset 0 0 0 1px rgba(91, 118, 155, .34);
+	opacity: 1;
+	transition: all .25s ease-in-out;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.btn-5_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid red;
+	border-left: 1px solid red;
+}
+
+.btn-5_2 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid red;
+	border-right: 1px solid red;
+}
+
+.btn-5_3 {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 10px;
+	height: 10px;
+	border-right: 1px solid red;
+	border-bottom: 1px solid red;
+}
+
+.btn-5_4 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 10px;
+	height: 10px;
+	border-bottom: 1px solid red;
+	border-left: 1px solid red;
+}
+
+.btn-5:hover {
+	border-color: red;
+	box-shadow: inset 0 0 0 1px red;
+	opacity: 1;
+}
+
+// END btn-5
+
+// btn-6_1-gradient
+.btn-6_1-gradient {
+	background: linear-gradient(to right, #0045cf 0%, #5aadff 50%, #0045cf 100%);
+	color: #fff;
+	background-size: 200% auto;
+	padding: 1.2em;
+	display: block;
+	width: 100%;
+	transition: all .5s ease-in-out;
+
+	@include hover() {
+		background-position: right center;
+		color: #fff;
+	}
+}
+
+// btn-6_2-gradient
+
+.btn-6_2-gradient {
+	background-image: linear-gradient(135deg, #2780e3, rgba(42, 176, 237, .28) 48%, rgba(42, 176, 237, .26) 49%, #2780e3);
+	background-size: 200% auto;
+	color: #fff;
+	display: block;
+	width: 100%;
+	padding: 1.2em;
+	transition: all .5s ease-in-out;
+
+	@include hover() {
+		color: #fff;
+		background-position: 100%;
+		box-shadow: 0 3px 10px rgba(39, 128, 227, .5);
+	}
+}
+
+// btn-7
+.btn-7 {
+	border-radius: 3px;
+	background-color: transparent;
+	border: 3px solid #fff;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 15px;
+	width: 200px;
+	transition: all 0.25s;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 15px;
+
+	span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
+
+	@include hover() {
+		color: #FFFFFF;
+		background-color: rgba(255, 255, 255, .2);
+	}
+}
+
+
+.btn-7 span:after,
+.btn-8 span:after {
+	content: '';
+	background-image: url('https://image.flaticon.com/icons/svg/16/16049.svg');
+	position: absolute;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
+	opacity: 0;
+	top: 9px;
+	right: 0;
+	transition: all 0.25s;
+}
+
+.btn-7:hover span {
+	padding-right: 30px;
+}
+
+.btn-7:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+// END btn-7
+
+// btn-8
+.btn-8 {
+	background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+	border-radius: 30px;
+	box-sizing: border-box;
+	color: #00a84f;
+	display: inline-block;
+	height: 60px;
+	padding: 4px;
+	width: 200px;
+	font-size: 20px;
+
+	span {
+		align-items: center;
+		background: #fff;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		transition: all .3s ease-in-out;
+		width: 100%;
+	}
+	
+	@include hover() {
+		color: #fff;
+	}
+}
+
+
+.btn-8:hover span {
+	background: transparent;
+}
+
+// END btn-8
+
+// btn-9
+.btn-9 {
+	width: 60px;
+	height: 100px;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+	display: block;
+}
+
+.btn-9:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn-9:after {
+	position: absolute;
+	top: calc(50% - 1px);
+	width: 50px;
+	height: 2px;
+	background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	content: '';
+	transition: all 0.3s ease-in-out;
+}
+
+.btn-9:hover:after {
+	width: 125px;
+}
+
+.btn-9.btn-9-prev:before {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 13px 8px 0;
+	border-color: transparent #fff transparent transparent;
+	left: 0;
+}
+
+.btn-9.btn-9-prev:after {
+	left: 13px;
+}
+
+// END btn-9
+
+
+.btn-7_prev,
+.btn-7_next {
+	position: relative;
+	cursor: pointer;
+	padding: 18px 10px;
+	display: inline-block;
+}
+
+.btn-7_prev span,
+.btn-7_next span {
+	width: 25px;
+	height: 2px;
+	display: block;
+	position: relative;
+	background: rgb(209, 211, 222);
+	transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+	border-radius: 2px;
+}
+
+.btn-7_next span::after {
+	bottom: -4px;
+	right: 0px;
+	transform: rotate(-45deg);
+	width: 10px;
+}
+
+.btn-7_prev span::after {
+	transform: rotate(45deg);
+	width: 10px;
+	bottom: -4px;
+	left: 0px;
+}
+
+.btn-7_prev span::before {
+	transform: rotate(-45deg);
+	width: 10px;
+	top: -4px;
+	left: 0px;
+}
+
+.btn-7_next span::before {
+	transform: rotate(45deg);
+	width: 10px;
+	top: -4px;
+	right: 0px;
+}
+
+.btn-7_prev span::before,
+.btn-7_prev span::after,
+.btn-7_next span::before,
+.btn-7_next span::after {
+	content: "";
+	display: block;
+	height: 2px;
+	position: absolute;
+	border-radius: 2px;
+	background: inherit;
+}
+
+.btn-7_prev:hover span,
+.btn-7_next:hover span {
+	width: 100px;
+}
+
+.btn-7_prev:hover span,
+.btn-7_next:hover span {
+	background: rgb(52, 68, 241);
+}

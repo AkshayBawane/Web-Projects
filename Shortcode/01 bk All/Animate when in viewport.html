@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <title>Page Title</title>
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+	</head>
+	<body>
+	    <div class="box rotate"></div>
+        <div class="box scale"></div>
+        <div class="box translate"></div>
+        
+        http://morr.github.io/appear.html
+        http://jsfiddle.net/RokoCB/tw6g2oeu/7/
+
+        <script type="text/javascript">
+    	// Add arrow to slider when in Viewport
+	    (function ($, win) {
+	        $.fn.inViewport = function (cb) {
+	            return this.each(function (i, el) {
+	                function visPx() {
+	                    var H = $(this).height(),
+	                        r = el.getBoundingClientRect(),
+	                        t = r.top,
+	                        b = r.bottom;
+	                    return cb.call(el, Math.max(0, t > 0 ? H - t : (b < H ? b : H)));
+	                }
+	                visPx();
+	                $(win).on("resize scroll", visPx);
+	            });
+	        };
+	    }(jQuery, window));
+	    $(".swiper-button-next").inViewport(function (px) {
+	        if (px) $(this).addClass("lh-swiper-indi-animearrow");
+	    });
+	    // END Add arrow to slider when in Viewport
+        </script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	</body>
+</html>

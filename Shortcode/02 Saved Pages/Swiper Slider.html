@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///D:/Project/Shortcode/Swiper%20Slider.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- head -->
+    
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Swiper Slider </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./Swiper Slider_files/bootstrap.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./Swiper Slider_files/swiper.css">
+    <!-- Demo styles -->
+    <style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    section {
+        margin-bottom: 100px;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .coverflow-effect-swiper .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    /*navigation arrow*/
+    /*.swiper-button-next { background-image: url('https://image.flaticon.com/icons/svg/109/109617.svg'); }
+    .swiper-button-prev { background-image: url('https://image.flaticon.com/icons/svg/109/109618.svg'); }*/
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">1st Swiper .default-swiper with FADE transition effect</h2>
+            <div class="default-swiper swiper-container swiper-container-fade swiper-container-horizontal swiper-container-wp8-horizontal" style="cursor: -webkit-grab;">
+                <div class="swiper-wrapper" style="transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 1349px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 1349px; transition-duration: 0ms; opacity: 1; transform: translate3d(-1349px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 1349px; transition-duration: 0ms; opacity: 1; transform: translate3d(-2698px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 1349px; transition-duration: 0ms; opacity: 0; transform: translate3d(-4047px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1349px; transition-duration: 0ms; opacity: 0; transform: translate3d(-5396px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 1349px; transition-duration: 0ms; opacity: 0; transform: translate3d(-6745px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="5" style="width: 1349px; transition-duration: 0ms; opacity: 0; transform: translate3d(-8094px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" style="width: 1349px; transition-duration: 0ms; opacity: 0; transform: translate3d(-9443px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">2nd Swiper .navigation-swiper</h2>
+            <div class="navigation-swiper swiper-container swiper-container-horizontal swiper-container-wp8-horizontal" style="cursor: -webkit-grab;">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1349px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">3rd Swiper .pagination-swiper with 3D CUBE transition effect</h2>
+            <div class="pagination-swiper swiper-container swiper-container-cube swiper-container-3d swiper-container-horizontal swiper-container-wp8-horizontal" style="cursor: -webkit-grab;">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform-origin: 50% 50% -674.5px; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(-90deg);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(90deg) translate3d(0px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(180deg) translate3d(1349px, 0px, 1349px);"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(270deg) translate3d(-1349px, 0px, 4047px);"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(360deg) translate3d(-5396px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(450deg) translate3d(0px, 0px, -5396px);"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(540deg) translate3d(6745px, 0px, 1349px);"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1349px; transition-duration: 0ms; transform: rotateX(0deg) rotateY(630deg) translate3d(-1349px, 0px, 9443px);"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div><div class="swiper-cube-shadow" style="height: 1349px; transform: translate3d(0px, 694.5px, -674.5px) rotateX(90deg) rotateZ(0deg) scale(0.94);"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">4th Swiper .dynamic-bullets-swiper</h2>
+            <div class="dynamic-bullets-swiper swiper-container swiper-container-horizontal swiper-container-wp8-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1349px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1349px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">5th Swiper .multiple-slides-per-view-swiper</h2>
+            <div class="multiple-slides-per-view-swiper swiper-container swiper-container-horizontal swiper-container-wp8-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1364px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 257.8px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">6th Swiper .centered-slides-swiper</h2>
+            <div class="centered-slides-swiper swiper-container swiper-container-horizontal swiper-container-wp8-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-852.5px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">7th Swiper .free-mode-swiper</h2>
+            <div class="free-mode-swiper swiper-container swiper-container-horizontal swiper-container-free-mode swiper-container-wp8-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-852.5px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="4" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span></div>
+            </div>
+        </div>
+    </section>
+    
+    <h2 class="text-center">8th Swiper .nested-horizontal-swiper</h2>
+    <div class="nested-horizontal-swiper swiper-container swiper-container-horizontal swiper-container-wp8-horizontal">
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1424px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(6)" class="img-fluid"></div>
+            <div class="swiper-slide" data-swiper-slide-index="2" style="width: 1349px; margin-right: 75px;">
+                <div class="nested-vertical-swiper swiper-container swiper-container-vertical swiper-container-wp8-vertical">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-active" style="height: 586px; margin-bottom: 75px;"><img src="./Swiper Slider_files/saved_resource(7)" class="img-fluid"></div>
+                        <div class="swiper-slide swiper-slide-next" style="height: 586px; margin-bottom: 75px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                        <div class="swiper-slide" style="height: 586px; margin-bottom: 75px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                        <div class="swiper-slide" style="height: 586px; margin-bottom: 75px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                        <div class="swiper-slide" style="height: 586px; margin-bottom: 75px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                        <div class="swiper-slide" style="height: 586px; margin-bottom: 75px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    </div>
+                    <div class="swiper-pagination pagination-vertical-swiper swiper-pagination-bullets swiper-pagination-clickable"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+                </div>
+            </div>
+            <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+            <div class="swiper-slide" data-swiper-slide-index="4" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+            <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1349px; margin-right: 75px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination pagination-horizontal-swiper swiper-pagination-bullets swiper-pagination-clickable"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+    </div>
+
+    <section style="margin-top: 80px;">
+        <div class="e-swiper-envelop">
+            <h2 class="text-center">9th Swiper .multiple-slides-per-group-swiper</h2>
+            <div class="multiple-slides-per-group-swiper swiper-container swiper-container-horizontal swiper-container-wp8-horizontal">
+                <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-511.5px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="4" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="5" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="0" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="1" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="4" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                    <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="5" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(1)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 326px; margin-right: 15px;"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" style="left: 8px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 8px;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="e-swiper-envelop">
+            <div class="container">
+                <h2 class="text-center">10th Swiper .coverflow-effect-swiper</h2>
+                <div class="coverflow-effect-swiper swiper-container swiper-container-coverflow swiper-container-3d swiper-container-horizontal swiper-container-wp8-horizontal" style="cursor: -webkit-grab;">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1395px, 0px, 0px); perspective-origin: 1950px 50%;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -600px) rotateX(0deg) rotateY(300deg); z-index: -5;"><img src="./Swiper Slider_files/saved_resource(8)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 6; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -500px) rotateX(0deg) rotateY(250deg); z-index: -4;"><img src="./Swiper Slider_files/saved_resource(9)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 5; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(200deg); z-index: -3;"><img src="./Swiper Slider_files/saved_resource(10)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 4; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(150deg); z-index: -2;"><img src="./Swiper Slider_files/saved_resource(11)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 3; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(100deg); z-index: -1;"><img src="./Swiper Slider_files/saved_resource(12)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 2; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(50deg); z-index: 0;"><img src="./Swiper Slider_files/saved_resource(13)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1;"><img src="./Swiper Slider_files/saved_resource(8)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg); z-index: 0;"><img src="./Swiper Slider_files/saved_resource(9)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div>
+                        <div class="swiper-slide" data-swiper-slide-index="2" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(-100deg); z-index: -1;"><img src="./Swiper Slider_files/saved_resource(10)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 2; transition-duration: 0ms;"></div></div>
+                        <div class="swiper-slide" data-swiper-slide-index="3" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -300px) rotateX(0deg) rotateY(-150deg); z-index: -2;"><img src="./Swiper Slider_files/saved_resource(11)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 3; transition-duration: 0ms;"></div></div>
+                        <div class="swiper-slide" data-swiper-slide-index="4" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -400px) rotateX(0deg) rotateY(-200deg); z-index: -3;"><img src="./Swiper Slider_files/saved_resource(12)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 4; transition-duration: 0ms;"></div></div>
+                        <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -500px) rotateX(0deg) rotateY(-250deg); z-index: -4;"><img src="./Swiper Slider_files/saved_resource(13)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 5; transition-duration: 0ms;"></div></div>
+                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -600px) rotateX(0deg) rotateY(-300deg); z-index: -5;"><img src="./Swiper Slider_files/saved_resource(8)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 6; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -700px) rotateX(0deg) rotateY(-350deg); z-index: -6;"><img src="./Swiper Slider_files/saved_resource(9)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 7; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -800px) rotateX(0deg) rotateY(-400deg); z-index: -7;"><img src="./Swiper Slider_files/saved_resource(10)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 8; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -900px) rotateX(0deg) rotateY(-450deg); z-index: -8;"><img src="./Swiper Slider_files/saved_resource(11)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 9; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1000px) rotateX(0deg) rotateY(-500deg); z-index: -9;"><img src="./Swiper Slider_files/saved_resource(12)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 10; transition-duration: 0ms;"></div></div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -1100px) rotateX(0deg) rotateY(-550deg); z-index: -10;"><img src="./Swiper Slider_files/saved_resource(13)" class="img-fluid"><div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 11; transition-duration: 0ms;"></div></div></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 32px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span><span class="swiper-pagination-bullet" style="left: 32px;"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="text-center">11th Swiper .vertical-swiper</h2>
+    <div class="swiper-slide">
+        <div class="vertical-swiper swiper-container swiper-container-fade swiper-container-vertical swiper-container-wp8-vertical">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-active" style="height: 586px; opacity: 1; transform: translate3d(0px, 0px, 0px);"><img src="./Swiper Slider_files/saved_resource(7)" class="img-fluid"></div>
+                <div class="swiper-slide swiper-slide-next" style="height: 586px; opacity: 0; transform: translate3d(0px, -586px, 0px);"><img src="./Swiper Slider_files/saved_resource(2)" class="img-fluid"></div>
+                <div class="swiper-slide" style="height: 586px; opacity: 0; transform: translate3d(0px, -1172px, 0px);"><img src="./Swiper Slider_files/saved_resource(3)" class="img-fluid"></div>
+                <div class="swiper-slide" style="height: 586px; opacity: 0; transform: translate3d(0px, -1758px, 0px);"><img src="./Swiper Slider_files/saved_resource(4)" class="img-fluid"></div>
+                <div class="swiper-slide" style="height: 586px; opacity: 0; transform: translate3d(0px, -2344px, 0px);"><img src="./Swiper Slider_files/saved_resource(5)" class="img-fluid"></div>
+                <div class="swiper-slide" style="height: 586px; opacity: 0; transform: translate3d(0px, -2930px, 0px);"><img src="./Swiper Slider_files/saved_resource" class="img-fluid"></div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-clickable"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery first, then Popper.js and Bootstrap JS. -->
+    <script src="./Swiper Slider_files/jquery-3.2.1.slim.min.js.download"></script>
+    <script src="./Swiper Slider_files/popper.min.js.download"></script>
+    <script src="./Swiper Slider_files/bootstrap.min.js.download"></script>
+    <!-- Swiper JS -->
+    <script src="./Swiper Slider_files/swiper.js.download"></script>
+
+    <script>
+
+    // 1st Swiper .default-swiper
+    var mySwiper = new Swiper('.default-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 50, // Space between slides
+        grabCursor: true, // Grab Cursor
+        effect: 'fade', // transition effect
+
+        // Autoplay Parameters
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        
+        // Keyboard Control
+        keyboard: {
+            enabled: true,
+        },
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+
+    // 2nd Swiper .navigation-swiper
+    var mySwiper = new Swiper('.navigation-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        grabCursor: true, // Grab Cursor
+        keyboard: {
+            enabled: true,
+        },
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+    // 3rd Swiper .pagination-swiper
+    var mySwiper = new Swiper('.pagination-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+
+    // 4th Swiper .dynamic-bullets-swiper
+    var mySwiper = new Swiper('.dynamic-bullets-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+
+    // 5th Swiper .multiple-slides-per-view-swiper
+    var mySwiper = new Swiper('.multiple-slides-per-view-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 15, // Space between slides
+        slidesPerView: 5, // Multiple Slides Per View
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 6th Swiper .centered-slides-swiper
+    var mySwiper = new Swiper('.centered-slides-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 15, // Space between slides
+        slidesPerView: 4, // Must be EVEN number for this demo
+        centeredSlides: true, // Centered Slides
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true,
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 7th Swiper .free-mode-swiper
+    var mySwiper = new Swiper('.free-mode-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 15, // Space between slides
+        slidesPerView: 4, // Must be EVEN number for this demo
+        centeredSlides: true, // Centered Slides
+        freeMode: true, // Free Mode / No Fixed Positions
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true,
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 8th Swiper .nested-horizontal-swiper
+    var swiperH = new Swiper('.nested-horizontal-swiper', {
+        spaceBetween: 75,
+        loop: true,
+        pagination: {
+            el: '.pagination-horizontal-swiper',
+            clickable: true,
+        },
+    });
+    var swiperV = new Swiper('.nested-vertical-swiper', {
+        direction: 'vertical',
+        spaceBetween: 75,
+        mousewheel: true, // Vertical Slides Scroll using mouse
+        pagination: {
+            el: '.pagination-vertical-swiper',
+            clickable: true,
+        },
+    });
+
+    // 9th Swiper .multiple-slides-per-group-swiper
+    var mySwiper = new Swiper('.multiple-slides-per-group-swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        spaceBetween: 15, // Space between slides
+        slidesPerView: 4, // Must be EVEN number for this demo
+        centeredSlides: true, // Centered Slides
+        slidesPerGroup: 3, // Multiple Slides Per Group
+        loopFillGroupWithBlank: true, // Multiple Slides Per Group
+
+        // Add Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+            clickable: true,
+        },
+
+        // Add Arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    // 10th Swiper .coverflow-effect-swiper
+    var mySwiper = new Swiper('.coverflow-effect-swiper', {
+        effect: 'coverflow',
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+            pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+    });
+
+
+    // 11th Swiper .vertical-swiper
+    var swiperV = new Swiper('.vertical-swiper', {
+        direction: 'vertical', // Vertical direction
+        spaceBetween: 75,
+        effect: 'fade', // transition effect
+        mousewheel: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    </script>
+
+
+
+</body></html>

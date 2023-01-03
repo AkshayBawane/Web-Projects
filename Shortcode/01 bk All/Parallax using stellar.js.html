@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+</head>
+    <style type="text/css">
+    .photo {
+        background-attachment: fixed;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        height: 450px;
+        position: relative;
+    }
+
+    .photo span {
+        color: white;
+        display: block;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 38px;
+        padding: 10px;
+        position: absolute;
+        text-shadow: 0 2px 0 black, 0 0 10px black;
+    }
+
+    .summer {
+        background-image: url('https://source.unsplash.com/1920x1080/?summer');
+    }
+
+    .autumn {
+        background-image: url('https://source.unsplash.com/1920x1080/?autumn');
+    }
+
+    .winter {
+        background-image: url('https://source.unsplash.com/1920x1080/?winter');
+    }
+
+    .spring {
+        background-image: url('https://source.unsplash.com/1920x1080/?spring');
+    }
+    </style>
+</head>
+
+<body>
+    <div class="photo summer" data-stellar-background-ratio="0.5"><span>Summer</span></div>
+    <div class="photo autumn" data-stellar-background-ratio="0.5"><span>Autumn</span></div>
+    <div class="photo winter" data-stellar-background-ratio="0.5"><span>Winter</span></div>
+    <div class="photo spring" data-stellar-background-ratio="0.5"><span>Spring</span></div>
+    <div class="photo summer" data-stellar-background-ratio="0.5"><span>Summer</span></div>
+    <div class="photo autumn" data-stellar-background-ratio="0.5"><span>Autumn</span></div>
+    <div class="photo winter" data-stellar-background-ratio="0.5"><span>Winter</span></div>
+    <div class="photo spring" data-stellar-background-ratio="0.5"><span>Spring</span></div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="http://arco.bitballoon.com/js/jquery-3.0.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="http://arco.bitballoon.com/js/jquery.stellar.min.js"></script>
+    <script>
+    $(function() {
+        $.stellar({
+            horizontalScrolling: false,
+            verticalOffset: 40
+        });
+    });
+    </script>
+</body>
+
+</html>

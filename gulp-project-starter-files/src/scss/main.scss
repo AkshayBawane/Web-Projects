@@ -1,0 +1,81 @@
+// Delete these lines and start your own adventure!
+@import "normalize";
+// @import "bootstrap-grid";
+
+/*--------------------------------------------------
+#   Mixins
+--------------------------------------------------*/
+@mixin reset-list($mt: 0, $mb: 0, $ls: none) {
+	margin-top: $mt;
+	margin-bottom: $mb;
+	padding-left: 0;
+	list-style: $ls;
+}
+
+/*--------------------------------------------------
+#   Initialization
+--------------------------------------------------*/
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+	font-size: 1rem;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.logo-and-toggle {
+	@include reset-list;
+	position: fixed;
+	top: 50px;
+	left: 50px;
+	z-index: 2;
+	text-align: center;
+
+	.logo-img {
+		max-width: 200px;
+	}
+}
+
+.banner-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+nav {
+	height: 100%;
+}
+
+.page-navigation {
+	background: pink;
+	
+	&.animate-nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+		z-index: 1;
+		background-color: red;
+	}
+}

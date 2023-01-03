@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-flow: row nowrap;
+            overflow: auto;
+            flex: 1;
+            padding: .5rem;
+        }
+        figure div span {
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            align-self: center;
+        }
+        .flex-item {
+            flex: 1 0 auto;
+            border-radius: .25rem;
+        }
+        figure > div {
+            display: inline-flex;
+            position: relative;
+            justify-content: center;
+            margin: .25rem;
+            font-size: 1.5em;
+            overflow: hidden;
+        }
+    </style>
+    <figure class="flex-container demo">
+        <div class="flex-item" style="background:hsl(389,50%,75%)"><span>Lorem ipsum</span></div>
+        <div class="flex-item" style="background:hsl(394,50%,75%)"><span>dolor</span></div>
+        <div class="flex-item" style="background:hsl(399,50%,75%)"><span>sit</span></div>
+        <div class="flex-item" style="background:hsl(404,50%,75%)"><span>amet</span></div>
+        <div class="flex-item" style="background:hsl(409,50%,75%)"><span>consectetur</span></div>
+        <div class="flex-item" style="background:hsl(414,50%,75%)"><span>adipiscing elit</span></div>
+        <div class="flex-item" style="background:hsl(419,50%,75%)"><span>nunc</span></div>
+        <div class="flex-item" style="background:hsl(424,50%,75%)"><span>enim</span></div>
+        <div class="flex-item" style="background:hsl(429,50%,75%)"><span>nunc</span></div>
+        <div class="flex-item" style="background:hsl(434,50%,75%)"><span>volutpat eget</span></div>
+        <div class="flex-item" style="background:hsl(439,50%,75%)"><span>aliquam</span></div>
+        <div class="flex-item" style="background:hsl(444,50%,75%)"><span>nec</span></div>
+        <div class="flex-item" style="background:hsl(449,50%,75%)"><span>accumsan rutrum</span></div>
+        <div class="flex-item" style="background:hsl(419,50%,75%)"><span>nunc</span></div>
+        <div class="flex-item" style="background:hsl(424,50%,75%)"><span>enim</span></div>
+        <div class="flex-item" style="background:hsl(429,50%,75%)"><span>nunc</span></div>
+        <div class="flex-item" style="background:hsl(434,50%,75%)"><span>volutpat eget</span></div>
+        <div class="flex-item" style="background:hsl(439,50%,75%)"><span>aliquam</span></div>
+        <div class="flex-item" style="background:hsl(444,50%,75%)"><span>nec</span></div>
+        <div class="flex-item" style="background:hsl(449,50%,75%)"><span>accumsan rutrum</span></div>
+        <div class="flex-item" style="background:hsl(454,50%,75%)"><span>bacon</span></div>
+        <div class="flex-item" style="background:hsl(459,50%,75%)"><span>maecenas</span></div>
+        <div class="flex-item" style="background:hsl(464,50%,75%)"><span>nunc</span></div>
+        <div class="flex-item" style="background:hsl(469,50%,75%)"><span>voldermere</span></div>
+        <div class="flex-item" style="background:hsl(474,50%,75%)"><span>it</span></div>
+        <div class="flex-item" style="background:hsl(479,50%,75%)"><span>las</span></div>
+        <div class="flex-item" style="background:hsl(484,50%,75%)"><span>quid</span></div>
+    </figure>
+
+
+    <style>
+        div.scroll {
+            background-color:#00FFFF;
+            height:40px;
+            overflow-x:scroll;
+            white-space: nowrap;
+        }
+    </style>
+    <p>overflow:scroll</p>
+    <div class="scroll">You can use the overflow property when you want to have better control of the layout. The default value is visible.You can use the overflow property when you want to have better control of the layout. The default value is visible.</div>
+    
+    <div class="scroll">
+        <a class="p-2 text-muted" href="#">World</a>
+        <a class="p-2 text-muted" href="#">U.S.</a>
+        <a class="p-2 text-muted" href="#">Technology</a>
+        <a class="p-2 text-muted" href="#">Design</a>
+        <a class="p-2 text-muted" href="#">Culture</a>
+        <a class="p-2 text-muted" href="#">Business</a>
+        <a class="p-2 text-muted" href="#">Politics</a>
+        <a class="p-2 text-muted" href="#">Opinion</a>
+        <a class="p-2 text-muted" href="#">Science</a>
+        <a class="p-2 text-muted" href="#">Health</a>
+        <a class="p-2 text-muted" href="#">Style</a>
+        <a class="p-2 text-muted" href="#">Travel</a>            
+    </div>
+</body>
+</html>

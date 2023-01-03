@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+	<meta content='ie=edge' http-equiv='X-UA-Compatible'>
+	<title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        .btn-success {
+            color: #fff;
+            border-color: #4cd964;
+            background-color: #4cd964;
+            box-shadow: none;
+        }
+        .bg-primary {
+            background-color: #510fa8!important;
+        }
+        .btn-secondary {
+            color: #212529;
+            border-color: #fafbfe;
+            background-color: #fafbfe;
+            box-shadow: none;
+        }
+        .bg-secondary {
+            background-color: #fafbfe!important;
+        }
+        .avatar {
+            font-size: 1rem;
+            font-weight: 600;
+            position: relative;
+            display: inline-flex;
+            width: 3rem;
+            height: 3rem;
+            color: #fff;
+            border-radius: .25rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar-sm {
+            font-size: .75rem;
+            width: 1.875rem;
+            height: 1.875rem;
+            border-radius: .2rem;
+        }
+        .avatar+.avatar-content {
+            display: inline-block;
+            margin-left: .75rem;
+        }
+        .list-group-img {
+            width: 3rem;
+            height: 3rem;
+            margin: -.1rem 1.2rem 0 -.2rem;
+            vertical-align: top;
+            border-radius: 50%;
+        }
+        .list-group-heading>small {
+            font-weight: 500;
+            float: right;
+            color: #adb5bd;
+        }
+        .btn-icon-only.btn-sm {
+            line-height: 1rem;
+            width: 2rem;
+            height: 2rem;
+        }
+        .btn-primary {
+            color: #fff;
+            border-color: #510fa8;
+            background-color: #510fa8;
+            box-shadow: none;
+        }
+        .btn-sm {
+            font-size: .875rem;
+            line-height: 1.5;
+            padding: .55rem 1rem;
+            border-radius: .25rem;
+        }
+        .card-comment-box input, .card-comment-box textarea {
+            width: 100%;
+            resize: none;
+            border: 0;
+            outline: 0;
+            box-shadow: none;
+        }
+        .card-footer:last-child {
+            border-radius: 0 0 calc(.375rem - .0625rem) calc(.375rem - .0625rem);
+        }
+        .card-footer {
+            padding: 1.25rem 1.5rem;
+            border-top: .0625rem solid rgba(0,0,0,.08);
+            background-color: transparent;
+        }
+        .icon+.icon-text {
+            padding-left: 1rem;
+        }
+        .icon-lg {
+            min-width: 4rem;
+            min-height: 4rem;
+        }
+        .icon {
+            display: inline-flex;
+            min-width: 3rem;
+            min-height: 3rem;
+        }
+        .icon i, .icon svg {
+            font-size: 2.75rem;
+        }
+        .icon-lg i, .icon-lg svg {
+            font-size: 1.75rem;
+        }
+        .icon img {
+            width: 3rem;
+            height: 3rem;
+        }
+        a {
+            color: #510fa8;
+        }
+        .bg-purple {
+            background-color: #510fa8!important;
+        }
+        .bg-pink {
+            background-color: #f074ad!important;
+        }
+        .bg-blue {
+            background-color: #007aff!important;
+        }
+    </style>
+	<div class='container'>
+        <div class='row justify-content-center text-center'>
+            <div class='col-md-4 mb-4'>
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>    
+            </div>
+            <div class='col-md-4 mb-4'>
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>    
+            </div>
+            <div class='col-md-4 mb-4'>
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>    
+            </div>
+            <div class='col-md-4 mb-4'>
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>    
+            </div>
+            <div class='col-md-4 mb-4'>
+                <div class="card">
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-primary text-white px-4 py-4 border-0 mb-0">
+                        <div class="card-body">
+                            <h1 class="heading h3 text-white">Theme as framework</h1>
+                            <p class="mt-4">
+                                We know how much you love Bootstrap components. That's why we've customized, and also, introduced dozens of completely new utilities, components, and plugins.
+                            </p>
+                            <a href="#" class="btn btn-secondary mt-4">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-secondary px-4 py-4 border-0 mb-0">
+                        <div class="card-body">
+                            <h1 class="heading h3">Even more components</h1>
+                            <p class="mt-4">
+                                We know how much you love Bootstrap components. That's why we've customized, and also, introduced dozens of completely new utilities, components, and plugins.
+                            </p>
+                            <a href="#" class="btn btn-primary mt-4">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header py-4">
+                            <h5 class="heading h5 font-weight-500 mb-0">Simple list group</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Cras justo odio</li>
+                            <li class="list-group-item">Dapibus ac facilisis in</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header py-4">
+                            <div class="d-flex align-items-center">
+                                <h5 class="heading h5 mb-0">Add team members</h5>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="list-group-img">
+                                    <span class="avatar bg-purple">JD</span>
+                                </div>
+                                <div class="list-group-content">
+                                    <div class="list-group-heading">Johnyy Depp <small>10:05 PM</small></div>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="list-group-img">
+                                    <span class="avatar bg-pink">TC</span>
+                                </div>
+                                <div class="list-group-content">
+                                    <div class="list-group-heading">Tom Cruise <small>11:30 PM</small></div>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
+                                <div class="list-group-img">
+                                    <span class="avatar bg-blue">WS</span>
+                                </div>
+                                <div class="list-group-content">
+                                    <div class="list-group-heading">Will Smith <small>15:45 PM</small></div>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipiscing eiusmod tempor</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer py-2 border-top-0">
+                            <form class="card-comment-box" role="form">
+                                <div class="row align-items-center">
+                                    <div class="col-8">
+                                        <input class="form-control" placeholder="e.g @willsmith">
+                                    </div>
+                                    <div class="col-4 text-right">
+                                        <button type="button" class="btn btn-sm btn-success btn-icon-only rounded-circle">
+                                            <span class="btn-inner--icon"><i class="fas fa-check"></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="heading heading-5 strong-600">Special title treatment</h5>
+                            <h6 class="text-muted mb-4">2 hrs ago</h6>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="heading heading-5 strong-600">Special title treatment</h5>
+                            <ul class="list-inline mb-4">
+                                <li class="list-inline-item pr-2">
+                                    <a href="#"><i class="fas fa-heart mr-1"></i> 50</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <i class="fas fa-eye text-muted mr-1"></i> 750
+                                </li>
+                            </ul>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="heading heading-5 strong-600">Special title treatment</h5>
+                            <h6 class="heading heading-sm strong-400 text-muted mb-4">
+                                2 hrs ago
+                            </h6>
+                            <p class="card-text">With supporting text below...</p>
+                            <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="avatar avatar-sm bg-purple">JD</span>
+                                    <span class="avatar-content">David Wally</span>
+                                </div>
+                                <div class="col text-right text-xs-right">
+                                    <ul class="list-inline mb-0">
+                                        <li class="list-inline-item pr-2">
+                                            <a href="#"><i class="fas fa-heart mr-1"></i> 50</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <i class="fas fa-eye text-muted mr-1"></i> 750
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="heading heading-5 strong-600">Special title treatment</h5>
+                            <h6 class="heading heading-sm strong-400 text-muted mb-4">
+                                2 hrs ago
+                            </h6>
+                            <p class="card-text">With supporting text below...</p>
+                            <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <span class="avatar avatar-sm bg-purple">JD</span>
+                                    <span class="avatar-content">David Wally</span>
+                                </div>
+                                <div class="col text-right text-xs-right">
+                                    <ul class="list-inline mb-0">
+                                        <li class="list-inline-item pr-2">
+                                            2 hrs ago
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h5 class="heading h5 mb-0">Favorite post</h5>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-icon-actions text-right">
+                                        <a href="#" class="favorite active" data-toggle="tooltip" data-original-title="Save to favorites"><i class="fas fa-star"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-sm btn-primary">Action button</a>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <span class="text-muted">2 hrs ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h5 class="heading h5 mb-0">Love &amp; bookmark post</h5>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card-icon-actions text-right">
+                                        <a href="#" class="favorite" data-toggle="tooltip" data-original-title="Save as favorite"><i class="fas fa-star"></i></a>
+                                        <a href="#" class="love active" data-toggle="tooltip" data-original-title="Love this"><i class="fas fa-heart"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <a href="#" class="btn btn-sm btn-primary">Action button</a>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <span class="text-muted">2 hrs ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header py-4">
+                            <div class="d-flex align-items-center">
+                                <span class="avatar avatar-sm bg-purple">JD</span>
+                                <div class="avatar-content">
+                                    <h5 class="h6 mb-0">Bettie Mavis</h5>
+                                    <small class="d-block text-muted">New York, US</small>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-image">
+                            <img src="https://source.unsplash.com/1920x1080/?office" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="card-icon-actions card-icon-actions-lg">
+                                        <a href="#" class="love active"><i class="fas fa-heart"></i></a>
+                                        <a href="#"><i class="fas fa-comment"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card-icon-actions card-icon-actions-lg text-right">
+                                        <a href="#"><i class="fas fa-bookmark"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="heading h6 mb-3">23 likes</h6>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row ">
+                                <div class="col-10">
+                                    <form class="card-comment-box" role="form">
+                                        <textarea rows="1" class="form-control textarea-autosize" placeholder="Add a comment..."></textarea>
+                                    </form>
+                                </div>
+                                <div class="col-2 text-right">
+                                    <div class="card-icon-actions card-icon-actions-lg">
+                                        <a href="#" data-toggle="dropdown" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </a>
+                                        <div class="dropdown-menu py-0 text-center">
+                                            <a class="dropdown-item" href="#">Got to post</a>
+                                            <a class="dropdown-item" href="#">Repost inappropriate</a>
+                                            <a class="dropdown-item" href="#">Embed</a>
+                                            <a class="dropdown-item" href="#">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-primary">
+                        <div class="card-body py-5">
+                            <div class="d-flex align-items-start">
+                                <div class="icon icon-lg">
+                                    <i class="fab fa-twitter text-white"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h5 class="heading text-white">Latest Bootstrap framework <small>(v4.0.0)</small></h5>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-dark">
+                        <div class="card-body py-5">
+                            <div class="d-flex align-items-start">
+                                <div class="icon icon-lg">
+                                    <i class="fab fa-twitter text-white"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h5 class="heading text-white">Latest Bootstrap framework <small>(v4.0.0)</small></h5>
+                                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class="card">
+                        <div class="card-body py-5">
+                            <div class="d-flex align-items-start">
+                                <div class="icon">
+                                    <i class="far fas fa-heart"></i>
+                                </div>
+                                <div class="icon-text">
+                                    <h5>Download Purpose</h5>
+                                    <p class=" mb-0">Purpose is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6'>
+                    <div>
+                        <div class="icon mb-4">
+                            <img alt="Image placeholder" src="https://www.templepilots.com/wp-content/uploads/2018/03/chat.svg" class="img-fluid">
+                        </div>
+                        <h5>Responsive design</h5>
+                        <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <div class="card">
+                        <img alt="Image placeholder" src="https://source.unsplash.com/1024x768/?office" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="heading h5 mb-1">
+                                <span class="card-title">This is a card title</span>
+                                <small class="text-muted"></small>
+                            </h5> 
+                            <p class="card-text">Each theme comes with updates for the life of the theme. This means you'll never pay for any bug-fixes and compatibility upgrades for your theme, ever.</p>
+                            <a href="#" class="btn btn-sm btn-primary">Card button</a>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6'></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

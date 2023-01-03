@@ -1,0 +1,26 @@
+{
+	"name": "gulp-4",
+	"version": "1.0.0",
+	"description": "Automating frontend task using gulp4",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"gulp 4",
+		"automating",
+		"frontend tasks"
+	],
+	"author": "Nithin Muniswamy",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.26.13",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-csso": "^4.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-sass": "^4.1.0",
+		"gulp-useref": "^5.0.0",
+		"tar": ">=4.4.2"
+	}
+}

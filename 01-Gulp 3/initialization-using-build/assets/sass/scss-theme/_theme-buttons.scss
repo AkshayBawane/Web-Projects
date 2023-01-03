@@ -1,0 +1,184 @@
+/* ——————————————————————————————————————————————————
+	Buttons.scss
+—————————————————————————————————————————————————— */
+// Comment this generic bootstrap code
+// .btn {
+// 	color: $body-color;
+// 	background-color: transparent;
+// 	@include hover() {
+// 	  color: $body-color;
+// 	}
+//  @include transition($btn-transition);
+// }
+
+@import "./scss-theme/theme-color-classes";
+
+@mixin hover() {
+	&:hover,
+	&:focus {
+		@content;
+	}
+}
+
+@mixin btn-1($var-1, $var-2, $var-3, $var-4, $var-5, $var-6, $var-7) {
+	color: $var-1;
+	background-color: $var-2;
+	border-color: $var-3;
+
+	@include hover() {
+		color: $var-4;
+		background-color: rgba($var-5, 1);
+		border-color: rgba($var-6, 1);
+		box-shadow: 0 3px 10px rgba($var-7, .5);
+	}
+}
+
+// Custom filled button
+.btn-1-primary {
+	@include btn-1($white, $primary, $primary, $white, $primary, $primary, $primary);
+}
+
+.btn-1-secondary {
+	@include btn-1($white, $secondary, $secondary, $white, $secondary, $secondary, $secondary);
+}
+
+.btn-1-success {
+	@include btn-1($white, $success, $success, $white, $success, $success, $success);
+}
+
+.btn-1-danger {
+	@include btn-1($white, $danger, $danger, $white, $danger, $danger, $danger);
+}
+
+.btn-1-warning {
+	@include btn-1($white, $warning, $warning, $white, $warning, $warning, $warning);
+}
+
+.btn-1-info {
+	@include btn-1($white, $info, $info, $white, $info, $info, $info);
+}
+
+.btn-1-dark {
+	@include btn-1($white, $dark, $dark, $white, $dark, $dark, $dark);
+}
+
+// Custom outline light background button
+
+
+@mixin btn-2($var-1, $var-2, $var-3, $var-4, $var-5, $var-6, $var-7) {
+	color: $var-1;
+	background-color: rgba($var-2, 1);
+	border-color: rgba($var-3, 1);
+	
+	@include hover() {
+		color: $var-4;
+		background-color: rgba($var-5, .15);
+		border-color: rgba($var-6, .2);
+		box-shadow: 0 3px 10px rgba($var-7, .5);
+	}
+}
+
+.btn-2-primary {
+	@include btn-2($white, $primary, $primary, $primary, $primary, $primary, $primary);
+}
+
+.btn-2-secondary {
+	@include btn-2($white, $secondary, $secondary, $secondary, $secondary, $secondary, $secondary);
+}
+
+.btn-2-success {
+	@include btn-2($white, $success, $success, $success, $success, $success, $success);
+}
+
+.btn-2-danger {
+	@include btn-2($white, $danger, $danger, $danger, $danger, $danger, $danger);
+}
+
+.btn-2-warning {
+	@include btn-2($white, $warning, $warning, $warning, $warning, $warning, $warning);
+}
+
+.btn-2-info {
+	@include btn-2($white, $info, $info, $info, $info, $info, $info);
+}
+
+.btn-2-dark {
+	@include btn-2($white, $dark, $dark, $dark, $dark, $dark, $dark);
+}
+
+// Custom outline dark background button
+@mixin btn-3($var-1, $var-2, $var-3, $var-4, $var-5, $var-6, $var-7) {
+	color: $var-1;
+	background-color: rgba($var-2, 1);
+	border-color: rgba($var-3, 1);
+	
+	@include hover() {
+		color: $var-4;
+		background-color: rgba($var-5, 0);
+		border-color: rgba($var-6, 1);
+		box-shadow: 0 3px 10px rgba($var-7, .5);
+	}
+}
+
+.btn-3-primary {
+	@include btn-3($white, $primary, $primary, $primary, $primary, $primary, $primary);
+}
+.btn-3-secondary {
+	@include btn-3($white, $secondary, $secondary, $secondary, $secondary, $secondary, $secondary);
+}
+
+.btn-3-success {
+	@include btn-3($white, $success, $success, $success, $success, $success, $success);
+}
+
+.btn-3-danger {
+	@include btn-3($white, $danger, $danger, $danger, $danger, $danger, $danger);
+}
+
+.btn-3-warning {
+	@include btn-3($white, $warning, $warning, $warning, $warning, $warning, $warning);
+}
+
+.btn-3-info {
+	@include btn-3($white, $info, $info, $info, $info, $info, $info);
+}
+
+.btn-3-dark {
+	@include btn-3($white, $dark, $dark, $dark, $dark, $dark, $dark);
+}
+
+// Custom outline button
+@mixin btn-4($var-1, $var-2, $var-3, $var-4, $var-5, $var-6, $var-7) {
+	color: $var-1;
+	background-color: rgba($var-2, 0);
+	border-color: rgba($var-3, 1);
+	
+	@include hover() {
+		color: $var-4;
+		background-color: rgba($var-5, 1);
+		border-color: rgba($var-6, 1);
+		box-shadow: 0 3px 10px rgba($var-7, .5);
+	}
+}
+
+.btn-4-primary {
+	@include btn-4($primary, $primary, $primary, $white, $primary, $primary, $primary);
+}
+.btn-4-secondary {
+	@include btn-4($secondary, $secondary, $secondary, $white, $secondary, $secondary, $secondary);
+}
+.btn-4-success {
+	@include btn-4($success, $success, $success, $white, $success, $success, $success);
+}
+.btn-4-danger {
+	@include btn-4($danger, $danger, $danger, $white, $danger, $danger, $danger);
+}
+.btn-4-warning {
+	@include btn-4($warning, $warning, $warning, $white, $warning, $warning, $warning);
+}
+.btn-4-info {
+	@include btn-4($info, $info, $info, $white, $info, $info, $info);
+}
+.btn-4-dark {
+	@include btn-4($dark, $dark, $dark, $white, $dark, $dark, $dark);
+}

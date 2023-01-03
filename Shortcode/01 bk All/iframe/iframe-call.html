@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" rel="stylesheet">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="https://ld-wp.template-help.com/wordpress_62222/css/style.css"> -->
+</head>
+
+<body>
+    <style type="text/css">
+    .demo-preview-screen {
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+    }
+
+    .demo-preview-screen .inner-screen {
+        overflow: hidden;
+        position: absolute;
+        top: 5.9%;
+        left: 4.9%;
+        right: 4.9%;
+        bottom: 22.5%;
+    }
+
+    .demo-preview-screen .inner-screen img {
+        width: 100%;
+        transition: 1.5s all ease-in-out;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .demo-preview-screen .inner-screen .btn-preview {
+            padding: 10px;
+            font-size: 10px;
+        }
+    }
+
+    .demo-preview-screen .inner-screen:hover img {
+        margin-top: 61.8%;
+        transform: translateY(-100%);
+        transition: 8s all linear;
+    }
+
+    .demo-preview-screen .inner-screen:hover .btn-preview {
+        transform: translateY(0);
+    }
+
+
+    .btn-preview {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        padding: 19px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: .06em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: rgba(46, 211, 174, 0.9);
+        transition: .3s all ease-in-out;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .btn-preview {
+            transform: translateY(100%);
+        }
+    }
+    </style>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="demo-preview-screen text-center">
+                    <img src="resizeimage.png" alt="" class="img-fluid">
+                    <a href="#" class="inner-screen">
+                        <img src="https://ld-wp.template-help.com/wordpress_62222/images/preview-default.jpg" alt="" class="img-fluid">
+                        <div class="btn-preview">Preview Default Theme</div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="demo-preview-screen text-center">
+                    <img src="resizeimage.png" alt="" class="img-fluid">
+                    <a href="#" class="inner-screen">
+                        <img src="https://ld-wp.template-help.com/wordpress_62222/images/preview-default.jpg" alt="" class="img-fluid">
+                        <div class="btn-preview">Preview Default Theme</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <style type="text/css">
+            @media only screen and (min-width: 1200px) {
+                .demo-preview a:hover {
+                    box-shadow: 17px 29px 35px 0px rgba(0, 0, 0, 0.2);
+                }
+                .demo-preview a:hover .btn-preview {
+                    transform: translateY(0);
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+                .demo-preview a:hover img {
+                    transform: translateY(-100%);
+                    margin-top: 119.6%;
+                    transition: 3s all linear;
+                }
+            }
+            .demo-preview a {
+                position: relative;
+                overflow: hidden;
+                display: block;
+                padding-bottom: 119.6%;
+                box-shadow: 2px 3px 16px 0px rgba(0, 0, 0, 0.1);
+                transition: 0.3s box-shadow ease-in-out;
+            }
+            .demo-preview a img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                transition: 1.5s all ease-in-out;
+            }
+            @media only screen and (min-width: 1200px) {
+                .btn-preview {
+                    transform: translateY(100%);
+                }
+            }
+
+        </style>
+        <div class="row">
+            <div class="demo-preview col-xs-12 col-md-6 col-lg-4 mt-5 mb-5">
+                <a href="#">
+                    <img src="https://ld-wp.template-help.com/wordpress_62222/images/preview-default.jpg" alt="" class="img-fluid">
+                    <div class="btn-preview">Preview Hotel Theme</div>
+                </a>
+            </div>
+            <div class="demo-preview col-xs-12 col-md-6 col-lg-4 mt-5 mb-5">
+                <a href="#">
+                    <img src="https://ld-wp.template-help.com/wordpress_62222/images/preview-5.jpg" alt="" class="img-fluid">
+                    <div class="btn-preview">Preview Hotel Theme</div>
+                </a>
+            </div>
+            <div class="demo-preview col-xs-12 col-md-6 col-lg-4 mt-5 mb-5">
+                <a href="#">
+                    <img src="https://ld-wp.template-help.com/wordpress_62222/images/preview-default.jpg" alt="" class="img-fluid">
+                    <div class="btn-preview">Preview Hotel Theme</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

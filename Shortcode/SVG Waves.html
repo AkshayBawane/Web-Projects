@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- Bootstrap 4.2.1 CSS -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <style type="text/css">
+    @keyframes waveAnimateA {
+        0% {
+            transform: translate(-80px, 5px)
+        }
+
+        100% {
+            transform: translate(80px, 0)
+        }
+    }
+
+    @-webkit-keyframes waveAnimateA {
+        0% {
+            transform: translate(-80px, 5px)
+        }
+
+        100% {
+            transform: translate(80px, 0)
+        }
+    }
+
+    @keyframes waveAnimateB {
+        0% {
+            transform: translate(-80px, 10px)
+        }
+
+        100% {
+            transform: translate(80px, 0)
+        }
+    }
+
+    @-webkit-keyframes waveAnimateB {
+        0% {
+            transform: translate(-80px, 10px)
+        }
+
+        100% {
+            transform: translate(80px, 0)
+        }
+    }
+
+    @keyframes waveAnimateC {
+        0% {
+            transform: translate(-20px, 5px)
+        }
+
+        100% {
+            transform: translate(-80px, 10px)
+        }
+    }
+
+    @-webkit-keyframes waveAnimateC {
+        0% {
+            transform: translate(-20px, 5px)
+        }
+
+        100% {
+            transform: translate(-80px, 10px)
+        }
+    }
+
+    .intro-waves {
+        position: relative;
+        overflow: hidden;
+        width: 100%
+    }
+
+    .waves-wrapper {
+        height: 124px;
+        transform: rotate(180deg);
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .waves {
+        position: absolute;
+        top: 40px;
+        width: calc(100% + 400px);
+        margin: 0 0 0 -200px;
+    }
+
+    .waves path {
+        opacity: .4;
+        animation: 14s ease-in-out infinite alternate waveAnimateA
+    }
+
+    .waves path:nth-child(2) {
+        animation: 14s ease-in-out infinite alternate waveAnimateB
+    }
+
+    .waves path:last-child {
+        animation: 14s ease-in-out infinite alternate waveAnimateC
+    }
+    </style>
+    <div class="intro-waves full-width">
+        <div class="waves-wrapper">
+            <div id="waves" class="waves">
+                <svg viewBox="0 0 800 600" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="wavesGradient1" x1="0%" x2="102%" y1="0%" y2="101%">
+                            <stop offset="0%" stop-color="#3023AE"></stop>
+                            <stop offset="100%" stop-color="#C96DD8"></stop>
+                        </linearGradient>
+                        <linearGradient id="wavesGradient2" x1="0%" x2="101%" y1="50%" y2="50%">
+                            <stop offset="0%" stop-color="#3023AE"></stop>
+                            <stop offset="48%" stop-color="#53A0FE"></stop>
+                            <stop offset="100%" stop-color="#B4ED50"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path fill="#E8EDFA" d="M0 13C67-4 133-4 200 13s133 17 200 0 133-17 200 0 133 17 200 0v550H0V13z"></path>
+                    <path fill="url(#wavesGradient1)" fill-opacity="0.1" d="M0 13C67-4 133-4 200 13s133 17 200 0 133-17 200 0 133 17 200 0v550H0V13z"></path>
+                    <path fill="url(#wavesGradient2)" fill-opacity="0.2" d="M0 13C67-4 133-4 200 13s133 17 200 0 133-17 200 0 133 17 200 0v550H0V13z"></path>
+                </svg>
+            </div>
+        </div>
+        <h2>https://www.netlify.com/docs/</h2>
+    </div>
+    <!-- /.container -->
+    <!-- jQuery 3.3.1 JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap 4.2.1 JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

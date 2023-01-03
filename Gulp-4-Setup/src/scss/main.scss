@@ -1,0 +1,30 @@
+// import all styles
+
+// helpers
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
+
+// base
+@import 'base/_normalize';
+@import 'base/_base';
+@import 'base/_layout';
+
+// components
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_iconlist';
+@import 'components/_linklist';
+
+
+// .akshay {
+//     background-image: url("cool.jpg");
+// }
+
+.intro {
+    font-size: 150%;
+    color: red;
+  }
+
+.bawa {
+    font-kerning: auto;
+}

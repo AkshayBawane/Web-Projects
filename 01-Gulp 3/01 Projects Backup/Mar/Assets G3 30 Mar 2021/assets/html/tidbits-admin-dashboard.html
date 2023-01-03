@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Tidbits Admin | Login</title>
+
+	<!-- ========== Theme CSS ========== -->
+	<link rel="stylesheet" type="text/css" href="./css/theme-css.css">
+
+	<!-- ========== Font Awesome ========== -->
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+	<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Side Navbar -->
+	<nav class="db-side-navbar scrollbar-hidden">
+		<div class="db-side-navbar-wrapper">
+			<!-- Sidebar Header    -->
+			<div class="sidenav-header d-flex align-items-center justify-content-center">
+				<!-- User Info-->
+				<div class="sidenav-header-inner text-center">
+					<img alt="site-logo" class="img-fluid rounded-circle" src="https://respinor.com/wp-content/uploads/2017/04/logo-dummy.png"></a>
+				</div>
+
+				<div class="sidenav-header-logo">
+					<a class="brand-small text-center" href="index.html"><strong>T</strong><strong class="text-primary">B</strong></a>
+				</div>
+			</div>
+			<!-- Sidebar Navigation Menus-->
+
+			<div class="admin-menu">
+				<ul class="side-menu list-unstyled">
+					<li>
+						<a href="#"><i class="fas fa-home"></i>Home</a>
+					</li>
+					<li>
+						<a href="#"><i class="far fa-chart-bar"></i>Dashboard</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-barcode"></i>Products</a>
+					</li>
+					<li>
+						<a href=""><i class="far fa-life-ring"></i>Help Center</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-cog"></i>Settings</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="db-page">
+		<!-- navbar-->
+		<header class="header">
+			<nav class="navbar db-top-navbar">
+				<div class="container-fluid">
+					<div class="navbar-holder d-flex align-items-center">
+						<div class="navbar-header d-flex">
+							<a class="menu-btn br-4" href="#" id="toggle-left-panel-btn">
+								<i class="fas fa-bars"></i>
+							</a>
+						</div>
+						<div class="w-100 position-relative ml-3">
+							<i class="fas fa-search" style="position: absolute; left: 8px; top: 10px;"></i>
+							<input type="email" class="form-control" style="padding-left: 30px; border: none;" placeholder="Search dealers, sellers, service providers or help">
+						</div>
+						<ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center ml-auto">
+							<li class="nav-item dropdown">
+								<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-target="#" data-toggle="dropdown" href="#" id="notifications" rel="nofollow"><i class="fas fa-bell"></i><span class="badge badge-warning">12</span></a>
+								<ul aria-labelledby="notifications" class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+										<div class="notification d-flex justify-content-between">
+											<div class="notification-content">
+												<i class="fa fa-envelope"></i>You have 6 new messages
+											</div>
+											<div class="notification-time">
+												<small>4 minutes ago</small>
+											</div>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+										<div class="notification d-flex justify-content-between">
+											<div class="notification-content">
+												<i class="fa fa-twitter"></i>You have 2 followers
+											</div>
+											<div class="notification-time">
+												<small>4 minutes ago</small>
+											</div>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+										<div class="notification d-flex justify-content-between">
+											<div class="notification-content">
+												<i class="fa fa-upload"></i>Server Rebooted
+											</div>
+											<div class="notification-time">
+												<small>4 minutes ago</small>
+											</div>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+										<div class="notification d-flex justify-content-between">
+											<div class="notification-content">
+												<i class="fa fa-twitter"></i>You have 2 followers
+											</div>
+											<div class="notification-time">
+												<small>10 minutes ago</small>
+											</div>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item all-notifications text-center" href="#" rel="nofollow"><strong><i class="fa fa-bell"></i>view all notifications</strong></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-target="#" data-toggle="dropdown" href="#" id="messages" rel="nofollow"><i class="fa fa-envelope"></i><span class="badge badge-info">10</span></a>
+								<ul aria-labelledby="notifications" class="dropdown-menu">
+									<li>
+										<a class="dropdown-item d-flex" href="#" rel="nofollow">
+										<div class="msg-profile"><img alt="..." class="img-fluid rounded-circle" src="https://d19m59y37dris4.cloudfront.net/dashboard-premium/1-4-7/img/avatar-1.jpg"></div>
+										<div class="msg-body">
+											<h3 class="h5">Jason Doe</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item d-flex" href="#" rel="nofollow">
+										<div class="msg-profile"><img alt="..." class="img-fluid rounded-circle" src="https://d19m59y37dris4.cloudfront.net/dashboard-premium/1-4-7/img/avatar-2.jpg"></div>
+										<div class="msg-body">
+											<h3 class="h5">Frank Williams</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item d-flex" href="#" rel="nofollow">
+										<div class="msg-profile"><img alt="..." class="img-fluid rounded-circle" src="https://d19m59y37dris4.cloudfront.net/dashboard-premium/1-4-7/img/avatar-3.jpg"></div>
+										<div class="msg-body">
+											<h3 class="h5">Ashley Wood</h3><span>sent you a direct message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+										</div></a>
+									</li>
+									<li>
+										<a class="dropdown-item all-notifications text-center" href="#" rel="nofollow"><strong><i class="fa fa-envelope"></i>Read all messages</strong></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<div class="user-panel d-flex" data-toggle="dropdown" aria-expanded="false">
+									<div class="image">
+										<img src="./images/tidbits/avatar.png" class="img-circle elevation-2" alt="User Image">
+									</div>
+									<div class="info">
+										<a href="#" class="d-none d-sm-block">James Warner
+											<i class="fas fa-caret-down"></i>
+										</a>
+									</div>
+								</div>
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right e-profile-dropdown" style="padding: 0;">
+									<ul class="list-inline d-flex flex-column">
+										<li>
+											<i class="fas fa-times btn-profile-close"></i>
+											<div class="mb-2">My Profile</div>
+											<span>
+												<img src="./images/tidbits/avatar.png" class="img-circle" style="width: 40px;" alt="User Image">
+											</span>
+											<span>
+												James Warner
+											</span>
+										</li>
+										<li>
+											<button class="btn">Edit Profile</button>
+										</li>
+										<li>
+											<button class="btn">Change Password</button>
+										</li>
+										<li>
+											<button class="btn">Logout</button>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="">
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<section class="content">
+					<div class="container-fluid">
+						<div class="content-header">
+							<div class="row pl-2 breadcrumb-wrapper d-none d-sm-block o-breadcrumb">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">Dashboard ></li>
+										<li class="breadcrumb-item"><a href="#">Dealers</a></li>
+										<li class="breadcrumb-item"><a href="#">Sellers</a></li>
+										<li class="breadcrumb-item active" aria-current="page">Service Provider</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+						<!-- /.content-header -->
+
+						<div class="row justify-content-between">
+							<div class="col-6">
+								<div class="form-group">
+									<select class="form-control select2">
+										<option selected="selected">All dealers</option>
+										<option>All sellers</option>
+										<option>All service providers</option>
+									</select>
+								</div>
+							</div>
+							<!-- /.col -->
+							<div class="col-6 col-sm-auto justify-self-end">
+								<!-- Button trigger modal -->
+								<button type="button" class="btn btn-primary add-dealer" data-toggle="modal" data-target="#AddSellerModal">
+									<i class="fas fa-plus"></i>
+									Add New
+								</button>
+
+								<button type="button" class="btn btn-link filter-btn">
+									<i class="fas fa-filter"></i>
+								</button>
+							</div>
+							<!-- /.col -->
+						</div>
+						<!-- /.row -->
+						<div class="row">
+							<div class="col-12">
+								<div class="card table-wrapper">
+									<!-- /.card-header -->
+									<div class="card-body table-responsive p-0" style="height: 450px;">
+										<table class="table table-head-fixed text-nowrap">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Category</th>
+													<th>Type</th>
+													<th>Location</th>
+													<th>Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-success">Active</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-muted">Suspended</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-danger">Blacklisted</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-success">Active</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-muted">Suspended</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-danger">Blacklisted</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-success">Active</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-muted">Suspended</span></td>
+												</tr>
+												<tr>
+													<td>Deniel</td>
+													<td>Digital Cameras</td>
+													<td>Individual</td>
+													<td>Dublin</td>
+													<td><span class="text-danger">Blacklisted</span></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<!-- /.card-body -->
+								</div>
+								<!-- /.card -->
+							</div>
+							<div class="col-sm-12">
+								<div class="row justify-content-between">
+									<div class="col-sm-6"></div>
+									<div class="col-auto mt-3">
+										<nav class="pagination-wrapper">
+											<ul class="pagination">
+												<li class="page-item">
+													<a class="page-link" href="#">
+														<i class="fas fa-caret-left"></i>
+													</a></li>
+												<li class="page-item active"><a class="page-link" href="#">1</a></li>
+												<li class="page-item"><a class="page-link" href="#">2</a></li>
+												<li class="page-item"><a class="page-link" href="#">3</a></li>
+												<li class="page-item"><a class="page-link" href="#">4</a></li>
+												<li class="page-item"><a class="page-link" href="#">5</a></li>
+												<li class="page-item"><a class="page-link" href="#">...</a></li>
+												<li class="page-item"><a class="page-link" href="#">14</a></li>
+												<li class="page-item">
+													<a class="page-link" href="#">
+														<i class="fas fa-caret-right"></i>
+													</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.row -->
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+		</section>
+
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<p>Copyright © 2020 Tidbits. All rights reserved.</p>
+					</div>
+					<div class="col-sm-6 text-right">
+						<p>Version 1.0.0</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- ========== Theme JS ========== -->
+	<script src="./js/theme-essentials-js.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// Side Navbar Function
+			$('#toggle-left-panel-btn').on('click', function (e) {
+
+				e.preventDefault();
+
+				if ($(window).outerWidth() > 1194) {
+					$('nav.db-side-navbar').toggleClass('left-panel-shrink desktop-bar');
+					$('.db-page').toggleClass('active-md-res desktop-page');
+				} else {
+					$('nav.db-side-navbar').toggleClass('mobile-res-c mobile-bar');
+					$('.db-page').toggleClass('active-sm-res mobile-page');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+        <div class="aos-init" data-aos="fade-up">
+            <h1 class="text-danger">AOS animation</h1>
+            <i class="fab fa-accusoft fa-5x text-danger"></i>
+        </div>
+        <div class="article article-single">
+            <style>
+            a,
+            a:hover {
+                text-decoration: none;
+            }
+
+            .underline-f-center {
+                position: relative;
+                color: #000;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .underline-f-center:hover {
+                color: #000;
+            }
+
+            .underline-f-center:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color: #000;
+                visibility: hidden;
+                transition: all 0.3s ease-in-out 0s;
+                transform: scaleX(0);
+            }
+
+            .underline-f-center:hover:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+            /*Sliding from center underline*/
+
+            .underline-l-t-r {
+                display: inline;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .underline-l-t-r:after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                right: 0;
+                width: 0;
+                bottom: -5px;
+                background: #000;
+                height: 3px;
+                transition-property: width;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+            }
+
+            .underline-l-t-r:hover:after,
+            .underline-l-t-r:focus:after,
+            .underline-l-t-r:active:after {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+            </style>
+            <style type="text/css">
+            /*CSS for sliding the underline from left to right*/
+
+            .slide-left-right {
+                text-decoration: none;
+                display: inline-block;
+                color: black;
+            }
+
+            .slide-left-right:after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                background: transparent;
+                transition: width .5s ease, background-color .5s ease;
+            }
+
+            .slide-left-right:hover:after {
+                width: 100%;
+                background: black;
+            }
+            /*CSS for sliding the underline from right to left*/
+
+            .slide-right-left {
+                text-decoration: none;
+                display: inline-block;
+                color: green;
+                position: relative;
+            }
+
+            .slide-right-left:after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                background: transparent;
+                transition: width .5s ease, background-color .5s ease;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .slide-right-left:hover:after {
+                width: 100%;
+                background: green;
+            }
+            /*CSS for sliding from center out to the left and right sides*/
+
+            .slide-center-out {
+                text-decoration: none;
+                display: inline-block;
+                color: blue;
+            }
+
+            .slide-center-out:after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                background: blue;
+                transition: width .5s ease, background-color .5s ease;
+                width: 30%;
+                margin: auto;
+            }
+
+            .slide-center-out:hover:after {
+                width: 100%;
+                background: blue;
+            }
+            /*CSS for sliding in the underline from the left and sliding it out to the right*/
+
+            .slide-in-out {
+                text-decoration: none;
+                color: brown;
+                display: inline-block;
+                position: relative;
+            }
+
+            .slide-in-out:before {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                transition: width 0s ease, background-color .5s ease;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+
+            .slide-in-out:after {
+                content: '';
+                display: block;
+                height: 3px;
+                width: 0;
+                background: brown;
+                transition: width .5s ease;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            .slide-in-out:hover:before {
+                width: 100%;
+                background: brown;
+                transition: width .5s ease;
+            }
+
+            .slide-in-out:hover:after {
+                width: 100%;
+                background: transparent;
+                transition: all 0s ease;
+            }
+            </style>
+            <h1><a href="#" class="underline-f-center">1. Sliding from center underline</a></h1>
+            <h1><a href="#" class="underline-l-t-r">2. Sliding from left to right underline</a></h1>
+            <h1><a href="#" class="slide-left-right">3. Sliding from left to right</a></h1>
+            <h1><a href="#" class="slide-right-left">4. Sliding from left to right</a></h1>
+            <h1><a href="#" class="slide-center-out">5. Sliding from center to left and right sides</a></h1>
+            <h1><a href="#" class="slide-in-out">6. Sliding in from left and sliding out to the right</a></h1>
+            <h1><a href="#" class="link-cover-slide">7. Cover link sliding</a></h1>
+            <style type="text/css">
+            .link-cover-slide {
+                text-decoration: none;
+                color: brown;
+                display: inline-block;
+                position: relative;
+            }
+
+            .link-cover-slide:before {
+                content: "";
+                background: #7FDBFF;
+                position: absolute;
+                width: 100%;
+                height: 5px;
+                bottom: 0;
+                left: 0;
+                border-radius: 5px;
+                transform: scaleX(0);
+                animation: 1.4s forwards no-hover-v linear;
+                animation-fill-mode: forwards;
+                z-index: -1;
+            }
+
+            .link-cover-slide:hover:before,
+            .link-cover-slide:focus:before {
+                animation: .5s forwards hover-v linear;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes hover-v {
+                0% {
+                    transform: scaleX(0);
+                    height: 5px;
+                }
+                45% {
+                    transform: scaleX(1.05);
+                    height: 5px;
+                }
+                55% {
+                    height: 5px;
+                }
+                100% {
+                    transform: scaleX(1.05);
+                    height: 3.8rem;
+                }
+            }
+
+            @keyframes no-hover-v {
+                0% {
+                    transform: scaleX(1.05);
+                    height: 3.8rem;
+                }
+                45% {
+                    height: 5px;
+                }
+                55% {
+                    transform: scaleX(1.05);
+                    height: 5px;
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: scaleX(0);
+                    height: 5px;
+                    opacity: .02;
+                }
+            }
+            </style>
+        </div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript">
+        $(function() {});
+        </script>
+        <script>
+        AOS.init();
+        </script>
+</body>
+
+</html>

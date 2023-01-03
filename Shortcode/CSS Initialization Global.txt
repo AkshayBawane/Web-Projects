@@ -1,0 +1,183 @@
+Internally redirected deals are not written in queries…
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900');
+body {
+    font-family: 'Lato', sans-serif;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: geometricPrecision;
+    color: #161823;
+    max-width: 100%;
+
+	overflow-wrap: break-word;
+	 /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+body {
+        overscroll-behavior-y: none; disable excessive scroll in most
+        overscroll-behavior-x: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+*:focus {
+    outline: none !important;
+}
+.custom-control-input:focus~.custom-control-label::before {
+	box-shadow: none !important;
+}
+a:hover, a:focus {
+    cursor: pointer;
+    text-decoration: none;
+}
+textarea { 
+     max-width: 100%;
+     width: 100%;
+}
+
+html, a, p, body, input, label, select, option, ul, li, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Lato', sans-serif;
+    color: #161823;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+	margin-bottom: 0;
+}
+p:last-child {
+	margin-bottom: 0;
+}
+.lh-text-center {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    display: inline-block !important;
+}
+
+——————————————————————————————
+transition: all 1s ease-in-out;
+transition: .3s ease;
+transition: all 1s ease-in;
+transition: top .6s cubic-bezier(.19, 1, .22, 1);
+transition: width .5s ease, background-color .5s ease;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+——————————————————————————————
+CSS
+.form-style-10 input[type="text"] {}
+.form-style-10 h1 > span {}
+.form-style-10 input[type="button"]:hover {}
+——————————————————————————————
+p:nth-child(3n+2) {
+    background: red;
+}
+p:nth-child(4) {
+    background: green;
+}
+p:nth-child(odd) {
+    background: yellow;
+}
+p:nth-child(even) {
+    background: blue;
+}
+p:last-child {
+    background: #ff0000;
+}
+https://www.w3schools.com/cssref/css_selectors.asp
+
+.valign{
+    display: flex;
+    align-items: center;
+}
+
+.v-middle {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+
+——————————————————————————————
+background: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, #ffffff 100%), url('http://0.0.0.0:8000/media/images/case-study-card-bg.svg');
+
+background-image: radial-gradient(ellipse at center, rgba(77, 81, 87, 1) 30%, rgba(19, 25, 33, 1) 100%), url('http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg');
+
+——————————————————————————————
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 6px;
+    display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lightgrey; 
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+——————————————————————————————
+
+Autocomplete form fields off,
+Autofocus for form
+https://html.com/tags/input/
+
+
+Javascript:
+——————————————————————————————
+<script type="text/javascript">
+        $(window).load(function () {
+        });
+</script>
+<script type="text/javascript">
+	jQuery(function($) {
+	});
+</script>
+<script type="text/javascript">
+	$(function() {
+        "use strict";
+	});
+</script>
+<script>
+	$( document ).live( 'pageload', function() {
+	});
+</script>
+

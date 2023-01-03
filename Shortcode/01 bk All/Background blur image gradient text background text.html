@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <title>Page Title</title>
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+	    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+
+	<div class="container">
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+		<div class="aos-init" data-aos="fade-up">
+	        <h1 class="text-danger">AOS animation</h1>
+	    	<i class="fab fa-accusoft fa-5x text-danger"></i>
+	    </div>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+	</div>
+
+	<style>
+	.background {
+		position: relative;
+	}
+    .background:before {
+    	content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        -webkit-filter: blur(35px);
+        filter: blur(3px);
+        background: url('http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg');
+        background-size: cover;
+    }
+
+    .circle {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        height: 250px;
+        width: 250px;
+        object-fit:cover;
+
+    }
+    </style>
+
+    <section class="background pt-5 pb-4 text-center">
+    	<img class="circle" src="http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg" alt="Pineapple" width="300" height="300">
+	    <p>Blurred background:</p>
+	    <h1>The filter Property</h1>
+	    <p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.</p>
+    </section>
+    
+    
+    <style>
+	.background-svg {
+		position: relative;
+		height: 100vh;
+	}
+    .background-svg:before {
+    	content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+        /*filter: blur(3px);*/
+        background: url('https://s3-ap-southeast-1.amazonaws.com/livehealthuser/userside/images/bg-home-solution.svg');
+        background-size: cover;
+    }
+    </style>
+
+    <section class="d-flex align-items-center background-svg pt-5 pb-4">
+	    <div class="container">
+			<div class="row align-items-center">
+		      <div class="col-md-6 order-md-2">
+		        <h2 class="text-danger">Responsive SVG Background.</h2>
+		        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		      </div>
+		      <div class="col-md-6 order-md-1">
+		        <img class="img-fluid mx-auto" alt="500x500" src="https://source.unsplash.com/1920x1080/?office">
+		      </div>
+		    </div>
+		</div>
+    </section>
+    
+    
+
+    <style type="text/css">
+
+   .title-grad-anime {
+   -webkit-animation: bounceInUp 3s;
+     color: #f35626;
+     background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     -webkit-animation: hue 30s infinite linear;
+   }
+
+  @-webkit-keyframes hue {
+   from {
+     -webkit-filter: hue-rotate(0deg);
+   }
+
+   to {
+     -webkit-filter: hue-rotate(-360deg);
+   }
+  }
+
+
+  .title-grad-anime-2 {
+   -webkit-animation: bounceInUp 3s;
+     color: #f35626;
+     background-image: url('http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg');
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+   }
+  </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6">
+        <div class="aos-init" data-aos="zoom-out-up">
+            <h1 class="title-grad-anime display-3">Animate.css</h1>
+        </div>
+        <h1 class="title-grad-anime display-3">Animate-2.css</h1>
+        
+        <h1 class="title-grad-anime-2 display-3">Animate-3.css</h1>
+
+      </div>
+    </div>
+  </div>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript">
+       $(function() {
+       });
+    </script> 
+    <script>
+       AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+// ———————————————————————————————————————————————
+// # main.scss (Akshay Bawane)
+// ———————————————————————————————————————————————
+
+// ———————————————————————————————————————————————
+// # Scss Plugins
+// ———————————————————————————————————————————————
+// @import "./scss-plugins/animate";
+// @import "./scss-plugins/animate-on-scroll";
+// @import "./scss-plugins/background-parallax-scroll-effect";
+// @import "./scss-plugins/image-gallery/image-lightbox";
+// @import "./scss-plugins/swiper-slider";
+// @import "./scss-plugins/perfect-scrollbar";
+// @import "./scss-plugins/progressive-image";
+
+// ———————————————————————————————————————————————
+// # Scss Theme
+// ———————————————————————————————————————————————
+@import "./scss-theme/bootstrap-custom-variables"; // Use this before importing Bootstrap
+// @import "./scss-theme/bootstrap-components-custom";
+// @import "./scss-theme/theme-bg-image";
+// @import "./scss-theme/theme-buttons";
+@import "./scss-theme/theme-color-classes"; // Keep this always selected
+// @import "./scss-theme/theme-font-family";
+// @import "./scss-theme/theme-helpers";
+// @import "./scss-theme/theme-typography";
+// @import "./scss-theme/theme-mixins";
+
+// ———————————————————————————————————————————————
+// # Scss Demo Project
+// ———————————————————————————————————————————————
+// @import "./scss-project/01-my-notes";
+// @import "./scss-project/cactus-global";
+// @import "./scss-project/demo-1";
+// @import "./scss-project/tidbits";
+// @import "./scss-project/wingify";
+@import "./scss-project/banner-buzz";
+// @import "./scss-project/snippets";
+// @import "./scss-project/multidots";
+// @import "./scss-project/dashboard-layout-1";
+
+// ———————————————————————————————————————————————
+// # Scss Essentials
+// ———————————————————————————————————————————————
+@import "./scss-essentials/scss-bootstrap/bootstrap";
+
+// ———————————————————————————————————————————————
+// # Initialization & Generic Style
+// ———————————————————————————————————————————————
+*:focus, *:active {
+	box-shadow: none;
+	outline: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+// Override all over fontsize
+// html {
+// 	font-size: 0.875rem;
+// }
+
+body {
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+	// text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+// Anchor or Link
+a {
+	outline: 0;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+// Form fields
+textarea {
+	outline: 0;
+	max-width: 100%;
+}
+
+// Button/Link hover style
+a, button, select, .btn, input[type=button], input[type=file], .img-link, .text-link {
+	cursor: pointer;
+}
+
+.btn {
+	&.focus,
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+// ———————————————————————————————————————————————
+// # Scroll To Top
+// ———————————————————————————————————————————————
+.scroll-top {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	position: fixed;
+	bottom: -54px;
+	right: 13px;
+	background: rgba(gray, 0.5);
+	padding: 10px 14px;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 4px solid rgba(255, 255, 255, 0.5);
+	transition: all .3s ease-in-out;
+
+	i {
+		font-size: 18px;
+		color: #fff;
+	}
+
+	&:hover {
+		box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.2);
+	}
+}
+
+// ———————————————————————————————————————————————
+// # Placeholder
+// ———————————————————————————————————————————————
+.form-control {
+	// Chrome/Opera/Safari
+	&::-webkit-input-placeholder {
+		color: #c3c3c3;
+	}
+
+	// Firefox 19+
+	&::-moz-placeholder {
+		color: #c3c3c3;
+	}
+
+	// IE 10+
+	&:-ms-input-placeholder {
+		color: #c3c3c3;
+	}
+
+	// Firefox 18-
+	&:-moz-placeholder {
+		color: #c3c3c3;
+	}
+}

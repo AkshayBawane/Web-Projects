@@ -1,0 +1,100 @@
+/* ——————————————————————————————————————————————————
+	Bootstrap Customisation
+—————————————————————————————————————————————————— */
+// Bootstrap dropdown menu on hover rather than click
+// https://www.tutorialrepublic.com/faq/how-to-open-bootstrap-dropdown-menu-on-hover-rather-than-click.php
+// @media screen and (min-width: 768px) {
+//     .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+//         display: block;
+//     }
+// }
+// END Bootstrap dropdown menu on hover rather than click
+
+// // Dropdown triangle
+// .dropdown-menu {
+// 	&::before {
+// 		border-bottom: 8px solid #FFFFFF;
+// 		border-left: 9px solid rgba(0, 0, 0, 0);
+// 		border-right: 9px solid rgba(0, 0, 0, 0);
+// 		content: "";
+// 		display: inline-block;
+// 		left: 50%;
+// 		position: absolute;
+// 		top: -7px;
+// 		transform: translateX(-50%);
+// 	}
+// }
+// // END Dropdown triangle
+
+// Bootstrap Carousel
+.slider_area {
+	.carousel-inner {
+		.item {
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: #000000;
+				opacity: 0.3;
+			}
+			img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			.carousel-caption {
+				bottom: inherit;
+				top: 32%;
+				left: 0;
+				text-align: left;
+				text-shadow: none;
+			}
+		}
+	}
+	.carousel-control {
+		position: absolute;
+		top: 50%;
+		left: auto;
+		font-size: 40px;
+		text-align: center;
+		color: #fff;
+		border: 2px solid #fff;
+		width: 50px;
+		height: 50px;
+		line-height: 60px;
+		border-radius: 100%;
+		transition: all 0.5s;
+        background: rgba(255, 255, 255, 0.25);
+		// i {
+		// 	position: relative;
+        //     z-index: 999;
+		// }
+	}
+	.carousel-control-prev, .carousel-control-next {
+		transition: all 0.5s;
+		box-shadow: 0px 6px 6px 1px rgba(0, 0, 0, 0.25);
+    }
+    .carousel-control-prev {
+		left: -7%;
+    }
+	.carousel-control-next {
+		right: -7%;
+	}
+	&:hover {
+		.carousel-control-prev {
+			left: 5%;
+		}
+		.carousel-control-next {
+			right: 5%;
+		}
+	}
+}
+.slider_area .carousel-control-prev:hover, .slider_area .carousel-control-next:hover {
+	background: rgba(255, 255, 255, .65);
+	border: 2px solid rgba(255, 255, 255, .65);
+}
+// END Bootstrap Carousel
+

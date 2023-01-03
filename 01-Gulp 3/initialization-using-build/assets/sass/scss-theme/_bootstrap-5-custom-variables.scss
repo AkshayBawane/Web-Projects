@@ -1,0 +1,47 @@
+// ——————————————————————————————————————————————————
+// 	Theme Defined variables
+// ——————————————————————————————————————————————————
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+// _variables.scss
+
+// small tag font weight
+// $font-weight-normal: 600;
+
+// $light-black-color: #494949;
+
+// $gray-color: #f2f2f2;
+// $gray-light: #636c72;
+// $dark-gray-color: darken($gray-color, 10%);
+
+
+// ——————————————————————————————————————————————————
+// 	Override Bootstrap variables.scss
+// ——————————————————————————————————————————————————
+// https://bootswatch.com/
+// Pallete colors
+$primary: #2780e3;
+$secondary: #6c757d;
+$success: #3fb618;
+$info: #04519b;
+$warning: #ff7518;
+$danger: #ff0039;
+$light: #f8f8f8;
+$dark: #000;
+
+$btn-primary-color: #fff;
+
+// Input field height
+$input-height: 35px;
+
+// body font size (Reduce font size throughout)
+// $font-size-base: 0.875rem;
+
+
+// body text color:
+$body-color: #494949;
+
+// body background color:
+$body-bg: #fff;
+
+// body font:
+// $font-family-base: 'Rubik', sans-serif;

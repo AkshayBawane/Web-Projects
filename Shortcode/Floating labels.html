@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<title>Project</title><!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<style type="text/css">
+		/* floating labels */
+		input, textarea {
+		    width: 100%;
+		    display: block;
+		    border: none;
+		    resize: none;
+		    line-height: 18px;
+		    background-color: transparent;
+		    padding: 14px 0;
+		    color: #1d1d23;
+		    outline: none;
+		    font-size: 12px;
+		    border-bottom: 1px solid rgba(0,0,0,.25);
+		    -webkit-transition: padding .25s ease-in-out;
+		    transition: padding .25s ease-in-out;
+		}
+		.floating-label {
+		    padding-top: 11px;
+		    position: relative;
+		    margin-bottom: 20px!important;
+		}
+		.floating-label input {
+		    font-size: 14px;
+		}
+		.floating-label label {
+		    top: 22px;
+		    position: absolute;
+		    -webkit-transition: .3s ease;
+		    transition: .3s ease;
+		    pointer-events: none;
+		    font-size: 13px;
+		    left: 0;
+		    color: #232328;
+		}
+		.floating-label input:focus~label {
+		    color: #f24282;
+		    top: 0;
+		    font-size: 12px;
+		    color: #f24286;
+		}
+
+
+		.floating-bottom-line {
+		    background: #f24282;
+		}
+
+		.floating-bottom-line {
+		    content: "";
+		    height: 2px;
+		    width: 0;
+		    background: #f24286;
+		    -webkit-transition: .3s ease;
+		    transition: .3s ease;
+		    position: absolute;
+		    bottom: 0;
+		}
+
+		/* animated bottom line */
+		.floating-label input:focus {
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+		    border-color: rgba(0,0,0,.2);
+		    padding-left: 0;
+		}
+		.floating-label input:focus~.floating-bottom-line {
+		    width: 100%;
+		}
+
+		/* END floating labels */
+	</style>
+
+	<div class="container">
+		<div class="form-group floating-label">
+			<input type="text" id="field-1" name="search_keywords" placeholder="">
+			<label for="field-1">What are you looking for?</label>
+			<div class="floating-bottom-line"></div>
+		</div>		
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

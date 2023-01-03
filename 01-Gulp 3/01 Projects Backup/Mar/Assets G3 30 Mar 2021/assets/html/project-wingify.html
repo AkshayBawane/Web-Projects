@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Website desc goes here">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Akshay Bawane">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=0" />
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="./css/theme-css.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="card">
+			<div class="col-1">
+				<div class="content">
+					<h1>Sample Heading</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis id laborum repellat debitis nesciunt, ut, enim rem sit doloremque recusandae illum.</p>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="content form-control">
+					<h2>Create an account</h2>
+					<form id="form1" name="form1">
+						<div class="group">
+							<label class="mb-10 d-block" for="email_field">
+								<b>Enter your email</b>
+							</label>
+							<input id="email_field" name="field1" type="text" />
+						</div>
+
+						<p>
+							<b>Date of birth (optional)</b>
+						</p>
+						<ul class="calendar-field">
+							<li>
+								<label class="mb-10" for="date_field">Date</label>
+								<input class="d-inline-block" id="date_field" name="field1" type="text" />
+							</li>
+							<li>
+								<label for="month">Month</label>
+								<select name="month" id="month">
+									<option value="Jan">Jan</option>
+									<option value="Feb">Feb</option>
+									<option value="March">March</option>
+								</select>
+							</li>
+							<li>
+								<label for="year">Year</label>
+								<select name="month" id="year">
+									<option value="1990">1990</option>
+									<option value="1991">1991</option>
+									<option value="1992">1992</option>
+								</select>
+							</li>
+						</ul>
+
+
+						<label class="mb-10 d-block" for="password_field">
+							<b>Choose a strong password</b>
+						</label>
+						<input id="password_field" name="field1" type="text" />
+						<p>
+							<b>Are you an agency or individual?</b>
+						</p>
+
+						<input type="radio" id="indiv-radio" name="gender" value="indiv-radio">
+						<label for="indiv-radio">Individual</label>
+
+						<input type="radio" id="agency-radio" name="gender" value="agency-radio">
+						<label for="agency-radio">Agency</label>
+					</form>
+
+					<div>
+						<input id="btn" class="form-btn" type="button" value="Submit"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+	<script>
+		$("#form1").validate({
+			rules: {
+				field1: "required"
+			},
+			messages: {
+				field1: "Please add valid email address"
+			}
+		})
+
+		$('#btn').click(function() {
+			$("#form1").valid();
+		});
+	</script>
+</body>
+
+</html>

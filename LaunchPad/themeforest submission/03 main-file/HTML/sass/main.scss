@@ -1,0 +1,610 @@
+/*--------------------------------------------------
+# main.scss
+# Sass file for a Launchpad template.
+# Author: Galacticlab
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+[TABLE OF CONTENTS]
+# 1. Import Files
+# 2. Initialization
+# 3. Typography
+# 4. Browser Scrollbar
+# 5. Scroll To Top
+# 6. Image Overlay + Pattern Overlay
+# 7. Kenburns Slider
+# 8. Swiper Slider
+# 9. Chevron Scroll Bottom Animation
+# 10. Landing Page Image & Hover Effect
+# 11. CSS Ribbon
+# 12. Big Special Icon For Eye Catchy
+# 13. Background Motion Parallax
+# 14. Image Overlay Text Used In GAlLERY Lightbox
+# 15. Background Diagonal Edge
+# 16. Miscellaneous
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+# 1. Import Files
+--------------------------------------------------*/
+
+// Import Google Web Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900');
+
+// Handwriting Font
+@import url('https://fonts.googleapis.com/css?family=Tangerine:400,700');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+
+// Import _helpers.scss
+@import "helpers";
+
+// Import _bg-image.scss
+@import "bg-image";
+
+// Import _variables.scss
+@import "variables";
+
+// Import _color-classes.scss
+@import "color-classes";
+
+// Import _bourbon.scss
+@import "bourbon/bourbon";
+
+/*--------------------------------------------------
+# 2. Initialization
+--------------------------------------------------*/
+
+$body-color: $light-black-color;
+
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: $st-body-font;
+    font-size: 1rem !important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    color: $light-black-color;
+    text-rendering: optimizeLegibility !important;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+@include selection {
+    background-color: $black-color;
+    color: #00ffbf;
+}
+a {
+    outline: none !important;
+    text-decoration: none !important;
+    color: $light-black-color;
+    @include transition(all 0.4s ease-in-out);
+    cursor: pointer;
+}
+
+/*--------------------------------------------------
+# 3. Typography
+--------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p, a,
+.h1, .h2, .h3, .h4, .h5, .h6,
+button, input, optgroup, select, textarea {
+    font-weight: 300;
+}
+.lead {
+    font-size: 1.5rem;
+}
+.btn {
+    cursor: pointer;
+}
+ol, ul {
+  list-style: none;
+}
+
+/*--------------------------------------------------
+# 4. Browser Scrollbar
+--------------------------------------------------*/
+body, .side, .o-y-scroll {
+    &::-webkit-scrollbar {
+        width: 3px;
+        display: none;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #00ffbf;
+        box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+        border-radius: 5px;
+        &:window-inactive {
+            background: rgba(210,210,210,.4);
+        }
+    }
+}
+
+/*--------------------------------------------------
+# 4. Full Page Banner
+--------------------------------------------------*/
+.centered-table {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.centered-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.cover-container {
+    max-width: 42rem;
+    padding: 15px;
+}
+
+// Make Centered Page title
+.centered-text-css {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px;
+}
+
+/*--------------------------------------------------
+# 5. Scroll To Top
+--------------------------------------------------*/
+.scroll-top {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: fixed !important;
+    bottom: -54px;
+    right: 15px;
+    background: $black-color;
+    background: rgba($black-color, 0.5);
+    padding: 10px 14px;
+    color: $gray-color;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    @include transition(all 0.4s ease-in-out);
+}
+
+/*--------------------------------------------------
+# 6. Image Overlay + Pattern Overlay
+--------------------------------------------------*/
+.pattern-overlay {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .pattern-dotted {
+        width: 100%;
+        &:before {
+            content: '';
+            display: block;
+            height: 100vh;
+            background: url('../images/bg-pattern/dotted.png');
+            // background: rgba(0,0,0,.1) url('../images/bg-pattern/dotted.png');
+        }
+    }
+    .pattern-diagonal-line {
+        width: 100%;
+        &:before {
+            content: '';
+            display: block;
+            height: 100vh;
+            background: url('../images/bg-pattern/raster_2x.png');
+            // background: rgba(0,0,0,.1) url('../images/bg-pattern/diagonal-line.png');
+        }
+    }
+    .pattern-dotted-square {
+        width: 100%;
+        &:before {
+            content: '';
+            display: block;
+            height: 100vh;
+            background: url('../images/bg-pattern/dotted-square.png');
+            // background: rgba(0,0,0,.1) url('../images/bg-pattern/dotted-square.png');
+        }
+    }
+    .pattern-diagonal-square-box {
+        width: 100%;
+        &:before {
+            content: '';
+            display: block;
+            height: 100vh;
+            background: url('../images/bg-pattern/diagonal-square-box.png');
+            // background: rgba(0,0,0,.1) url('../images/bg-pattern/diagonal-square-box.png');
+        }
+    }
+    .pattern-crissxcross-square-box {
+        width: 100%;
+        &:before {
+            content: '';
+            display: block;
+            height: 100vh;
+            background: url('../images/bg-pattern/crissxcross-square-box.png');
+            // background: rgba(0,0,0,.1) url('../images/bg-pattern/crissxcross-square-box.png');
+        }
+    }
+    .pattern-square-hollow-box {
+        width: 100%;
+        &:before {
+            content: '';
+            display: block;
+            height: 100vh;
+            background: url('../images/bg-pattern/square-hollow-box.png');
+            // background: rgba(0,0,0,.1) url('../images/bg-pattern/square-hollow-box.png');
+        }
+    }
+}
+
+/*--------------------------------------------------
+# 7. Kenburns Slider
+--------------------------------------------------*/
+.sy-box {
+    position: absolute !important;
+}
+.sy-list {
+    position: fixed;
+}
+
+/*--------------------------------------------------
+# 8. Swiper Slider
+--------------------------------------------------*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    height: 100vh;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------
+# 9. Chevron Scroll Bottom Animation
+--------------------------------------------------*/
+$tcon-size: 40px !default;
+$tcon-transition: .3s !default;
+$tcon-jstransform: 'tcon-transform' !default;
+
+$tcon-svgchevron-size: $tcon-size !default;
+$tcon-svgchevron-color: #fff !default;
+$tcon-svgchevron-strokew: 1px !default;
+$tcon-svgchevron-timing: 3s !default;
+
+@keyframes chevron-pulse {
+  0%   { opacity: 0; }
+  40%  { opacity: 1; }
+  80%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.tcon-svgchevron {
+    height: $tcon-svgchevron-size;
+    width: $tcon-svgchevron-size;
+    path {
+        animation: chevron-pulse $tcon-svgchevron-timing infinite cubic-bezier(0.4, 0, 0.2, 1);
+        fill: transparent;
+        stroke: $tcon-svgchevron-color;
+        stroke-width: $tcon-svgchevron-strokew;
+    }
+    .fill-black {
+        fill: rgba(0, 0, 0, .5) !important;
+        stroke: none !important;
+    }
+}
+@for $i from 1 through 3 {
+  .tcon-svgchevron path.a#{$i} {
+    animation-delay: -($i - ($i/2)) + 0.5s;
+  }
+}
+
+
+/*--------------------------------------------------
+# 10. Landing Page Image & Hover Effect
+--------------------------------------------------*/
+.showcase-img {
+    &:hover {
+        a {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 80px -5px rgba(0,0,0,0.75);
+        }
+    }
+    a {
+        display: block;
+        position: relative;
+        transition: all 0.3s linear 0s;
+        // box-shadow: 0 2px 19px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/*--------------------------------------------------
+# 11. CSS Ribbon
+--------------------------------------------------*/
+.ribbon-box {
+    position: relative;
+    // border: 1px solid #BBB;
+    background: #EEE;
+}
+.ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+    span {
+        font-size: 10px;
+        font-weight: bold;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 20px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        width: 100px;
+        display: block;
+        background: #79A70A;
+        background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+        box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+        position: absolute;
+        top: 19px;
+        left: -21px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #79A70A;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #79A70A;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #79A70A;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #79A70A;
+        }
+    }
+}
+
+/*--------------------------------------------------
+# 12. Big Special Icon For Eye Catchy
+--------------------------------------------------*/
+.big-icon {
+    font-size: 150px;
+    position: absolute;
+    top: -10%;
+    right: 20%;
+    opacity: .85;
+    transform: rotate(15deg);
+    &:hover {
+        transform: scale(1.5);
+        transition-duration: 5s;
+    }
+}
+
+/*--------------------------------------------------
+# 13. Background Motion Parallax
+--------------------------------------------------*/
+.background-move {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: url('../images/background-move/2200-1964457-pink-wine.jpg');
+}
+
+/*--------------------------------------------------
+# 14. Image Overlay Text Used In GAlLERY Lightbox
+--------------------------------------------------*/
+.img-overlay-block {
+    position: relative;
+    &:hover {
+        .img-overlay {
+            height: 20%;
+            border-radius: .25rem;
+            cursor: crosshair;
+        }
+    }
+}
+.img-overlayed {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    @include transition(all .3s ease-in-out);
+}
+.text-over-image {
+    white-space: nowrap;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+}
+
+/*--------------------------------------------------
+# 15. Background Diagonal Edge
+--------------------------------------------------*/
+// Diagonal Edge (slant-edge.html)
+.slant-edge {
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: "";
+        height: 39vh;
+        left: 0;
+        top: 80%;
+        bottom: 0;
+        position: absolute;
+        transform: skewY(169.5deg);
+        width: 100%;
+        z-index: -1;
+        background: #fff;
+    }
+}
+
+// Diagonal Edge (index.html)
+.diagonal-edge-left {
+    position: relative;
+    z-index: 0;
+    &::after {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 50vw;
+        content: "";
+        background-image: linear-gradient(rgba(39, 128, 227, .4), transparent);
+        top: 40%;
+        transform: skewY(45deg);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 50vw;
+        content: "";
+        left: 0;
+    }
+    >* {
+        position: relative;
+        z-index: 1;
+    }
+}
+.diagonal-edge-right {
+    position: relative;
+    z-index: 0;
+    &::after {
+        top: 15%;
+        transform: skewY(-45deg);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 50vw;
+        content: "";
+        background-image: linear-gradient(rgba(39, 128, 227, .4), transparent);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 50vw;
+        content: "";
+        left: 0;
+    }
+    >* {
+        position: relative;
+        z-index: 1;
+    }
+}
+@media (max-width: 1366px) {
+    .diagonal-edge-right::after {
+        top: 10.5%;
+    }
+}
+
+/*--------------------------------------------------
+# 16. Miscellaneous
+--------------------------------------------------*/
+// Lauchpad logo Adjustment
+@media (min-width: 576px) {
+    .logo-adjust {
+        margin-left: -30px;
+    }
+}
+
+// Change Font For Clock 
+#letter-container #clock {
+    font-family: tangerine;
+}
+
+// Subscribe Box Style
+.email input[type="email"] {
+    padding: 8px 10px 11px 10px;
+    border: none;
+    color: black;
+    outline: none;
+}
+@media (max-width: 575px) {
+    .email input[type="email"] {
+        width: 50%;
+    }
+}
+
+// MailChimp Morphing Button Customize
+#mc_embed_signup div.mce_inline_error {
+    background-color: transparent !important;
+    font-weight: 400 !important;
+    text-align: center;
+    color: #e85c41 !important;
+}
+#mce-success-response, #mce-error-response {
+    color: #000 !important;
+    font-size: 14px !important;
+}
+@media (max-width: 575px) {
+    .cta.active {
+        width: 320px !important;
+    }
+}
+
+// Split 50 50
+#right-half {
+    width: 50%;
+    float: right;
+}
+
+#left-half {
+    width: 50%;
+    height: 100%;
+    position: fixed;
+}
+@media screen and (max-width: 768px) {
+    #right-half {
+        width: 100%;
+    }
+    #left-half {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+}

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+</head>
+
+<body>
+    <style type="text/css">
+    a {
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+    }
+
+    .btn {
+        margin: 30px 0;
+    }
+    /*.btn-hvr-arrow-effect-right*/
+
+    .btn-hvr-arrow-effect-right {
+        display: inline-block;
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        transition-property: color;
+        transition-duration: 0.3s;
+        position: relative;
+        padding: 18px 50px 18px 40px;
+        z-index: 1;
+        transition: all 0.8s ease 0s;
+        border: thin solid black;
+        color: #000;
+        min-width: 200px;
+        font-weight: 300;
+        margin: 2rem 0;
+    }
+
+    .btn-hvr-arrow-effect-right:after {
+        position: absolute;
+        content: "";
+        right: 22px;
+        top: 13px;
+        width: 40px;
+        height: 35px;
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+        background-size: auto 25px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .btn-hvr-arrow-effect-right:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+
+    .btn-hvr-arrow-effect-right:hover,
+    .btn-hvr-arrow-effect-right:focus {
+        color: white;
+    }
+
+    .btn-hvr-arrow-effect-right:hover:after,
+    .btn-hvr-arrow-effect-right:focus:after,
+    .btn-hvr-arrow-effect-right:active:after {
+        color: white;
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+        right: 10px;
+        transition: all 0.5s ease 0s;
+        background-size: auto 25px;
+    }
+
+    .btn-hvr-arrow-effect-right:hover:before,
+    .btn-hvr-arrow-effect-right:focus:before,
+    .btn-hvr-arrow-effect-right:active:before {
+        transform: scaleX(1);
+    }
+    /*.btn-hvr-arrow-effect-left*/
+
+    .btn-hvr-arrow-effect-left {
+        display: inline-block;
+        position: relative;
+        padding: 18px 40px 18px 50px;
+        z-index: 1;
+        transition: all 0.8s ease 0s;
+        border: thin solid black;
+        color: #000;
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        transition-property: color;
+        transition-duration: 0.3s;
+        min-width: 200px;
+        font-weight: 300;
+        margin: 2rem 0;
+    }
+
+    .btn-hvr-arrow-effect-left:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #2098D1;
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        background: #000;
+    }
+
+    .btn-hvr-arrow-effect-left:after {
+        position: absolute;
+        content: "";
+        left: 22px;
+        top: 13px;
+        width: 28px;
+        height: 35px;
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+        background-size: auto 25px;
+        transition: all 0.5s ease 0s;
+        transform: rotateY(-180deg)
+    }
+
+    .btn-hvr-arrow-effect-left:hover:after,
+    .btn-hvr-arrow-effect-left:focus:after {
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+        left: 10px;
+        transition: all 0.5s ease 0s;
+        background-size: auto 25px;
+    }
+
+
+    .btn-hvr-arrow-effect-left:hover:before,
+    .btn-hvr-arrow-effect-left:focus:before,
+    .btn-hvr-arrow-effect-left:active:before {
+        transform: scaleX(1);
+    }
+
+    .btn-hvr-arrow-effect-left:hover,
+    .btn-hvr-arrow-effect-left:focus,
+    .btn-hvr-arrow-effect-left:active {
+        color: white;
+    }
+    /*.btn-hvr-arrow-effect-right-inverse*/
+
+    .btn-hvr-arrow-effect-right-inverse {
+        padding: 18px 50px 18px 40px;
+        display: inline-block;
+        vertical-align: middle;
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        transition-property: color;
+        transition-duration: 0.3s;
+        border: thin solid #fff;
+        color: #fff;
+        min-width: 200px;
+        font-weight: 300;
+        margin: 2rem 0;
+    }
+
+    .btn-hvr-arrow-effect-right-inverse:hover,
+    .btn-hvr-arrow-effect-right-inverse:focus,
+    .btn-hvr-arrow-effect-right-inverse:active {
+        color: black;
+        text-decoration: none;
+    }
+
+    .btn-hvr-arrow-effect-right-inverse:after {
+        position: absolute;
+        content: "";
+        right: 22px;
+        top: 13px;
+        width: 40px;
+        height: 35px;
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-white.svg) center no-repeat;
+        background-size: auto 25px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .btn-hvr-arrow-effect-right-inverse:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+
+    .btn-hvr-arrow-effect-right-inverse:hover:after,
+    .btn-hvr-arrow-effect-right-inverse:focus:after,
+    .btn-hvr-arrow-effect-right-inverse:active:after {
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+        right: 10px;
+        transition: all 0.5s ease 0s;
+        background-size: auto 25px;
+    }
+
+    .btn-hvr-arrow-effect-right-inverse:hover:before,
+    .btn-hvr-arrow-effect-right-inverse:focus:before,
+    .btn-hvr-arrow-effect-right-inverse:active:before {
+        transform: scaleX(1);
+    }
+    /*.btn-hvr-arrow-effect-link*/
+
+    .btn-hvr-arrow-effect-link {
+        position: relative;
+        color: #000;
+        font-weight: 300;
+        margin: 2rem 0;
+    }
+
+    .btn-hvr-arrow-effect-link:hover {
+        color: #000;
+    }
+
+    .btn-hvr-arrow-effect-link:after {
+        position: absolute;
+        content: "";
+        right: -35px;
+        top: -5px;
+        width: 40px;
+        height: 35px;
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-black.svg) right center no-repeat;
+        background-size: auto 25px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .btn-hvr-arrow-effect-link:hover:after {
+        right: -47px;
+        transition: all 0.5s ease 0s;
+        background-size: auto 25px;
+    }
+    /*.btn-hvr-arrow-effect-link-inverse*/
+
+    .btn-hvr-arrow-effect-link-inverse {
+        position: relative;
+        color: #fff;
+        font-weight: 300;
+        margin: 2rem 0;
+    }
+
+    .btn-hvr-arrow-effect-link-inverse:hover {
+        color: #fff;
+    }
+
+    .btn-hvr-arrow-effect-link-inverse:after {
+        position: absolute;
+        content: "";
+        right: -35px;
+        top: -5px;
+        width: 40px;
+        height: 35px;
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+        opacity: .5;
+        background-size: auto 25px;
+        transition: all 0.5s ease 0s;
+    }
+
+    .btn-hvr-arrow-effect-link-inverse:hover:after {
+        background: url(https://www.koru.co.in/wp-content/uploads/2017/12/new-arrow-white.svg) right center no-repeat;
+        opacity: 1;
+        right: -47px;
+        transition: all 0.5s ease 0s;
+        background-size: auto 25px;
+    }
+    /*.btn-outline*/
+
+    .btn-outline-green {
+        display: inline-block;
+        font-size: 1.2em;
+        padding: 1.2em;
+        min-width: 200px;
+        background: none;
+        border: 2px solid #a9fd00;
+        color: #222;
+        text-align: center;
+        border-radius: 3px;
+        font-weight: 400;
+        margin: 2rem 0;
+        transition: all .5s;
+    }
+
+    .btn-outline-green:hover {
+        background-color: rgba(169, 253, 0, 0.2);
+        color: #000;
+    }
+    </style>
+    <style type="text/css">
+    .btn-corner-border {
+        position: relative;
+        padding: 20px 45px;
+        float: right;
+        background-color: rgba(0, 0, 0, .2);
+        box-shadow: inset 0 0 0 1px rgba(91, 118, 155, .34);
+        opacity: 1;
+        transition: all .25s ease-in-out;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .corner-upper-left {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid red;
+        border-left: 1px solid red;
+    }
+
+    .corner-upper-right {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid red;
+        border-right: 1px solid red;
+    }
+
+    .corner-bottom-right {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid red;
+        border-bottom: 1px solid red;
+    }
+
+    .corner-bottom-left {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 10px;
+        height: 10px;
+        border-bottom: 1px solid red;
+        border-left: 1px solid red;
+    }
+
+    .btn-corner-border:hover {
+        border-color: red;
+        box-shadow: inset 0 0 0 1px red;
+        opacity: 1;
+    }
+    </style>
+    <div class="container text-center">
+        <div class="row" style="padding: 10px">
+            <a href="#" class="btn-corner-border">
+                <div>Border with special</div>
+                <div class="corner-upper-right"></div>
+                <div class="corner-bottom-right"></div>
+                <div class="corner-upper-left"></div>
+                <div class="corner-bottom-left"></div>
+            </a>
+        </div>
+        <div class="row" style="padding: 10px">
+            <a href="#" class="btn-hvr-arrow-effect-link">LEARN MORE</a>
+        </div>
+        <div class="row" style="padding: 10px">
+            <a href="#" class="btn-hvr-arrow-effect-right">GET IN TOUCH&nbsp;&nbsp;</a>
+        </div>
+        <div class="row" style="padding: 10px">
+            <a href="#" class="btn-hvr-arrow-effect-left">&nbsp;&nbsp;GET IN TOUCH</a>
+        </div>
+        <div class="row" style="padding: 10px">
+            <a href="#" class="btn-outline-green">Get in touch</a>
+        </div>
+        <div class="row" style="background-color: #000; padding: 10px">
+            <a href="#" class="btn-hvr-arrow-effect-link-inverse" style="">CONTACT US</a>
+        </div>
+        <div class="row" style="background-color: #000; padding: 10px">
+            <a href="#" class="btn-hvr-arrow-effect-right-inverse">SERVICES</a>
+        </div>
+    </div>
+    <style type="text/css">
+    /* btn-blue-gradient */
+
+    .btn-blue-gradient {
+        background: linear-gradient(to right, #0045cf 0%, #5aadff 50%, #0045cf 100%);
+        color: #fff;
+        background-size: 200% auto;
+        padding: 1.2em;
+        display: block;
+        width: 100%;
+        transition: all .5s ease-in-out;
+    }
+
+    .btn-blue-gradient:hover,
+    .btn-blue-gradient:focus {
+        background-position: right center;
+        color: #fff;
+    }
+    /* btn-blue-gradient */
+
+    .btn-danger {
+        background-color: #ff0039;
+        padding: 1.2em;
+        transition: all .3s;
+    }
+
+    .btn-danger:hover,
+    .btn-danger:focus {
+        background-color: #ff0039 !important;
+        border-color: #ff0039 !important;
+        box-shadow: 0 3px 10px rgba(255, 0, 57, 0.5);
+    }
+    /* gradient-btn */
+
+    .gradient-btn {
+        background-image: linear-gradient(135deg, #2780e3, rgba(42, 176, 237, .28) 48%, rgba(42, 176, 237, .26) 49%, #2780e3);
+        background-size: 200% auto;
+        color: #fff!important;
+        display: block;
+        width: 100%;
+        padding: 1.2em;
+        transition: all .5s ease-in-out;
+    }
+
+    .gradient-btn:hover,
+    .gradient-btn:focus {
+        color: #fff!important;
+        background-position: 100%;
+        box-shadow: 0 3px 10px rgba(39, 128, 227, .5);
+    }
+    /* gradient-btn */
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" class="btn btn-blue-gradient">Get in Touch</a>
+            </div>
+            <div class="col-md-6">
+                <a href="#" class="btn btn-danger">Get It Now</a>
+            </div>
+            <div class="col-md-6">
+                <a href="#" class="btn gradient-btn">Get in Touch</a>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+    .btn-style-outline {
+        border-radius: 3px;
+        background-color: transparent;
+        border: 3px solid #fff;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 15px;
+        width: 200px;
+        transition: all 0.25s;
+        cursor: pointer;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .btn-style-outline:hover {
+        color: #FFFFFF;
+        background-color: rgba(255, 255, 255, .2);
+    }
+
+    .btn-style-outline span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .btn-style-outline span:after,
+    .btn-gradient-border span:after {
+        content: '';
+        background-image: url('https://image.flaticon.com/icons/svg/16/16049.svg');
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+        opacity: 0;
+        top: 9px;
+        right: 0;
+        transition: all 0.25s;
+    }
+
+    .btn-style-outline:hover span {
+        padding-right: 30px;
+    }
+
+    .btn-style-outline:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    </style>
+    <section class="text-center bg-danger p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" class="btn-style-outline"><span>Join Now</span></a>
+            </div>
+            <div class="col-md-6">
+                <a href="#" class="btn-style-outline"><span>Join Now</span></a>
+            </div>
+        </div>
+    </section>
+    <style type="text/css">
+    .btn-gradient-border {
+        background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+        border-radius: 30px;
+        box-sizing: border-box;
+        color: #00a84f;
+        display: inline-block;
+        height: 60px;
+        padding: 4px;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .btn-gradient-border:hover {
+        color: #fff;
+    }
+
+    .btn-gradient-border span {
+        align-items: center;
+        background: #fff;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        transition: all .3s ease-in-out;
+        width: 100%;
+    }
+
+    .btn-gradient-border:hover span {
+        background: transparent;
+    }
+    </style>
+    <section class="text-center bg-warning p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="#" class="btn-gradient-border">
+                    <span>Join Now !</span>
+                </a>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+    </section>
+    <style type="text/css">
+    .btn-tail {
+        width: 60px;
+        height: 100px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        display: block;
+    }
+
+    .btn-tail:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .btn-tail:after {
+        position: absolute;
+        top: calc(50% - 1px);
+        width: 50px;
+        height: 2px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        content: '';
+        transition: all 0.3s ease-in-out;
+    }
+
+    .btn-tail:hover:after {
+        width: 125px;
+    }
+
+    .btn-tail.btn-tail-prev:before {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 13px 8px 0;
+        border-color: transparent #fff transparent transparent;
+        left: 0;
+    }
+
+    .btn-tail.btn-tail-prev:after {
+        left: 13px;
+    }
+    </style>
+    <section class="bg-danger" style="height: 100vh; position: relative;">
+        <div class="btn-tail btn-tail-prev">
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

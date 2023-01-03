@@ -1,0 +1,24 @@
+// Bootstrap Variables
+@import "variables";
+
+$body-bg:    $gray-color;
+$body-color: $light-black-color;
+
+$brand-primary: $primary-color;
+$brand-success: $success-color;
+$brand-info: $info-color;
+$brand-warning: $warning-color;
+$brand-danger: $danger-color;
+$brand-inverse: $light-black-color;
+
+$link-hover-decoration: none;
+$font-family-base: $st-body-font;
+$headings-font-family: $st-heading-font;
+$headings-font-weight: $st-heading-font-weight;
+$headings-color: $black-color;
+$font-weight-bold: 500;
+
+$navbar-inverse-color: rgba($white-color,.8);
+$navbar-inverse-hover-color: rgba($white-color,1);
+
+@import "bootstrap-sass/bootstrap";

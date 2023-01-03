@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .section-diff-outer {
+            background-image: url(https://unsplash.it/1366/768/?random);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            padding: 100px 0;
+            background-attachment: fixed;
+            z-index: -1;
+        }
+        .section-diff-outer::after {
+            content: "";
+            height: 100%;
+            opacity: 0.65;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            z-index: -1;
+        }
+        .section-diff-pattern::before {
+            content: "";
+            background: url(section-diff.png);
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            transform: rotate(-180deg);
+        }
+        .section-diff-pattern::after {
+            content: "";
+            background: url(section-diff.png);
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+    </style>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nihil dicta itaque temporibus repellat maiores odit voluptatum labore officia ullam laboriosam, soluta harum necessitatibus beatae fuga, distinctio rem ex at?</p>
+    </div>
+    <div class="section-diff-outer text-center">
+        <div class="section-diff-pattern"></div>
+        <h2 class="text-white">text center</h2>
+    </div>
+</body>
+</html>

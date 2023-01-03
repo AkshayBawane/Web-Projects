@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<title>Document</title>
+	<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css'>
+</head>
+<style>
+	html,
+	body {
+		box-sizing: border-box;
+		height: 100%;
+	}
+</style>
+
+<body>
+	<section class="d-flex justify-content-center align-items-center h-100 text-center" style="background: lavender">
+		<div>
+			<div class="alert alert-success" role="alert"> This is ideal method use it! </div>
+			<a href='#' class="btn btn-danger">Button</a>
+		</div>
+	</section>
+	<!-- section -->
+
+	<table class="h-75 w-100 text-center" style="background-color: lavenderblush">
+		<tbody>
+			<tr>
+				<td class="align-baseline">baseline</td>
+				<td class="align-top">top</td>
+				<td class="align-middle">middle</td>
+				<td class="align-bottom">bottom</td>
+				<td class="align-text-top">text-top</td>
+				<td class="align-text-bottom">text-bottom</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- table -->
+
+	<div class="bd-example-row py-5" style="background: honeydew">
+		<style>
+			.bd-example-row .row>[class^=col-] {
+				padding-top: .75rem;
+				padding-bottom: .75rem;
+				background-color: rgba(86, 61, 124, .15);
+				border: 1px solid rgba(86, 61, 124, .2);
+			}
+
+			.bd-example-row .row+.row {
+				margin-top: 1rem;
+			}
+		</style>
+		<div class="bd-exmple">
+			<div class="container">
+				<div class="row justify-content-start">
+					<div class="col-4">
+						One of two columns
+					</div>
+					<div class="col-4">
+						One of two columns
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-4">
+						One of two columns
+					</div>
+					<div class="col-4">
+						One of two columns
+					</div>
+				</div>
+				<div class="row justify-content-end">
+					<div class="col-4">
+						One of two columns
+					</div>
+					<div class="col-4">
+						One of two columns
+					</div>
+				</div>
+				<div class="row justify-content-around">
+					<div class="col-4">
+						One of two columns
+					</div>
+					<div class="col-4">
+						One of two columns
+					</div>
+				</div>
+				<div class="row justify-content-between">
+					<div class="col-4">
+						One of two columns
+					</div>
+					<div class="col-4">
+						One of two columns
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bd-example-row -->
+
+	<div>
+		<style>
+			.cstm-row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.cstm-column {
+				/* flex: 1; */
+				width: calc(25% - 10px);
+			}
+
+			.cstm-row .cstm-column:first-child {
+				margin-right: 5px;
+				margin-bottom: 10px;
+			}
+
+			.cstm-row .cstm-column {
+				margin-left: 5px;
+				margin-right: 5px;
+				margin-bottom: 10px;
+				padding: 10px;
+				border-radius: 3px;
+				background: lavender;
+			}
+
+			.cstm-row .cstm-column:last-child {
+				margin-left: 5px;
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+
+			/* make it responsive */
+			@media only screen and (max-width: 1024px) {
+
+				.cstm-column_1,
+				.cstm-column_2,
+				.cstm-column_3,
+				.cstm-column_4 {
+					flex: 0 0 calc(50% - 10px);
+					width: calc(50% - 10px);
+				}
+			}
+
+			@media only screen and (max-width: 768px) {
+				.cstm-column_1 {
+					flex: 0 0 calc(75% - 10px);
+				}
+
+				.cstm-column_2 {
+					flex: 0 0 calc(25% - 10px);
+				}
+			}
+
+			@media only screen and (max-width: 576px) {
+
+				.cstm-column_1,
+				.cstm-column_2,
+				.cstm-column_3,
+				.cstm-column_4 {
+					flex: 0 0 100%;
+				}
+			}
+
+			/* Using ul li */
+			.cstm-row li {
+				flex: 1;
+				padding: 10px;
+				border-radius: 3px;
+				background: cornsilk;
+			}
+
+			.cstm-row li:first-child {
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+
+			.cstm-row li {
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+
+			.cstm-row li:last-child {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		</style>
+		<h4>Flex using ul li</h4>
+		<ul class="cstm-row py-5 list-unstyled">
+			<li>
+				<p>Some Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column Oome Text in Column One </p>
+			</li>
+			<li>
+				<p>Some Text in Column Two </p>
+			</li>
+			<li>
+				<p>Some Text in Column Three </p>
+			</li>
+			<li>
+				<p>Some Text in Column Two </p>
+			</li>
+		</ul>
+
+
+		<h4>Flex using div</h4>
+		<div class="cstm-row my-5">
+			<div class="cstm-column cstm-column_1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="cstm-column cstm-column_2">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="cstm-column cstm-column_3">
+				<p>Some Text in Column Three</p>
+			</div>
+			<div class="cstm-column cstm-column_4">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+		<!-- cstm-row -->
+	</div>
+
+
+	<style>
+		.cstm-grid-row-1 {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.cstm-grid-column_1 {
+			width: calc(50% - 10px);
+		}
+
+		.cstm-grid-row-1 .cstm-grid-column_1:first-child {
+			margin-right: 5px;
+			margin-bottom: 10px;
+		}
+
+		.cstm-grid-row-1 .cstm-grid-column_1 {
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 3px;
+			background: lavender;
+		}
+	</style>
+	<h4>Grid Flex-1</h4>
+	<div class="cstm-grid-row-1 my-5 h-100">
+		<div class="cstm-grid-column_1 cstm-grid-column_1-1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="cstm-grid-column_1 cstm-grid-column_1-2 p-0">
+			<div class="p-2 rounded" style="background: lightskyblue; height: calc(50% - 5px); margin-bottom: 10px;">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="p-2 rounded" style="background: deepskyblue; height: calc(50% - 5px);">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+	</div>
+	<!-- Grid Flex -->
+
+	<style>
+		.cstm-grid-row-2 {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.cstm-grid-column_2-1 {
+			width: calc(66.66% - 10px);
+		}
+
+		.cstm-grid-column_2-2 {
+			width: calc(33.33% - 10px);
+		}
+
+		.cstm-grid-row-2 .cstm-grid-column_2:first-child {
+			margin-right: 5px;
+			margin-bottom: 10px;
+		}
+
+		.cstm-grid-row-2 .cstm-grid-column_2 {
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 3px;
+		}
+	</style>
+	<h4>Grid Flex-2</h4>
+	<div class="cstm-grid-row-2 my-5 h-75">
+		<!-- Just change here height; NO need to change inner div heights -->
+		<div class="cstm-grid-column_2 cstm-grid-column_2-1 p-0">
+			<div class="p-2 rounded" style="background: lavender; height: calc(60% - 5px); margin-bottom: 10px;">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="p-2 rounded" style="background: lavender; height: calc(40% - 5px);">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+		<div class="cstm-grid-column_2 cstm-grid-column_2-2 p-0">
+			<div class="p-2 rounded" style="background: lavender; height: calc(60% - 5px); margin-bottom: 10px;">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="p-2 rounded" style="background: lavender; height: calc(40% - 5px);">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+	</div>
+	<!-- Grid Flex-2 -->
+
+
+	<style>
+		.cstm-grid-row-3 {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.cstm-grid-column_3-1,
+		.cstm-grid-column_3-3 {
+			width: calc(38% - 10px);
+		}
+
+		.cstm-grid-column_3-2 {
+			width: calc(24% - 10px);
+		}
+
+		.cstm-grid-row-3 .cstm-grid-column_3:first-child {
+			margin-right: 5px;
+			margin-bottom: 10px;
+		}
+
+		.cstm-grid-row-3 .cstm-grid-column_3 {
+			margin-left: 5px;
+			margin-right: 5px;
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 3px;
+		}
+	</style>
+	<h4>Grid Flex-3</h4>
+	<div class="cstm-grid-row-3 my-5" style="height: 150%">
+		<!-- Just change here height; NO need to change inner div heights -->
+		<div class="cstm-grid-column_3 cstm-grid-column_3-1 p-0">
+			<div class="p-2 rounded" style="background: rgb(73, 73, 211); height: calc(60% - 5px); margin-bottom: 10px;">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="p-2 rounded" style="background: rgb(29, 29, 82); height: calc(40% - 5px);">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+		<div class="cstm-grid-column_3 cstm-grid-column_3-2 p-0">
+			<div class="p-2 rounded" style="background: rgb(90, 165, 90); height: calc(60% - 5px); margin-bottom: 10px;">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="p-2 rounded" style="background: rgb(1, 119, 21); height: calc(40% - 5px);">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+		<div class="cstm-grid-column_3 cstm-grid-column_3-3 p-0">
+			<div class="p-2 rounded" style="background: rgb(156, 248, 255); height: calc(40% - 5px); margin-bottom: 10px;">
+				<p>Some Text in Column Two</p>
+			</div>
+			<div class="p-2 rounded" style="background: rgb(47, 235, 235); height: calc(60% - 5px);">
+				<p>Some Text in Column Two</p>
+			</div>
+		</div>
+	</div>
+	<!-- Grid Flex-2 -->
+
+	<div class="container my-5">
+		<h4>Using Columns</h4>
+		<div class="column-layout-1">
+			<style>
+				.column-layout-1 {
+					column-count: 2;
+					column-rule: 1px solid #e5e5e5;
+					column-gap: 60px;
+				}
+			</style>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<hr>
+
+		<div class="column-layout-2">
+			<style>
+				.column-layout-2 {
+					column-count: 3;
+					column-rule: 1px solid #e5e5e5;
+					column-gap: 60px;
+					column-fill: balance;
+				}
+			</style>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<!-- container -->
+
+	<section class="py-5" style="background: cornsilk">
+		<div class="container">
+			<h2>Cards</h2>
+			<div class="row mb-5">
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://source.unsplash.com/random/1920x1080" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://source.unsplash.com/random/1920x1080" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+						<hr class="m-0">
+						<div class="card-body">
+							<a href="#" class="card-link">Card link</a>
+							<a href="#" class="card-link">Another link</a>
+						</div>
+						<hr class="m-0">
+						<div class="card-body bg-light">
+							<div class="row no-gutters align-items-center">
+								<div class="col-6">
+									<a href="#" class="card-link">Using Col's</a>
+								</div>
+								<div class="col-6">
+									<div class="float-right">
+										<a href="#" class="btn btn-sm btn-danger">abc</a>
+										<a href="#" class="btn btn-sm btn-danger">xyz</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex card-body bg-light">
+							<div class="btn btn-sm btn-danger">Using Flex</div>
+							<div class="btn btn-sm btn-danger ml-auto">Search</div>
+							<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-start card-body bg-light">
+							<div class="btn btn-sm btn-danger">Using Flex</div>
+							<div class="btn btn-sm btn-danger ml-2">Search</div>
+							<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-center card-body bg-light">
+							<div class="btn btn-sm btn-danger">Using Flex</div>
+							<div class="btn btn-sm btn-danger ml-2">Search</div>
+							<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-end card-body bg-light">
+							<div class="btn btn-sm btn-danger">Using Flex</div>
+							<div class="btn btn-sm btn-danger ml-2">Search</div>
+							<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-around card-body bg-light">
+							<div class="btn btn-sm btn-danger">Using Flex</div>
+							<div class="btn btn-sm btn-danger ml-2">Search</div>
+							<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-between card-body bg-light">
+							<div class="btn btn-sm btn-danger">Using Flex</div>
+							<div class="btn btn-sm btn-danger ml-2">Search</div>
+							<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-end cstm-flex-1 card-body bg-light">
+							<style>
+								.cstm-flex-1>div {
+									flex: 1;
+								}
+							</style>
+							<div class="card-link btn btn-sm btn-danger">Using Flex</div>
+							<div class="card-link btn btn-sm btn-danger">Search</div>
+							<div class="card-link btn btn btn-sm btn-dark">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-end cstm-flex-2 card-body bg-light">
+							<style>
+								.cstm-flex-2>div {
+									flex: 1;
+								}
+
+								.cstm-flex-2>.search {
+									flex: 2;
+								}
+							</style>
+							<div class="card-link home btn btn-sm btn-danger">Home</div>
+							<div class="card-link search btn btn-sm btn-danger">Dbl Search</div>
+							<div class="card-link logout btn btn btn-sm btn-dark">Logout</div>
+						</div>
+						<hr class="m-0">
+						<div class="d-flex justify-content-end cstm-flex-3 card-body bg-light">
+							<style>
+								.cstm-flex-3>.search {
+									flex: 2;
+								}
+							</style>
+							<div class="card-link home btn btn-sm btn-danger">Home</div>
+							<div class="card-link search btn btn-sm btn-danger">Dbl Search</div>
+							<div class="card-link logout btn btn btn-sm btn-dark">Logout</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img src="https://source.unsplash.com/random/1920x1080" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row -->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card mb-3">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-4">
+								<img src="https://source.unsplash.com/random/600x800" class="card-img" alt="...">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card mb-3">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-4">
+								<img src="https://source.unsplash.com/random/600x800" class="card-img" alt="...">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- row -->
+		</div>
+		<!-- container -->
+	</section>
+
+	<section class="py-5" style="background: honeydew">
+		<div class="container p-0">
+			<div class="card-body">
+				<a href="#" class="card-link">Card link</a>
+				<a href="#" class="card-link">Another link</a>
+			</div>
+			<hr class="m-0">
+			<div class="card-body">
+				<div class="row no-gutters align-items-center">
+					<div class="col-6">
+						<a href="#" class="card-link">Using Col's</a>
+					</div>
+					<div class="col-6">
+						<div class="float-right">
+							<a href="#" class="btn btn-sm btn-danger">abc</a>
+							<a href="#" class="btn btn-sm btn-danger">xyz</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex card-body">
+				<div class="btn btn-sm btn-danger">Using Flex</div>
+				<div class="btn btn-sm btn-danger ml-auto">Search</div>
+				<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-start card-body">
+				<div class="btn btn-sm btn-danger">Using Flex</div>
+				<div class="btn btn-sm btn-danger ml-2">Search</div>
+				<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-center card-body">
+				<div class="btn btn-sm btn-danger">Using Flex</div>
+				<div class="btn btn-sm btn-danger ml-2">Search</div>
+				<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-end card-body">
+				<div class="btn btn-sm btn-danger">Using Flex</div>
+				<div class="btn btn-sm btn-danger ml-2">Search</div>
+				<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-around card-body">
+				<div class="btn btn-sm btn-danger">Using Flex</div>
+				<div class="btn btn-sm btn-danger ml-2">Search</div>
+				<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-between card-body">
+				<div class="btn btn-sm btn-danger">Using Flex</div>
+				<div class="btn btn-sm btn-danger ml-2">Search</div>
+				<div class="btn btn btn-sm btn-dark ml-2">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-end cstm-flex-1 card-body">
+				<style>
+					.cstm-flex-1>div {
+						flex: 1;
+					}
+				</style>
+				<div class="card-link btn btn-sm btn-danger">Using Flex</div>
+				<div class="card-link btn btn-sm btn-danger">Search</div>
+				<div class="card-link btn btn btn-sm btn-dark">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-end cstm-flex-2 card-body">
+				<style>
+					.cstm-flex-2>div {
+						flex: 1;
+					}
+
+					.cstm-flex-2>.search {
+						flex: 2;
+					}
+				</style>
+				<div class="card-link home btn btn-sm btn-danger">Home</div>
+				<div class="card-link search btn btn-sm btn-danger">Dbl Search</div>
+				<div class="card-link logout btn btn btn-sm btn-dark">Logout</div>
+			</div>
+			<hr class="m-0">
+			<div class="d-flex justify-content-end cstm-flex-3 card-body">
+				<style>
+					.cstm-flex-3>.search {
+						flex: 2;
+					}
+				</style>
+				<div class="card-link home btn btn-sm btn-danger">Home</div>
+				<div class="card-link search btn btn-sm btn-danger">Dbl Search</div>
+				<div class="card-link logout btn btn btn-sm btn-dark">Logout</div>
+			</div>
+
+			<style>
+				.flex-container {
+					padding: 0;
+					margin: 0;
+					list-style: none;
+					/* height: 200px; */
+					-ms-box-orient: horizontal;
+					display: flex;
+					justify-content: space-around;
+					flex-flow: row wrap;
+					align-items: stretch;
+				}
+
+				.header,
+				.footer  { flex: 1 100%; }
+				.sidebar { flex: 1; }
+				.main    { flex: 2; }
+
+				.flex-item {
+					background: tomato;
+					padding: 10px;
+					width: 100px;
+					border: 3px solid rgba(0,0,0,.2);
+					color: white;
+					font-weight: bold;
+					font-size: 2em;
+					text-align: center;
+				}
+			</style>
+			<ul class="flex-container">
+				<li class="flex-item header">Structure using li</li>
+				<li class="flex-item sidebar">Sidebar</li>
+				<li class="flex-item main">Main</li>
+				<li class="flex-item sidebar">Sidebar</li>
+				<li class="flex-item footer">Footer</li>
+			</ul>
+		</div>
+		<!-- container -->
+	</section>
+
+	<section class="h-75" style="background: lavender">
+		<div class="d-flex h-100 card-body">
+			<div class="p-3 home bg-danger text-white m-auto">Home</div>
+		</div>
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavenderblush">
+		<div class="container h-100">
+			<div class="d-flex justify-content-center card-body">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavender">
+		<div class="container h-100">
+			<div class="d-flex align-items-start card-body">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavenderblush">
+		<div class="container h-100">
+			<div class="d-flex align-items-start card-body">
+				<div class="p-3 home bg-danger text-white mr-auto">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavender">
+		<div class="container h-100">
+			<div class="d-flex align-items-start card-body">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white ml-auto">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavenderblush">
+		<div class="container h-100">
+			<div class="d-flex h-100 align-items-end card-body">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavender">
+		<div class="container h-100">
+			<div class="d-flex h-100 align-items-center card-body">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavenderblush">
+		<div class="container h-100">
+			<div class="d-flex h-100 card-body">
+				<div class="p-3 home bg-danger text-white align-self-start">Home</div>
+				<div class="p-3 search bg-dark text-white align-self-center">Search</div>
+				<div class="p-3 logout bg-info text-white align-self-end">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<hr class="m-0">
+	<a href="https://the-echoplex.net/flexyboxes/?fixed-height=on&display=flex&flex-direction=column&flex-wrap=nowrap&justify-content=space-between&align-items=flex-start&align-content=flex-end&order%5B%5D=0&flex-grow%5B%5D=0&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=auto&order%5B%5D=0&flex-grow%5B%5D=0&flex-shrink%5B%5D=1&flex-basis%5B%5D=auto&align-self%5B%5D=flex-start">Link</a>
+	<section class="h-75" style="background: lavender">
+		<div class="container h-100">
+			<div class="d-flex h-100 card-body flex-column flex-nowrap justify-content-between align-content-end align-items-start">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="h-75" style="background: lavenderblush">
+		<div class="container h-100">
+			<div class="d-flex h-100 card-body flex-column flex-nowrap justify-content-between align-content-end align-items-start">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white my-auto">Logout</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="h-75" style="background: lavender">
+		<div class="container h-100">
+			<div class="d-flex h-100 card-body flex-column flex-nowrap justify-content-between align-content-end align-items-start">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white mt-auto">Logout</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="m-0">
+	<section class="h-75" style="background: lavenderblush">
+		<div class="container h-100">
+			<div class="d-flex h-100 card-body" style="flex-direction: column;">
+				<div class="p-3 home bg-danger text-white align-self-start">Home</div>
+				<div class="p-3 search bg-dark text-white align-self-center">Search</div>
+				<div class="p-3 logout bg-info text-white align-self-end">Logout</div>
+			</div>
+		</div>
+		<!-- container -->
+	</section>
+
+	<h2>Vertical Align</h2>
+	<hr class="m-0">
+	<section class="h-75" style="background: lavender">
+		<div class="container h-100">
+			<div class="d-flex h-100 card-body justify-content-end align-items-end">
+				<div class="p-3 home bg-danger text-white">Home</div>
+				<div class="p-3 search bg-dark text-white">Search</div>
+				<div class="p-3 logout bg-info text-white">Logout</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="row h-100 no-gutters">
+		<div class="col-md-6">
+			<section class="h-100 d-flex align-items-center" style="background: url('https://source.unsplash.com/random/1920x1080'); background-size: cover">
+				<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic a ipsum, sequi consequatur modi quaerat recusandae ut labore aperiam iusto quidem ex ab nisi perferendis omnis in error distinctio.</h2>
+			</section>
+		</div>
+		<div class="col-md-6">
+			<section class="h-100 d-flex align-items-end" style="background: url('https://source.unsplash.com/random/1920x1080'); background-size: cover">
+				<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus hic a ipsum, sequi consequatur modi quaerat recusandae ut labore aperiam iusto quidem ex ab nisi perferendis omnis in error distinctio.</h2>
+			</section>
+		</div>
+	</div>
+
+	<div class="row h-100 no-gutters justify-content-between mt-5">
+		<div class="d-flex align-items-center p-3" style="background: url('https://source.unsplash.com/1920x1080/?nature,water'); background-size: cover; height: 50vh; width: 50vh; overflow: hidden;">
+			<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor.</h2>
+		</div>
+		<div class="d-flex align-items-center p-3" style="background: url('https://source.unsplash.com/1920x1080/?nature,water'); background-size: cover; height: 50vh; width: 50vh; overflow: hidden;">
+			<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor.</h2>
+		</div>
+		<div class="d-flex align-items-center p-3" style="background: url('https://source.unsplash.com/1920x1080/?nature,water'); background-size: cover; height: 50vh; width: 50vh; overflow: hidden;">
+			<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor.</h2>
+		</div>
+		<div class="d-flex align-items-center p-3" style="background: url('https://source.unsplash.com/1920x1080/?nature,water'); background-size: cover; height: 50vh; width: 50vh; overflow: hidden;">
+			<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor.</h2>
+		</div>
+	</div>
+
+	<div class="row h-100 no-gutters justify-content-between mt-5">
+		<div class="d-flex w-100 align-items-center p-3" style="background: url('https://source.unsplash.com/1920x1080/?nature,water'); background-size: cover; overflow: hidden;">
+			<h2 class="p-3 m-auto" style="background: rgba(255, 17, 255, 0.568); color: rgb(255, 255, 255)">Lorem ipsum dolor.</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<h3 style="background: lavenderblush">Div 1</h3>
+		</div>
+		<div class="col-md-6" style="order: 3">
+			<h3 style="background: pink">Div 2</h3>
+		</div>
+		<div class="col-md-6">
+			<h3 style="background: lightgoldenrodyellow">Div 3</h3>
+		</div>
+	</div>
+	<hr>
+	<div style="display: flex; flex-wrap: wrap;">
+		<div style="flex: 0 0 50%; max-width: 50%;">
+			<h3 style="background: lavenderblush">Div 1</h3>
+		</div>
+		<div style="flex: 0 0 50%; max-width: 50%; order: 3">
+			<h3 style="background: pink">Div 2</h3>
+		</div>
+		<div style="flex: 0 0 50%; max-width: 50%;">
+			<h3 style="background: lightgoldenrodyellow">Div 3</h3>
+		</div>
+	</div>
+	<hr class="clear-floats clearfix">
+
+	<style>
+		.outer-class ol {
+			counter-reset: my-awesome-counter;
+			list-style: none;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); /* Change this % to change the output */
+			grid-auto-flow: row;
+		}
+		.outer-class ol li {
+			margin: 0 0 0.5rem 0;
+			counter-increment: my-awesome-counter;
+			position: relative;
+			color: black;
+			padding: 1em;
+			border-radius: 50%;
+		}
+		.outer-class ol li::before {
+			content: counter(my-awesome-counter);
+			color: #fff;
+			background: #0C82AA;
+			border-radius: 50%;
+			max-width: 20px;
+			padding: 0.5em 0.75em;
+			margin: 0 0.5em 0 0;
+		}
+		.align-by-column-wise ol {
+			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  			grid-auto-flow: column;
+		}
+	</style>
+	<section class="outer-class align-by-row-wise">
+		<h3>align-by-row-wise</h3>
+		<div class="extra">
+			<ol>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+			</ol>
+		</div>
+	</section>
+	<hr>
+	<section class="outer-class align-by-column-wise">
+		<h3>align-by-column-wise</h3>
+		<div class="extra">
+			<ol>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+				<li>Surgical</li>
+			</ol>
+		</div>
+	</section>
+
+	<style>
+		#col {
+			column-count: 2;
+		}
+	</style>
+	<div id="col">
+		<h4>
+			DIV 1. <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+			sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua.</p>
+		</h4>
+		<h4>
+			DIV 2. <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</h4>
+		<h4>
+			DIV 3. <p>Duis aute irure dolor in reprehenderit in voluptate velit
+			esse cillum dolore eu fugiat nulla pariatur.</p>
+		</h4>
+		<h4>
+			DIV 4. <p>Excepteur sint occaecat cupidatat non proident, sunt in
+			culpa qui officia deserunt mollit anim id est laborum.</p>
+		</h4>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>

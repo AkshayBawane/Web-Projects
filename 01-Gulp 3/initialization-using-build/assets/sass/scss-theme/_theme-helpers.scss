@@ -1,0 +1,391 @@
+/* ——————————————————————————————————————————————————
+	helpers.scss
+—————————————————————————————————————————————————— */
+// Google Web Fonts
+.font-dosis            { font-family: 'Dosis', sans-serif}
+.font-roboto           { font-family: 'Roboto', sans-serif}
+.font-raleway          { font-family: 'Raleway', sans-serif}
+.font-poppins          { font-family: 'Poppins', sans-serif}
+.font-josefin          { font-family: 'Josefin Sans', sans-serif}
+.font-roboto-condensed { font-family: 'Roboto Condensed', sans-serif}
+.font-nunito           { font-family: 'Nunito', sans-serif}
+
+// Handwriting Font
+.font-tangerine        { font-family: 'Tangerine', sans-serif}
+.font-alex-brush       { font-family: 'Alex Brush', sans-serif}
+
+// Dynamic Class Loading
+// https://www.addwebsolution.com/blog/generate-dynamic-classes-width-margin-padding-etc-using-scss
+// https://codepen.io/jasonjlock/pen/glkKw
+
+// Font Weight
+.fw-lighter { font-weight: var(--fw-lighter)}
+.fw-light { font-weight: var(--fw-light)}
+.fw-normal, .fw-regular { font-weight: var(--fw-normal)}
+.fw-bold { font-weight: var(--fw-bold)}
+.fw-bolder { font-weight: var(--fw-bolder)}
+
+// Transform
+.flip-x         { transform: scaleX(-1)}
+.rotateY-min-90 { transform: rotate(-90deg); }
+.hover-45:hover { transform: rotate(45deg); transition: all .3s ease; }
+.hover-90:hover { transform: rotate(90deg); transition: all .3s ease; }
+
+// Typography
+.text-decoration-none { text-decoration: none}
+.text-shadow-none { text-shadow: none}
+.border-none { border: none}
+
+// Neon Text
+.neon-text-1 { text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 15px #00d4ff, 0 0 20px #00d4ff, 0 0 25px #00d4ff, 0 0 30px #00d4ff; }
+.neon-text-2 { text-shadow: 0 0 5px #00ff66, 0 0 10px #00ff66, 0 0 15px #00ff66, 0 0 20px #00ff66, 0 0 25px #00ff66, 0 0 30px #00ff66; }
+.neon-text-3 { text-shadow: 0 0 5px #ff0066, 0 0 10px #ff0066, 0 0 15px #ff0066, 0 0 20px #ff0066, 0 0 25px #ff0066, 0 0 30px #ff0066; }
+.neon-text-4 { text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 15px #ffff00, 0 0 20px #ffff00, 0 0 25px #ffff00, 0 0 30px #ffff00; }
+.neon-text-5 { text-shadow: 0 0 5px #FF00FF, 0 0 10px #FF00FF, 0 0 15px #FF00FF, 0 0 20px #FF00FF, 0 0 25px #FF00FF, 0 0 30px #FF00FF; }
+
+// Gradient Text Animation
+.text-grad-1 {
+    color: #ff0000;
+    background: linear-gradient(to right, rgba(0, 24, 123, 1) 0%, rgba(236, 0, 185, 1) 27%, rgba(182, 0, 236, 1) 52%, rgba(0, 236, 227, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 800% 800%;
+    animation: text-grad-1 30s ease infinite;
+    @keyframes text-grad-1 {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+}
+
+// Box Shadow Classes
+.box-shadow-1 { box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); }
+.box-shadow-2 { box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); }
+
+// Utility Classes
+.o-auto     { overflow: auto!important; }
+.o-hidden   { overflow: hidden}
+.o-x-hidden { overflow-x: hidden}
+.o-y-hidden { overflow-y: hidden}
+.o-x-scroll { overflow-x: scroll}
+.o-y-scroll { overflow-y: scroll}
+
+// Rounded Button
+.btn-sm-rounded { border-radius: 1.2rem; line-height: 1.2}
+.btn-rounded    { border-radius: 1.25rem; line-height: 1.25}
+.btn-lg-rounded { border-radius: 2rem; line-height: 2}
+
+// Position Classes
+.pos-fixed    { position: fixed}
+.pos-static   { position: static}
+.pos-inherit  { position: inherit}
+.pos-absolute { position: absolute}
+.pos-relative { position: relative}
+
+.top-0        { top: 0}
+.top-10       { top: 10px}
+.top-15       { top: 15px}
+.top-25       { top: 25px}
+.top--25      { top: 25%}
+.top--30      { top: 30%}
+.top--50      { top: 50%}
+.left-0       { left: 0}
+.left--30     { left: 30%}
+.left--50     { left: 50%}
+.right-0      { right: 0}
+.right-10     { right: 10px}
+.right-15     { right: 15px}
+.right-25     { right: 25px}
+.right--25    { right: 25%}
+.bottom-0     { bottom: 0}
+.bottom-25    { bottom: 25px}
+.bottom-50    { bottom: 50px}
+.bottom--25   { bottom: 25%}
+.bottom-100   { bottom: 100px}
+
+// Mouse Cursor
+.cursor-none      { cursor: none}
+.cursor-grab      { cursor: grab}
+.cursor-pointer   { cursor: pointer}
+.cursor-grabbing  { cursor: grabbing}
+.cursor-progress  { cursor: progress}
+.cursor-crosshair { cursor: crosshair}
+
+.border-rad-0 { border-radius: 0}
+
+.bg-transparent { background-color: transparent}
+.bg-cover     { background-size: cover}
+.bg-contain   { background-size: contain}
+.bg-fixed     {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bg-img-100 {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg-img-thumbnail {
+    padding: 0.25rem;
+    background-color: #f2f2f2;
+    border: .25rem solid #ddd;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+.pos-absolute-center {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
+.pos-center {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.bg-pos-center {
+    background-position: 50% 50%;
+}
+
+// Horizontal Line
+.hr-line-em {
+   border-top: 1px solid #8c8b8b;
+   border-bottom: 1px solid #fff;
+}
+.hr-db-line-em {
+   border-top: 1px solid #8c8b8b;
+   border-bottom: 1px solid #fff;
+   &:after {
+       content: '';
+       display: block;
+       margin-top: 2px;
+       border-top: 1px solid #8c8b8b;
+       border-bottom: 1px solid #fff;
+   }
+}
+.hr-dashed-em {
+   border-top: 1px dashed #8c8b8b;
+   border-bottom: 1px dashed #fff;
+}
+.hr-gradient-center {
+    display: block;
+    margin: 1rem 0;
+    border:none;
+    height:1px;
+    background: linear-gradient(to left, rgba(255,255,255,0) 0%,rgba(250,250,250,0) 1%,rgba(0,0,0,1) 50%,rgba(255,255,255,0) 100%);
+}
+.hr-gradient-l2r {
+   margin: 1rem 0;
+   border:none;
+   height:1px;
+   background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 1%,rgba(0,0,0,1) 25%,rgba(255,255,255,0) 55%);
+}
+.hr-gradient-r2l {
+   margin: 1rem 0;
+   border:none;
+   height:1px;
+   background: linear-gradient(to right, rgba(255,255,255,0) 45%,rgba(0,0,0,1) 75%,rgba(0,0,0,1) 100%);
+}
+// END Horizontal Line
+
+// Gradient buttons
+.gradient-btn {
+    background-size: 200% auto;
+    color: #fff;
+    &:hover {
+        color: #fff;
+        transition: all 1s ease;
+        background-position: right center;
+        box-shadow: 0 3px 10px rgba(39,128,227,.5);
+    }
+}
+.gradient-btn-flash-info {
+    &:hover {
+        box-shadow: 0 3px 10px rgba(39,128,227,.5);
+    }
+}
+.gradient-btn-1 { background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%); }
+.gradient-btn-2 { background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%); }
+.gradient-btn-3 { background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%); }
+.gradient-btn-4 { background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%); }
+.gradient-btn-5 { background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%); }
+.gradient-btn-6 { background-image: linear-gradient(90deg,#00ffd2 0,#7d5cff 51%,#00ffd2); }
+.gradient-btn-flash-info { background-image: linear-gradient(135deg, #2780e3 0%,rgba(42,176,237,0.28) 48%,rgba(42,176,237,0.26) 49%,#2780e3 100%); }
+.gradient-btn-flash-danger { background-image: linear-gradient(135deg, #ff0039 0%,rgba(255, 0, 57, 0.3) 48%,rgba(255, 0, 57, .3) 49%,#ff0039 100%); }
+
+/*———————————————————————————————————————————————
+# Overlay
+———————————————————————————————————————————————*/
+// Dark Overlay
+.dark-olay {
+    &-1 { background: rgba(0, 0, 0, 0.1)}
+    &-2 { background: rgba(0, 0, 0, 0.2)}
+    &-3 { background: rgba(0, 0, 0, 0.3)}
+    &-4 { background: rgba(0, 0, 0, 0.4)}
+    &-5 { background: rgba(0, 0, 0, 0.5)}
+    &-6 { background: rgba(0, 0, 0, 0.6)}
+    &-7 { background: rgba(0, 0, 0, 0.7)}
+    &-8 { background: rgba(0, 0, 0, 0.8)}
+    &-9 { background: rgba(0, 0, 0, 0.9)}
+}
+
+// Light Overlay
+.light-olay {
+    &-1 { background: rgba(255, 255, 255, 0.1)}
+    &-2 { background: rgba(255, 255, 255, 0.2)}
+    &-3 { background: rgba(255, 255, 255, 0.3)}
+    &-4 { background: rgba(255, 255, 255, 0.4)}
+    &-5 { background: rgba(255, 255, 255, 0.5)}
+    &-6 { background: rgba(255, 255, 255, 0.6)}
+    &-7 { background: rgba(255, 255, 255, 0.7)}
+    &-8 { background: rgba(255, 255, 255, 0.8)}
+    &-9 { background: rgba(255, 255, 255, 0.9)}
+}
+
+/*———————————————————————————————————————————————
+# Spacing Classes
+———————————————————————————————————————————————*/
+$spaceamounts: (10, 15, 20, 25, 30);
+$sides: (top, bottom, left, right, all);
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        @if $side == 'all' {
+            .m-#{$space} {
+                margin: #{$space}px;
+            }
+            .p-#{$space} {
+                padding: #{$space}px;
+            }
+            } @else {
+            .m#{str-slice($side, 0, 1)}-#{$space} {
+                margin-#{$side}: #{$space}px;
+            }
+
+            .p#{str-slice($side, 0, 1)}-#{$space} {
+                padding-#{$side}: #{$space}px;
+            }
+        }
+    }
+}
+
+$verticalspace: 50;
+@while $verticalspace > 5    {
+    .py-#{$verticalspace}, .ptb-#{$verticalspace} { padding-top: #{$verticalspace}px; padding-bottom: #{$verticalspace}px}
+    .my-#{$verticalspace}, .mtb-#{$verticalspace} { margin-top: #{$verticalspace}px; margin-bottom: #{$verticalspace}px}
+    // .m-#{$verticalspace} { margin: $verticalspace;}
+    // .mt-#{$verticalspace} { margin-top: $verticalspace;}
+    // .mb-#{$verticalspace} { margin-bottom: $verticalspace;}
+    // .p-#{$verticalspace} { padding: $verticalspace;}
+    // .pt-#{$verticalspace} { padding-top: $verticalspace;}
+    // .pb-#{$verticalspace} { padding-bottom: $verticalspace;}
+    $verticalspace: $verticalspace - 5;
+}
+/*———————————————————————————————————————————————
+# HEIGHT & WIDTH
+———————————————————————————————————————————————*/
+.h {
+    &-1  { height: 1px}
+    &-2  { height: 2px}
+    &-3  { height: 3px}
+    &-4  { height: 4px}
+    &-5  { height: 5px}
+}
+
+// Width in percent
+// .w-auto { width: auto}
+// .w {
+//     &--10 { width: 10%}
+//     &--15 { width: 15%}
+//     &--20 { width: 20%}
+//     &--25 { width: 25%}
+//     &--30 { width: 30%}
+//     &--35 { width: 35%}
+//     &--40 { width: 40%}
+//     &--45 { width: 45%}
+//     &--50 { width: 50%}
+//     &--55 { width: 55%}
+//     &--60 { width: 60%}
+//     &--65 { width: 65%}
+//     &--70 { width: 70%}
+//     &--75 { width: 75%}
+//     &--80 { width: 80%}
+//     &--85 { width: 85%}
+//     &--90 { width: 90%}
+//     &--95 { width: 95%}
+// }
+// Opacity
+// .opacity {
+//     &-n  { opacity: 0}
+//     &-5  { opacity: .5}
+//     &-10 { opacity: .10}
+//     &-15 { opacity: .15}
+//     &-20 { opacity: .20}
+//     &-25 { opacity: .25}
+//     &-30 { opacity: .30}
+//     &-35 { opacity: .35}
+//     &-40 { opacity: .40}
+//     &-45 { opacity: .45}
+//     &-50 { opacity: .50}
+//     &-55 { opacity: .55}
+//     &-60 { opacity: .60}
+//     &-65 { opacity: .65}
+//     &-70 { opacity: .70}
+//     &-75 { opacity: .75}
+//     &-80 { opacity: .80}
+//     &-85 { opacity: .85}
+//     &-90 { opacity: .90}
+//     &-95 { opacity: .95}
+//     &-100 { opacity: 1}
+// }
+
+/*———————————————————————————————————————————————
+# ANIMATIONS
+———————————————————————————————————————————————*/
+// Floating item in air
+.floating-item {
+    animation: floating-item 5s -1s infinite;
+}
+@keyframes floating-item {
+    0%, 100% {
+        transform: translateY(-5%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+}
+
+// Swinging Bell
+.fa-bell-o, .fa-bell {
+    animation: bell 8s .5s ease-in-out 3;
+    transform-origin: 50% 4px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bell {
+    0% {transform: rotate(0); } 1% {transform: rotate(30deg); } 3% {transform: rotate(-28deg); } 5% {transform: rotate(34deg); } 7% {transform: rotate(-32deg); } 9% {transform: rotate(30deg); } 11% {transform: rotate(-28deg); } 13% {transform: rotate(26deg); } 15% {transform: rotate(-24deg); } 17% {transform: rotate(22deg); } 19% {transform: rotate(-20deg); } 21% {transform: rotate(18deg); } 23% {transform: rotate(-16deg); } 25% {transform: rotate(14deg); } 27% {transform: rotate(-12deg); } 29% {transform: rotate(10deg); } 31% {transform: rotate(-8deg); } 33% {transform: rotate(6deg); } 35% {transform: rotate(-4deg); } 37% {transform: rotate(2deg); } 39% {transform: rotate(-1deg); } 41% {transform: rotate(1deg); } 43% {transform: rotate(0); } 100% {transform: rotate(0);
+    }
+}
+
+
+
+
+
+*:focus { outline: 0; box-shadow: none;}
+.float-left, .pull-left { float: left;}
+.float-right, .pull-right { float: right;}
+.clear_both { display: block; clear: both; content: "";}
+
+.text-primary, .text-blue, .text-link { color: #428bca; background-color: transparent;}
+
+.pos-relative, .position-relative { position: relative;}
+
+.border-rounded { border-radius: 3px;}
+
+.table-responsive { display: block; width: 100%; overflow-x: auto;}
+
+.bg-transparent { background-color: transparent;}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Coming Soon Responsive Templates">
+    <meta name="keywords" content="HTML,CSS,Web,Responsive,Templates">
+    <meta name="author" content="Galacticlab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LaunchPad | Ultimate & Innovative Coming Soon Template</title>
+
+    <!-- ========== COMMON CSS ========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+
+	<!-- ========== PAGE CSS ========== -->
+
+	<!-- ========== THEME CSS ========== -->
+    <link rel="stylesheet" href="css/main.min.css" media="screen">
+    <link rel="stylesheet" href="css/social-icons/social-icons.css">
+
+	<!-- ========== MODERNIZR ========== -->
+	<script src="js/modernizr/modernizr.min.js"></script>
+</head>
+
+<body>
+    <div class="inner-body">
+        <div class="bg-img-100vh o-hidden" style="background-image: url(images/christmas/1920-2488377-christmas.jpg);">
+            <div class="centered-text-css w-100 text-center">
+                <h1 class="fs--6 fs-sm--5 fw-500 text-white font-tangerine neon-text-1 lh--4">Days to go for</h1>
+                <span id="clock" class="fs--6 fs-sm--5 d-block font-tangerine rounded p-20 text-cyan"></span>
+                <h1 class="fs--6 fs-sm--5 fw-500 text-white font-tangerine neon-text-1 lh--4 ls-5">Christmas</h1>
+            </div>
+            <div id="particles-js" class="dark-olay-1 h--100vh"></div>
+        </div>
+    </div>
+    <!-- inner-body -->
+
+	<!-- ========== Common JS ========== -->
+    <script src="js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap/tether.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+	<!-- ========== Page JS ========== -->
+    <script src="js/particlejs/particles.min.js"></script>
+    <script src="js/jquery.countdown/jquery.countdown.js"></script>
+
+	<!-- ========== Theme JS ========== -->
+    <script src="js/main.js"></script>
+    <script src="js/social-icons/social-icons.js"></script>
+
+	<!-- ========== CUSTOM JS CODE ========== -->
+    
+    <script>
+        // Particles animation
+        particlesJS.load('particles-js', 'js/particlejs/particlesjs-config-snow.json', function() {
+            console.log('Particles loaded');
+        });
+
+        $('#clock').countdown('2017/12/25', function(event) {
+          var $this = $(this).html(event.strftime(''
+            + '<span>%D</span> days '
+            + '<span>%H</span> hr '
+            + '<span>%M</span> min '
+            + '<span>%S</span> sec'));
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.square {
+	position: relative;
+	width: 50%;
+	border: 1px solid red;
+
+	&:after {
+		content: "";
+		display: block;
+		padding-bottom: 100%; // For Square content;
+		// padding-top: 66.66%; // 3:2 Aspect Ratio (divide 2 by 3 = 0.6666)
+		// padding-top: 75%; // 4:3 Aspect Ratio (divide 3 by 4 = 0.75)
+	}
+
+	.square-inner {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}

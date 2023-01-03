@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        .mask-1 {
+            -webkit-mask-image: url(http://informex-html.rovadex.com/assets/img/mask2.svg);
+            mask-image: url(http://informex-html.rovadex.com/assets/img/mask2.svg);
+            -webkit-mask-position: center;
+            mask-position: center;
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+
+        .mask-3 {
+            -webkit-mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 50%);
+            mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 50%);
+        }
+    </style>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="https://source.unsplash.com/random/1920x1080" alt="img" class="img-fluid mask-1">
+            </div>
+            <div class="col-md-6">
+                <img src="https://source.unsplash.com/random/900x900" alt="img" class="img-fluid mask-3">
+            </div>
+        </div>
+
+        <div class="row">
+            <style>
+                .mask-2 {
+                    margin: 20px auto;
+                    display: block;
+                    width: 100%;
+                    height: 400px;
+                    -webkit-mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+                    mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+                    -webkit-mask-position: center center;
+                    mask-position: center center;
+                    -webkit-mask-repeat: no-repeat;
+                    mask-repeat: no-repeat;
+                }
+            </style>
+            <div class="col-md-6">
+                <div class="img-slide">
+                    <img src="http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/field.jpg" alt="" class="img-fluid mask-2">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <style>
+                #bg-blend-mode { 
+                    width: 400px;
+                    height: 400px;
+                    background-repeat: no-repeat, repeat;
+                    background-image: url("http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg"), url("http://informex-html.rovadex.com/assets/img/effect-1.svg");
+                    /* background-image: url("http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg"), url("http://themes.galacticlab.com/html-cloud/launchpad/images/logo/animat-rocket-color.gif"); */
+                    /* background-image: url("http://informex-html.rovadex.com/assets/img/effect-team-1.png"), url("https://www.w3schools.com/cssref/paper.gif"); */
+                    /* background-image: url("https://www.w3schools.com/cssref/img_tree.gif"), url("http://informex-html.rovadex.com/assets/img/effect-1.svg"); */
+                    background-blend-mode: multiply;
+                    /* background-blend-mode: lighten; */
+                }
+                </style>
+                <div id="bg-blend-mode"></div>
+            </div>
+        </div>
+        <div>
+            <style>
+                .img-overlay {
+                    position: relative;
+                    background-repeat: no-repeat;
+                }
+                .img-overlay::after {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: radial-gradient(circle at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 80%, #ffffff 100%);
+                    content: '';
+                    z-index: 0;
+                }
+            </style>
+            <img src="http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg" alt="" srcset="" class="img-fluid tint">
+            <div style="background-image: url(https://source.unsplash.com/random/500x500/?face)" class="img-overlay">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <style>
+                .tint {
+                    position: relative;
+                }
+                .tint:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0,255,255, 0.1);
+                }
+                .tint-1:before {
+                    right: 0;
+                    background: radial-gradient(circle at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 80%, #ffffff 100%);
+                }
+            </style>
+            <div class="col-md-6">
+                <figure class="tint"><img src="http://themes.galacticlab.com/html-cloud/launchpad/images/1920-2558666-laptop.jpg" alt="" class="img-fluid"></figure>
+                <figure class="tint tint-1"><img src="https://source.unsplash.com/random/500x500/?face" alt=""></figure>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+</body>
+</html>

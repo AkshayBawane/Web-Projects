@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+</head>
+<body>
+    <style>
+        .pageOption {
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            width: 40em; height: 27em;
+        }
+        .option, .option img { width: 100%; height: 100%; }
+        .option {
+            overflow: hidden;
+            position: absolute;
+            transform: skewX(-55.98deg);
+        }
+        .option:first-child {
+            left: -.25em;
+            transform-origin: 100% 0;
+        }
+        .option:last-child {
+            right: -.25em;
+            transform-origin: 0 100%;
+        }
+        .option img { opacity: .75; transition: .5s; }
+        .option img:hover { opacity: 1; }
+        .option img, .option:after {
+            transform: skewX(55.98deg);
+            transform-origin: inherit;
+        }
+        .option:after {
+            position: absolute;
+            margin: .5em 1.65em;
+            color: white;
+            font: 500 1.25em Courier;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            content: attr(data-inf);
+        }
+        .option:first-child:after { top: 0; left: 0; }
+        .option:last-child:after { right: 0; bottom: 0; }
+    </style>
+
+    <style>
+        .box {
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            display:inline-block;
+        }
+
+        .triangle {
+            width: 100%;
+            height: 100%;
+            transform: skewX(-20deg) skewY(45deg); /* 27deg instead of 20deg to have a regular triangle */
+            transform-origin: bottom left;
+            overflow: hidden;
+            background-size:0 0;
+        }
+        .triangle.bottom {
+            transform-origin: top right;
+        }
+
+        .triangle:before {
+            content: "";
+            display: block;
+            width: inherit;
+            height: inherit;
+            background-image: inherit;
+            background-size:cover;
+            background-position:center;
+            transform: skewY(-45deg) skewX(20deg); /* We invert order AND signs*/
+            transform-origin: inherit;
+        }
+
+        .triangle:hover {
+            filter:grayscale(100%);
+        }
+
+        .adjust {
+            margin-left:-120px;
+        }
+    </style>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <div class='pageOption'>
+                    <a href='#' class='option' data-inf='photo'>
+                        <img src='http://imgsrc.hubblesite.org/hu/db/images/hs-2009-28-b-large_web.jpg'>
+                    </a>
+                    <a href='#' class='option' data-inf='cinema'>
+                        <img src='http://imgsrc.hubblesite.org/hu/db/images/hs-2013-06-a-large_web.jpg'>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <div class="box">
+                    <div class="triangle" style="background-image:url(https://picsum.photos/id/155/1000/800)"></div>
+                </div>    
+                <div class="box adjust">
+                    <div class="triangle bottom" style="background-image:url(https://picsum.photos/id/159/1000/800)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

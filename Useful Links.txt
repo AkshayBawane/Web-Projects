@@ -1,0 +1,6 @@
+Chrome Updates:
+https://developers.google.com/web/updates/2017/04/devtools-release-notes
+
+What's New In DevTools (Chrome 59)
+CSS and JS code coverage. Find unused CSS and JS with the new Coverage tab.
+Full-page screenshots. Take a screenshot of the entire page, from the top of the viewport to the bottom.

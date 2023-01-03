@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+	<style>
+		html, body {
+			box-sizing: border-box;
+			height: 100%;
+		}
+
+		.gallery-outer {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.gallery-outer > div > img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		/* for same size images
+		.gallery-outer > .div {
+			flex: 1 1 150px;
+		}*/
+		.gallery-outer > .normal {
+			flex: 1 1 150px;
+		}
+		.gallery-outer > .big {
+			flex: 1 1 250px;
+		}
+	</style>
+	<section class="d-flex justify-content-center align-items-center h-100 text-center" style="background: pink;">
+		<div>
+			<div class="alert alert-success" role="alert"> A simple success alert—check it out! </div>
+			<a href='#' class="btn btn-danger">Button</a>
+		</div>
+	</section>
+
+	<div class="gallery-outer">
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?space"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?ear"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?nose"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?head"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?red"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?green"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?yellow"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?pink"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?dark"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?laptop"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?office"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?space"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?ear"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?nose"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?head"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?red"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?green"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?yellow"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?pink"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?dark"/></div>
+		<div class="big"><img src="https://source.unsplash.com/1920x1080/?laptop"/></div>
+		<div class="normal"><img src="https://source.unsplash.com/1920x1080/?office"/></div>
+	</div>
+
+    <!-- jQuery 3.3.1 JS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

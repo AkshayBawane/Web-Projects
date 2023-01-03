@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Tidbits Admin | Record Sales</title>
+
+	<!-- ========== Theme CSS ========== -->
+	<link rel="stylesheet" type="text/css" href="./css/theme-css.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<!-- ========== Font Awesome ========== -->
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"> -->
+	<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Side Navbar -->
+	<nav class="db-side-navbar scrollbar-hidden">
+		<div class="db-side-navbar-wrapper">
+			<!-- Sidebar Header    -->
+			<div class="sidenav-header d-flex align-items-center justify-content-center">
+				<!-- User Info-->
+				<div class="sidenav-header-inner text-center">
+					<img alt="site-logo" class="img-fluid" src="./images/tidbits/tidbits-logo.png"></a>
+				</div>
+
+				<div class="sidenav-header-logo">
+					<a class="brand-small text-center" href="index.html"><strong>T</strong><strong
+							class="text-primary">B</strong></a>
+				</div>
+			</div>
+			<!-- Sidebar Navigation Menus-->
+
+			<div class="admin-menu">
+				<ul class="side-menu list-unstyled">
+					<li>
+						<a href="#"><i class="fas fa-home"></i>
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#"><i class="far fa-chart-bar"></i>
+							<span>Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-barcode"></i>
+							<span>Products</span>
+						</a>
+					</li>
+					<li>
+						<a href=""><i class="far fa-life-ring"></i>
+							<span>Help Center</span>
+						</a>
+					</li>
+					<li>
+						<a href=""><i class="fas fa-cog"></i>
+							<span>Settings</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="db-page sales-record">
+		<!-- navbar-->
+		<header class="header">
+			<nav class="navbar db-top-navbar">
+				<div class="container-fluid">
+					<div class="navbar-holder d-flex align-items-center">
+						<div class="navbar-header d-flex">
+							<a class="menu-btn br-4" href="#" id="toggle-left-panel-btn">
+								<i class="fas fa-bars"></i>
+							</a>
+						</div>
+						<div class="w-100 position-relative ml-3">
+							<i class="fas fa-search" style="position: absolute; left: 8px; top: 10px;"></i>
+							<input type="email" class="form-control" style="padding-left: 30px; border: none;"
+								placeholder="Search dealers, sellers, service providers or help">
+						</div>
+						<ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center ml-auto">
+							<li class="nav-item dropdown">
+								<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-target="#"
+									data-toggle="dropdown" href="#" id="notifications" rel="nofollow"><i
+										class="fas fa-bell"></i><span class="badge badge-warning">12</span></a>
+								<ul aria-labelledby="notifications" class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+											<div class="notification d-flex justify-content-between">
+												<div class="notification-content">
+													<i class="fa fa-envelope"></i>You have 6 new messages
+												</div>
+												<div class="notification-time">
+													<small>4 minutes ago</small>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+											<div class="notification d-flex justify-content-between">
+												<div class="notification-content">
+													<i class="fa fa-twitter"></i>You have 2 followers
+												</div>
+												<div class="notification-time">
+													<small>4 minutes ago</small>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+											<div class="notification d-flex justify-content-between">
+												<div class="notification-content">
+													<i class="fa fa-upload"></i>Server Rebooted
+												</div>
+												<div class="notification-time">
+													<small>4 minutes ago</small>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#" rel="nofollow">
+											<div class="notification d-flex justify-content-between">
+												<div class="notification-content">
+													<i class="fa fa-twitter"></i>You have 2 followers
+												</div>
+												<div class="notification-time">
+													<small>10 minutes ago</small>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item all-notifications text-center" href="#"
+											rel="nofollow"><strong><i class="fa fa-bell"></i>view all
+												notifications</strong></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a aria-expanded="false" aria-haspopup="true" class="nav-link" data-target="#"
+									data-toggle="dropdown" href="#" id="messages" rel="nofollow"><i
+										class="fa fa-envelope"></i><span class="badge badge-info">10</span></a>
+								<ul aria-labelledby="notifications" class="dropdown-menu">
+									<li>
+										<a class="dropdown-item d-flex">
+											<div class="msg-profile"><img alt="..." class="img-fluid rounded-circle"
+													src="https://i.pravatar.cc/300"></div>
+											<div class="msg-body">
+												<h3 class="h5">Jason Doe</h3><span>sent you a direct
+													message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item d-flex">
+											<div class="msg-profile"><img alt="..." class="img-fluid rounded-circle"
+													src="https://i.pravatar.cc/300"></div>
+											<div class="msg-body">
+												<h3 class="h5">Frank Williams</h3><span>sent you a direct
+													message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item d-flex">
+											<div class="msg-profile"><img alt="..." class="img-fluid rounded-circle"
+													src="https://i.pravatar.cc/300"></div>
+											<div class="msg-body">
+												<h3 class="h5">Ashley Wood</h3><span>sent you a direct
+													message</span><small>3 days ago at 7:58 pm - 10.06.2014</small>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item all-notifications text-center" href="#"
+											rel="nofollow"><strong><i class="fa fa-envelope"></i>Read all
+												messages</strong></a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<div class="user-panel d-flex" data-toggle="dropdown" aria-expanded="false">
+									<div class="image">
+										<img src="./images/tidbits/avatar.png" class="img-circle elevation-2"
+											alt="User Image">
+									</div>
+									<div class="info">
+										<a href="#" class="d-none d-sm-block">James Warner
+											<i class="fas fa-caret-down"></i>
+										</a>
+									</div>
+								</div>
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right e-profile-dropdown" style="padding: 0;">
+									<ul class="list-inline d-flex flex-column">
+										<li>
+											<i class="fas fa-times btn-profile-close"></i>
+											<div class="mb-2">My Profile</div>
+											<span>
+												<img src="./images/tidbits/avatar.png" class="img-circle" style="width: 40px;" alt="User Image">
+											</span>
+											<span>
+												James Warner
+											</span>
+										</li>
+										<li>
+											<button class="btn">Edit Profile</button>
+										</li>
+										<li>
+											<button class="btn">Change Password</button>
+										</li>
+										<li>
+											<button class="btn">Logout</button>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="mt-4">
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<section class="content">
+					<div class="container-fluid">
+						<div class="content-header">
+							<div class="row">
+								<h1 class="page-title pl-2">Product Sales</h1>
+							</div>
+							<div class="row pl-2 breadcrumb-wrapper d-none d-sm-block o-breadcrumb">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">Products ></li>
+										<li class="breadcrumb-item"><a href="#">Sale</a></li>
+										<li class="breadcrumb-item"><a href="#">Send Product Sale Receipt</a></li>
+										<!-- <li class="breadcrumb-item active" aria-current="page">Service Provider</li> -->
+									</ol>
+								</nav>
+							</div>
+						</div>
+						<!-- /.content-header -->
+
+						<div id="add-seller-details-accordion" class="add-seller-details-accordion">
+							<div class="card o-top-card text-sm-left text-center">
+								<div class="card-body">
+									<div class="row ">
+										<div class="col-md-3 br-right-bottom py-4">
+											<img class="pb-40 img-fluid" src="./images/tidbits/image0.png" alt="store brand image" />
+										</div>
+										<div class="col-md-7 py-4 br-b">
+											<h2 class="pl-3 store-name">Reliance Digital</h2>
+											<h5 class="pl-3 store-add">Kothrud, Pune</h5>
+										</div>
+										<div class="col-md-2 py-4 br-b">
+											<h4 class="pl-3 sale-rep">Mr. John Doe</h4>
+											<h6 class="pl-3 sale-des">Sales Manager</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card o-customer-details">
+								<div class="card-header" id="headingOne">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#customer-details-collapse" aria-expanded="true" aria-controls="customer-details-collapse"> <i class="fas fa-plus"></i> 1. Customer Details </button>
+								</div>
+								<div id="customer-details-collapse" class="collapse show" aria-labelledby="headingOne" data-parent="#add-seller-details-accordion">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-8">
+												<form>
+													<div class="form-row">
+														<div class="form-group col-md-4">
+															<select class="custom-select" id="salutation01" required>
+																<option selected>Choose...</option>
+																<option value="1">Mr</option>
+																<option value="2">Mrs</option>
+																<option value="3">Miss</option>
+															</select>
+															<label for="salutation01">
+																<small>Salutation</small>
+															</label>
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" id="firstname01"
+																required>
+															<label for="firstname01">
+																<small>First name</small>
+															</label>
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" id="lastname01"
+																required>
+															<label for="lastname01">
+																<small>Last name</small>
+															</label>
+														</div>
+													</div>
+
+													<div class="form-row">
+														<div class="form-group col-md-6">
+															<input type="email" class="form-control" id="email01"
+																placeholder="name@example.com" required>
+															<label for="email01">
+																<small>Email ID</small>
+															</label>
+														</div>
+
+														<div class="form-group col-md-6">
+															<input type="text" class="form-control" id="phone"
+																placeholder="phone" required>
+															<label for="phone">
+																<small>Enter Phone Number</small>
+															</label>
+														</div>
+													</div>
+
+													<div class="form-row">
+														<div class="form-group col-md-12">
+															<input type="email" class="form-control" id="email01"
+																placeholder="Address Details" required>
+															<label for="email01">
+																<small>Enter address details if available</small>
+															</label>
+														</div>
+													</div>
+												</form>
+											</div>
+
+											<div class="col-md-4 text-center">
+												<ul class="list-inline profile-list mb-5">
+													<li>
+														<img src="./images/tidbits/avatar.png"
+															class="img-circle personal-details-avatar" alt="User Image">
+													</li>
+													<li>
+														<button class="btn">Add profile photo</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card o-product-details">
+								<div class="card-header" id="headingTwo">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#product-details-collapse" aria-expanded="false" aria-controls="product-details-collapse"> <i class="fas fa-plus"></i> 2. Product Details </button>
+								</div>
+								<div id="product-details-collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#add-seller-details-accordion">
+									<div class="card-body">
+										<form action="">
+											<div class="form-row">
+												<div class="form-group col-md-6 info-icon">
+													<button class="btn btn-icon">
+														<i class="fas fa-search"></i>
+													</button>
+													<input id="ac-product" type="text" class="form-control" placeholder="Search Product">
+													<label for="ac-product">
+														<small>Enter keyword to search product</small>
+													</label>
+												</div>
+											</div>
+										</form>
+
+										<a href="#" class="btn-cyan-outline">LAST 6 SOLD PRODUCTS</a>
+
+										<ul class="list-unstyled d-flex mt-4 prod-showcase-box-outer">
+											<li>
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="ml-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="ml-0 ml-sm-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (3).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="ml-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (4).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="ml-0 ml-sm-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+										</ul>
+
+										<ul class="list-unstyled d-flex mt-3 mb-40 prod-showcase-box-outer">
+											<li class="mr-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (3).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (4).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="prod-showcase-box">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<p class="desc mt-1 mb-1">Toyota Fortuner</p>
+												</div>
+											</li>
+										</ul>
+
+										<a href="#" class="btn-cyan-outline">SELECT CATEGORY</a>
+										<form class="mt-4">
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<select class="custom-select">
+														<option selected>Select Category</option>
+														<option value="1">Automobile</option>
+														<option value="2">Appliance</option>
+														<option value="3">Digital Electronics</option>
+													</select>
+													<label>
+														<small>e.g. Automobile, Appliance, Digital Electronics etc.</small>
+													</label>
+												</div>
+											</div>
+										</form>
+
+										<ul class="list-unstyled d-flex flex-wrap mb-50 icon-category-box-outer">
+											<li class="mr-3">
+												<div class="icon-category-box selected">
+													<img src="./images/tidbits/showcase-images/line-icons (1).png" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Appliances</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-category-box">
+													<img src="./images/tidbits/showcase-images/line-icons (2).png" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Automobile</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-category-box">
+													<img src="./images/tidbits/showcase-images/line-icons (3).png" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Digital Devices</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-category-box">
+													<img src="./images/tidbits/showcase-images/line-icons (4).png" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Appliances</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-category-box">
+													<img src="./images/tidbits/showcase-images/line-icons (5).png" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Digital Devices</p>
+												</div>
+											</li>
+										</ul>
+
+										<a href="#" class="btn-cyan-outline">SELECT BRAND</a>
+										<form class="mt-4">
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<select class="custom-select">
+														<option selected>Select Brand</option>
+														<option value="1">Nissan</option>
+														<option value="2">Mahindra</option>
+														<option value="3">Tata</option>
+													</select>
+													<label>
+														<small>e.g. Nissan, Mahindra, Tata etc.</small>
+													</label>
+												</div>
+											</div>
+										</form>
+
+										<ul class="list-unstyled d-flex flex-wrap icon-brand-box-outer">
+											<li class="mr-3">
+												<div class="icon-brand-box selected">
+													<img src="./images/tidbits/showcase-images/car-logos (1).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-brand-box">
+													<img src="./images/tidbits/showcase-images/car-logos (2).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-brand-box">
+													<img src="./images/tidbits/showcase-images/car-logos (3).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-brand-box">
+													<img src="./images/tidbits/showcase-images/car-logos (4).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-brand-box">
+													<img src="./images/tidbits/showcase-images/car-logos (5).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+												</div>
+											</li>
+										</ul>
+
+										<a href="#" class="btn-cyan-outline">SELECT PRODUCT</a>
+										<form class="mt-4">
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<select class="custom-select">
+														<option selected>Select Product</option>
+														<option value="1">Nissan</option>
+														<option value="2">Mahindra</option>
+														<option value="3">Tata</option>
+													</select>
+													<label>
+														<small>e.g. Petrol, Disel</small>
+													</label>
+												</div>
+											</div>
+										</form>
+										<ul class="list-unstyled d-flex flex-wrap mb-50 icon-product-box-outer">
+											<li class="mr-3">
+												<div class="icon-product-box selected">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (3).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Digital Devices</p>
+												</div>
+											</li>
+										</ul>
+										
+										<a href="#" class="btn-cyan-outline">SELECT MODEL</a>
+										<form class="mt-4">
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<select class="custom-select">
+														<option selected>Select Model</option>
+														<option value="1">Nissan</option>
+														<option value="2">Mahindra</option>
+														<option value="3">Tata</option>
+													</select>
+													<label>
+														<small>e.g. Nissan Micra XV</small>
+													</label>
+												</div>
+											</div>
+										</form>
+										<ul class="list-unstyled d-flex flex-wrap mb-50 icon-product-box-outer">
+											<li class="mr-3">
+												<div class="icon-product-box selected">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (3).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Toyota Fortuner</p>
+												</div>
+											</li>
+											<li class="mr-3">
+												<div class="icon-product-box">
+													<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+													<i class="fas fa-check tick-ribbon"></i>
+													<p>Digital Devices</p>
+												</div>
+											</li>
+										</ul>
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-3">
+													<select class="custom-select">
+														<option selected="">Quantity</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+													<label>
+														<small>e.g. 2</small>
+													</label>
+												</div>
+												<div class="form-group col-md-3">
+													<input type="text" class="form-control" placeholder="Price">
+												</div>
+												<div class="form-group col-md-3">
+													<input type="text" class="form-control" placeholder="Discount">
+												</div>
+												<div class="form-group col-md-3">
+													<input type="text" class="form-control" placeholder="Tax">
+													<label>
+														<small>e.g. Add tax details</small>
+													</label>
+												</div>
+											</div>
+										</form>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="card o-additional-product-details">
+								<div class="card-header" id="headingTwo">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#additional-product-details-collapse" aria-expanded="false" aria-controls="additional-product-details-collapse"> <i class="fas fa-plus"></i> 3. Additional/Related Product Details </button>
+								</div>
+								<div id="additional-product-details-collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#add-seller-details-accordion">
+									<div class="card-body">
+										<form class="mt-4">
+											<div class="form-row">
+												<div class="form-group col-md-6 info-icon">
+													<button class="btn btn-icon">
+														<i class="fas fa-search"></i>
+													</button>
+													<input id="additional-product" type="text" class="form-control" placeholder="Search Additional Product">
+													<label for="additional-product">
+														<small>Enter keyword to search product</small>
+													</label>
+												</div>
+											</div>
+										</form>
+										<div class="row">
+											<div class="col-md-10">
+												<ul class="list-unstyled d-flex flex-wrap mb-50 icon-product-box-outer">
+													<li class="mr-3">
+														<div class="icon-product-box selected">
+															<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+															<i class="fas fa-check tick-ribbon"></i>
+															<div class="desc">
+																<p>Toyota Fortuner</p>
+																<div class="cart">
+																	<i class="fas fa-minus"></i>
+																	<span>1</span>
+																	<i class="fas fa-plus"></i>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="mr-3">
+														<div class="icon-product-box">
+															<img src="./images/tidbits/showcase-images/car-model (2).jpeg" class="img-fluid" alt="" >
+															<i class="fas fa-check tick-ribbon"></i>
+															<div class="desc">
+																<p>Toyota Fortuner</p>
+																<div class="cart">
+																	<i class="fas fa-minus"></i>
+																	<span>1</span>
+																	<i class="fas fa-plus"></i>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="mr-3">
+														<div class="icon-product-box">
+															<img src="./images/tidbits/showcase-images/car-model (3).jpeg" class="img-fluid" alt="" >
+															<i class="fas fa-check tick-ribbon"></i>
+															<div class="desc">
+																<p>Toyota Fortuner</p>
+																<div class="cart">
+																	<i class="fas fa-minus"></i>
+																	<span>1</span>
+																	<i class="fas fa-plus"></i>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="mr-3">
+														<div class="icon-product-box">
+															<img src="./images/tidbits/showcase-images/car-model (4).jpeg" class="img-fluid" alt="" >
+															<i class="fas fa-check tick-ribbon"></i>
+															<div class="desc">
+																<p>Toyota Fortuner</p>
+																<div class="cart">
+																	<i class="fas fa-minus"></i>
+																	<span>1</span>
+																	<i class="fas fa-plus"></i>
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="col-md-2 d-flex justify-content-center align-self-center justify-content-sm-end">
+												<a href="#" class="btn-cyan-solid mb-3">SELECT MODEL</a>
+											</div>
+										</div>
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-2">
+													<input type="text" class="form-control" placeholder="Accessory Name">
+													<label>
+														<small>e.g. Fog Lamp</small>
+													</label>
+												</div>
+												<div class="form-group col-md-2">
+													<select class="custom-select">
+														<option selected="">Quantity</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+													<label>
+														<small>e.g. 2</small>
+													</label>
+												</div>
+												<div class="form-group col-md-2">
+													<input type="text" class="form-control" placeholder="Price">
+												</div>
+												<div class="form-group col-md-2">
+													<input type="text" class="form-control" placeholder="Discount">
+												</div>
+												<div class="form-group col-md-2">
+													<input type="text" class="form-control" placeholder="Tax">
+													<label>
+														<small>e.g. Add tax details</small>
+													</label>
+												</div>
+												<div class="form-group col-md-2 tb-cart-icons text-center">
+													<i class="fas fa-plus icon-add"></i>
+													<i class="far fa-edit icon-edit"></i>
+													<i class="far fa-trash-alt icon-delete"></i>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="card o-insurance-details">
+								<div class="card-header" id="headingTwo">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#insurance-details-collapse" aria-expanded="false" aria-controls="insurance-details-collapse"> <i class="fas fa-plus"></i> 4. Insurance Details </button>
+								</div>
+								<div id="insurance-details-collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#add-seller-details-accordion">
+									<div class="card-body">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-4">
+													<input type="text" class="form-control" placeholder="Insurance Policy Number">
+													<label>
+														<small>e.g. 23487838</small>
+													</label>
+												</div>
+												<div class="form-group col-md-4">
+													<select class="custom-select">
+														<option disabled selected>Warranty Years #</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+													<label>
+														<small>e.g. 2, 2.5, 5</small>
+													</label>
+												</div>
+												<div class="form-group col-md-4">
+													<select class="custom-select">
+														<option disabled selected>Extended Warranty Years #</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+													<label>
+														<small>e.g. 1 , 2</small>
+													</label>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="card o-loan-details">
+								<div class="card-header" id="headingTwo">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#loan-details-collapse" aria-expanded="false" aria-controls="loan-details-collapse"> <i class="fas fa-plus"></i> 5. Loan Details </button>
+								</div>
+								<div id="loan-details-collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#add-seller-details-accordion">
+									<div class="card-body">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-4">
+													<select class="custom-select">
+														<option disabled selected>Bank Name</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+													<label>
+														<small>e.g. Axis Bank</small>
+													</label>
+												</div>
+												<div class="form-group col-md-4">
+													<input type="text" class="form-control" placeholder="IFSC Code">
+													<label>
+														<small>e.g. AS00334</small>
+													</label>
+												</div>
+												<div class="form-group col-md-4">
+													<input type="text" class="form-control" placeholder="Phone Number">
+													<label>
+														<small>e.g. 99224567890</small>
+													</label>
+												</div>
+												<div class="form-group col-md-4">
+													<input type="text" class="form-control" placeholder="Email ID">
+													<label>
+														<small>e.g. abc@gmail.com</small>
+													</label>
+												</div>
+												<div class="form-group col-md-8">
+													<input type="text" class="form-control" placeholder="Address Details">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="card o-total-amount-details">
+								<div class="card-header" id="headingTwo">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#total-amount-details-collapse" aria-expanded="false" aria-controls="total-amount-details-collapse"> <i class="fas fa-plus"></i> 6. Total Amount Details </button>
+								</div>
+								<div id="total-amount-details-collapse" class="collapse" aria-labelledby="headingTwo" data-parent="#add-seller-details-accordion">
+									<div class="card-body">
+
+										<div class="total-amount-inner-card mb-4">
+											<ul class="list-unstyled p-3 mb-0 d-flex justify-content-between" style="border-bottom: 1px solid #E8E9EC;">
+												<li>
+													<p class="mb-0">Selected Products</p>
+												</li>
+												<li>
+													<a href="#" class="btn-cyan-solid-sm">Add New</a>
+												</li>
+											</ul>
+	
+											<div class="row mx-auto col-md-11 mt-3 mb-3 d-none d-sm-flex desktop-only">
+												<div class="col-md-3">
+													<p class="mb-0 fw-semi-bold">ID</p>
+												</div>
+												<div class="col-md-4">
+													<p class="mb-0">Product</p>
+												</div>
+												<div class="col-md-2">
+													<p class="mb-0">Qty</p>
+												</div>
+												<div class="col-md-3">
+													<p class="mb-0">Price</p>
+												</div>
+											</div>
+
+											<div class="row mx-auto mt-3 mb-3 d-sm-none no-gutters pl-2 pr-2 mobile-only">
+												<div class="col-3">
+													<p class="mb-0 fw-semi-bold">ID</p>
+												</div>
+												<div class="col-9">
+													<p class="mb-0">Product Details</p>
+												</div>
+											</div>
+
+											<hr>
+											<div class="row mx-auto col-md-11 mt-4 mb-4 align-items-center d-none d-sm-flex desktop-only">
+												<div class="col-md-3">
+													<p class="mb-0 fw-semi-bold">356121</p>
+												</div>
+												<div class="col-md-4">
+													<div class="row no-gutters align-items-center">
+														<div class="col-sm-4">
+															<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+														</div>
+														<div class="col-sm-8">
+															<p class="mb-0 ml-3">Toyota Fortuner</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<p class="mb-0">1</p>
+												</div>
+												<div class="col-md-3">
+													<p class="mb-0">Rs 50, 00, 000</p>
+												</div>
+											</div>
+
+											<div class="row mx-auto mt-4 mb-4 align-items-center d-sm-none no-gutters pl-2 pr-2 mobile-only">
+												<div class="col-3">
+													<p class="mb-0 fw-semi-bold">356121</p>
+												</div>
+												<div class="col-9">
+													<div class="row align-items-center">
+														<div class="col-4 p-1">
+															<img src="./images/tidbits/showcase-images/car-model (1).jpeg" class="img-fluid" alt="" >
+														</div>
+														<div class="col-8 p-1">
+															<p class="mb-0">Toyota Fortuner</p>
+															<p class="mb-0">Qty (1)</p>
+															<p class="mb-0">Rs 50, 00, 000</p>
+														</div>
+													</div>
+												</div>
+											</div>
+	
+											<div class="row mx-auto col-md-11 mt-4 mb-4 align-items-center d-none d-sm-flex desktop-only">
+												<div class="col-md-3">
+													<p class="mb-0 fw-semi-bold">356122</p>
+												</div>
+												<div class="col-md-4">
+													<div class="row no-gutters align-items-center">
+														<div class="col-sm-4">
+															<img src="./images/tidbits/showcase-images/car-products (1).png" class="img-fluid" alt="" >
+														</div>
+														<div class="col-sm-8">
+															<p class="mb-0 ml-3">Fog Lamp</p>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-2">
+													<p class="mb-0">5</p>
+												</div>
+												<div class="col-md-3">
+													<p class="mb-0">Rs 6, 000</p>
+												</div>
+											</div>
+
+											<div class="row mx-auto mt-4 mb-4 align-items-center d-sm-none no-gutters pl-2 pr-2 mobile-only">
+												<div class="col-3">
+													<p class="mb-0 fw-semi-bold">356122</p>
+												</div>
+												<div class="col-9">
+													<div class="row align-items-center">
+														<div class="col-4 p-1">
+															<img src="./images/tidbits/showcase-images/car-products (1).png" class="img-fluid" alt="" >
+														</div>
+														<div class="col-8 p-1">
+															<p class="mb-0">Fog Lamp</p>
+															<p class="mb-0">Qty (4)</p>
+															<p class="mb-0">Rs 6, 000</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.total-amount-inner-card -->
+
+										<div class="row">
+											<div class="col-md-8">
+												<p class="fw-bold">Payment Mode Details</p>
+												<span>
+													<input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+													<label class="mr-3" for="exampleRadios1">
+														Full Payment
+													</label>
+												</span>
+												<span>
+													<input type="radio" name="exampleRadios" id="exampleRadios2" value="option1" checked>
+													<label for="exampleRadios2">
+														Split Payment
+													</label>
+												</span>
+												<form class="mt-3">
+													<div class="form-row">
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" placeholder="Cash">
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" placeholder="Debit Card">
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" placeholder="Credit Card">
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" placeholder="Cheque">
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" placeholder="UPI">
+														</div>
+														<div class="form-group col-md-4">
+															<input type="text" class="form-control" placeholder="Other Wallets">
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="col-md-4 fw-bold">
+												<div class="row no-gutters">
+													<div class="col-6">
+														<p class="mb-0">Item Total</p>
+													</div>
+													<div class="col-6 text-right">
+														<p class="mb-0">Rs 50, 06, 000</p>
+													</div>
+												</div>
+												<div class="row no-gutters">
+													<div class="col-6">
+														<p class="mb-0">Sales Tax</p>
+													</div>
+													<div class="col-6 text-right">
+														<p class="mb-0">Rs 90, 000</p>
+													</div>
+												</div>
+												<hr class="mt-1 mb-1">
+												<div class="row no-gutters">
+													<div class="col-6">
+														<p class="mb-0">Total Amount</p>
+													</div>
+													<div class="col-6 text-right">
+														<p class="mb-0 fs-18">Rs 50, 96, 000</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="text-center">
+											<a href="#" class="btn-cyan-outline mt-4 mb-4">PAYMENT SUMMARY</a>
+										</div>
+
+										<div class="row fw-bold">
+											<div class="col-6" style="color: #3EAC45;">
+												<p class="mb-0">Total (Split Payment)</p>
+												<p class="fs-18 mb-0">Rs 40, 06, 000</p>
+											</div>
+											<div class="col-6 text-right" style="color: #BC0404;">
+												<p class="mb-0">Due Payment</p>
+												<p class="mb-0">Rs 10, 00, 000</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+		</section>
+		<footer class="main-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6">
+						<p>Copyright © 2020 Tidbits. All rights reserved.</p>
+					</div>
+					<div class="col-sm-6 text-right">
+						<p>Version 1.0.0</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- ========== Theme JS ========== -->
+	<script src="./js/theme-essentials-js.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			// Side Navbar Function
+			$('#toggle-left-panel-btn').on('click', function (e) {
+
+				e.preventDefault();
+
+				if ($(window).outerWidth() > 1194) {
+					$('nav.db-side-navbar').toggleClass('left-panel-shrink desktop-bar');
+					$('.db-page').toggleClass('active-md-res desktop-page');
+				} else {
+					$('nav.db-side-navbar').toggleClass('mobile-res-c mobile-bar');
+					$('.db-page').toggleClass('active-sm-res mobile-page');
+				}
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function () {
+			// Bootstrap tooltips
+			$('[data-toggle="tooltip"]').tooltip({
+				boundary: 'window'
+			})
+
+			// Add down arrow icon for collapse element which is open by default
+			$(".collapse.show").each(function () {
+				$(this).prev(".card-header").find(".fas").addClass("fa-minus").removeClass( "fa-plus");
+			});
+
+			// Toggle right and down arrow icon on show hide of collapse element
+			$(".collapse").on('show.bs.collapse', function () {
+				$(this).prev(".card-header").find(".fas").removeClass("fa-plus").addClass( "fa-minus");
+			}).on('hide.bs.collapse', function () {
+				$(this).prev(".card-header").find(".fas").removeClass("fa-minus").addClass( "fa-plus");
+			});
+		});
+	</script>
+
+	<script>
+		var product = [
+			"seatcover", "car", "headlight", "lights", "speaker"
+		];
+
+		$("#ac-product").autocomplete({
+			source: product
+		});
+
+		var additionalproduct = [
+			"one", "two", "three", "four", "five"
+		];
+
+		$("#additional-product").autocomplete({
+			source: additionalproduct
+		});
+	</script>
+</body>
+
+</html>
